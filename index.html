@@ -18,6 +18,13 @@
   <!-- 首页：四玩法导航 -->
   <section id="view-home" class="view">
     <div class="home-grid">
+      <a class="home-card" href="#/guess">
+        <div class="hc-emoji">🎯</div>
+        <div class="hc-body">
+          <h2>猜干员<span class="dot" id="dot-guess"></span></h2>
+          <p>Wordle 式七维比对：星级、职业、分支、势力、种族、性别、实装日期，6 次机会逼近答案。</p>
+        </div>
+      </a>
       <a class="home-card" href="#/voice">
         <div class="hc-emoji">🎧</div>
         <div class="hc-body">
@@ -48,6 +55,48 @@
       </a>
     </div>
     <p class="home-note">每个玩法每天一道题（按本地日期，全站同题），也有不限次的练习模式。进度存在本机浏览器里。</p>
+  </section>
+
+  <!-- 玩法 0：猜干员 -->
+  <section id="view-guess" class="view hidden">
+    <div class="game-head">
+      <h2>🎯 猜干员</h2>
+      <div class="mode-tabs" data-game="guess">
+        <button class="mode-tab active" data-mode="daily">每日挑战</button>
+        <button class="mode-tab" data-mode="practice">练习模式</button>
+      </div>
+    </div>
+    <p class="mode-banner" id="guessBanner"></p>
+
+    <div class="guess-bar">
+      <div class="input-wrap">
+        <input id="guessInput" type="text" placeholder="输入干员名，如：能天使"
+               autocomplete="off" autocapitalize="off" spellcheck="false">
+        <ul id="guessSuggest" class="suggest-list hidden"></ul>
+      </div>
+      <span class="tries-left" id="guessTries"></span>
+    </div>
+
+    <div class="table-scroll">
+      <div class="guess-table">
+        <div class="grid-head guess-grid">
+          <span class="c-name">干员</span><span>星级</span><span>职业</span><span>分支</span>
+          <span>势力</span><span>种族</span><span>性别</span><span>实装日期</span>
+        </div>
+        <div id="guessRows" class="rows"></div>
+      </div>
+    </div>
+
+    <div id="guessResult" class="result hidden"></div>
+
+    <details class="legend">
+      <summary>图例与规则</summary>
+      <ul>
+        <li>🟩 完全正确　🟥 不对　⬆️ / ⬇️ 用于数值维度（星级 / 实装日期）：⬆️ 表示答案比你猜的<b>更高/更晚</b>，⬇️ 表示更低/更早。</li>
+        <li>分支为空的干员显示为「—」，双方都为空算相同。</li>
+        <li>题池为 5★+6★ 且实装日期、性别明确的干员；每日挑战按本地日期出题，同一天所有人同一题，共 6 次机会；进度存在本机浏览器里。</li>
+      </ul>
+    </details>
   </section>
 
   <!-- 玩法 1：语音猜人 -->

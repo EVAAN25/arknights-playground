@@ -79,6 +79,91 @@
     return out.slice(0, limit || 8).map((x) => x.c);
   }
 
+  // ---------- 玩法 0：猜干员（wordle 式七维比对） ----------
+
+  // 题池开关：true 时把 4★ 也放进题池（默认只 5★+6★）
+  const GUESS_INCLUDE_R4 = false;
+  const GUESS_MAX_TRIES = 6;
+  const GUESS_CELL_ORDER = ["rarity", "prof", "sub", "faction", "race", "sex", "release"];
+  const GUESS_CELL_LABEL = {
+    rarity: "星级", prof: "职业", sub: "分支", faction: "势力",
+    race: "种族", sex: "性别", release: "实装日期",
+  };
+  const GUESS_CELL_EMOJI = { green: "🟩", red: "🟥", up: "⬆️", down: "⬇️" };
+
+  // 题池：release 非空、sex 非空（排除谜语人），星级按开关
+  function guessPool(ops, includeR4) {
+    const minR = (includeR4 == null ? GUESS_INCLUDE_R4 : includeR4) ? 4 : 5;
+    return ops.filter((o) => o.rarity >= minR && o.release && o.sex);
+  }
+
+  function guessDaily(date, pool) {
+    return pool[dailyIndex(date, pool.length, "ak-guess")].id;
+  }
+
+  function guessRandom(pool, rand) {
+    rand = rand || Math.random;
+    return pool[Math.floor(rand() * pool.length)].id;
+  }
+
+  // 数值维度：0 相等；1 目标更高/更晚（提示 ⬆️）；-1 目标更低/更早（提示 ⬇️）
+  function cmpNumeric(g, t) {
+    if (g === t) return 0;
+    return t > g ? 1 : -1;
+  }
+
+  function numCell(g, t) {
+    const dir = cmpNumeric(g, t);
+    if (dir === 0) return { status: "green" };
+    return { status: dir > 0 ? "up" : "down", dir };
+  }
+
+  // 分支（子职业）：空字符串按「—」处理，空==空算相同
+  function subNorm(s) { return s == null || s === "" ? "—" : s; }
+
+  /*
+   * 比对一次猜测。win=精确命中；cells 七维：
+   * 文本维度 green/red；数值维度（星级/实装日期）green 或 up/down（⬆️=答案更高/更晚）
+   */
+  function guessCompare(g, t) {
+    return {
+      win: g.id === t.id,
+      cells: {
+        rarity: numCell(g.rarity, t.rarity),
+        prof: { status: g.prof === t.prof ? "green" : "red" },
+        sub: { status: subNorm(g.sub) === subNorm(t.sub) ? "green" : "red" },
+        faction: { status: g.faction === t.faction ? "green" : "red" },
+        race: { status: g.race === t.race ? "green" : "red" },
+        sex: { status: g.sex === t.sex ? "green" : "red" },
+        release: numCell(Date.parse(g.release), Date.parse(t.release)),
+      },
+    };
+  }
+
+  function guessGrade(tries, won) {
+    if (!won) return "海猫听了都摇头";
+    if (tries === 1) return "读心神探";
+    if (tries <= 3) return "人事部资深HR";
+    if (tries <= 5) return "档案室常客";
+    return "压线过关";
+  }
+
+  // results: guessCompare 的结果数组；只含 emoji 与成绩，不含答案名
+  function buildGuessShare(opts) {
+    const { date, results, won, practice } = opts;
+    const label = practice ? "猜干员·练习" : `猜干员 #${date}`;
+    const rows = results.map((r) =>
+      GUESS_CELL_ORDER.map((k) => GUESS_CELL_EMOJI[r.cells[k].status]).join(""));
+    const lines = [
+      `${SITE_NAME} · ${label}`,
+      won ? `🎯 ${results.length}/${GUESS_MAX_TRIES}` : `🎯 X/${GUESS_MAX_TRIES}`,
+      ...rows,
+      `评级：${guessGrade(results.length, won)}`,
+      SITE_URL,
+    ];
+    return lines.join("\n");
+  }
+
   // ---------- 玩法 1：语音猜人 ----------
 
   const VOICE_SEGMENTS = [2, 5, 10, Infinity]; // 分段解锁秒数，Infinity = 完整
@@ -375,6 +460,9 @@
   return {
     SITE_NAME, SITE_URL,
     hash32, mulberry32, dateStr, dailyIndex, shuffle, normalize, search,
+    // 猜干员
+    GUESS_INCLUDE_R4, GUESS_MAX_TRIES, GUESS_CELL_ORDER, GUESS_CELL_LABEL, GUESS_CELL_EMOJI,
+    guessPool, guessDaily, guessRandom, cmpNumeric, numCell, subNorm, guessCompare, guessGrade, buildGuessShare,
     // 语音猜人
     VOICE_SEGMENTS, VOICE_MAX_TRIES, voicePool, voiceDaily, voiceRandom, voiceGrade, buildVoiceShare,
     // 人气对决

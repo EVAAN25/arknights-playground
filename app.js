@@ -14,6 +14,7 @@
   window.ARK_CONN.forEach((p) => { CONN_BY_ID[p.id] = p; });
   const VPOOL = AKG.voicePool(OPS, window.ARK_VOICE);
   const TPOOL = AKG.timelinePool(OPS);
+  const GPOOL = AKG.guessPool(OPS);
 
   // ---------- 本地存储（file:// 下也尽量可用，失败降级为内存） ----------
   const store = (() => {
@@ -71,6 +72,167 @@
   }
 
   function stars(r) { return "★".repeat(r); }
+
+  // 输入框错误抖动（≤300ms）
+  function shakeInput(input) {
+    input.classList.add("shake");
+    setTimeout(() => input.classList.remove("shake"), 320);
+  }
+
+  /* ================================================================
+   * 玩法 0：猜干员（wordle 七维比对）
+   * state = {targetId, guesses:[id...], results:[...], status}
+   * ================================================================ */
+  const Guess = { mode: "daily", daily: null, practice: null, sugItems: [], sugIndex: -1 };
+
+  function gState() { return Guess.mode === "daily" ? Guess.daily : Guess.practice; }
+  function gTarget() { return byId[gState().targetId]; }
+  function gPersist() { if (Guess.mode === "daily") store.set(dkey("guess"), JSON.stringify(Guess.daily)); }
+
+  function guessNewState(targetId) { return { targetId, guesses: [], results: [], status: "playing" }; }
+
+  function guessInit() {
+    const targetId = AKG.guessDaily(TODAY, GPOOL);
+    const saved = loadJSON(dkey("guess"), null);
+    Guess.daily = (saved && saved.targetId === targetId) ? saved : guessNewState(targetId);
+  }
+
+  function guessNewPractice() { Guess.practice = guessNewState(AKG.guessRandom(GPOOL)); }
+
+  // 单元格内容：数值维度带箭头
+  function gCellHTML(cell, text) {
+    let arrow = "";
+    if (cell.status === "up") arrow = '<span class="arrow">⬆</span>';
+    if (cell.status === "down") arrow = '<span class="arrow">⬇</span>';
+    return `<div class="cell ${cell.status}"><span>${text}</span>${arrow}</div>`;
+  }
+
+  function gRowHTML(c, res) {
+    const cells = res.cells;
+    return `<div class="row guess-grid">
+      <div class="cell name">${avatarHTML(c)}<span>${c.name}</span></div>
+      ${gCellHTML(cells.rarity, c.rarity + "★")}
+      ${gCellHTML(cells.prof, c.prof)}
+      ${gCellHTML(cells.sub, AKG.subNorm(c.sub))}
+      ${gCellHTML(cells.faction, c.faction)}
+      ${gCellHTML(cells.race, c.race)}
+      ${gCellHTML(cells.sex, c.sex)}
+      ${gCellHTML(cells.release, c.release)}
+    </div>`;
+  }
+
+  function guessRender() {
+    const s = gState();
+    $("#guessBanner").innerHTML = Guess.mode === "daily"
+      ? `今日题目 <b>#${TODAY}</b> · 全站同题 · 进度自动保存`
+      : `练习模式 · 随机出题 · 不计入每日成绩`;
+    const left = AKG.GUESS_MAX_TRIES - s.guesses.length;
+    $("#guessTries").innerHTML = `剩 <b>${left}</b> / ${AKG.GUESS_MAX_TRIES} 次`;
+    $("#guessRows").innerHTML = s.guesses.map((id, i) => gRowHTML(byId[id], s.results[i])).join("");
+    const playing = s.status === "playing";
+    $("#guessInput").disabled = !playing;
+    $("#guessInput").placeholder = playing ? "输入干员名，如：能天使" : "本局已结束";
+    if (playing) $("#guessResult").classList.add("hidden");
+    else guessRenderResult();
+    gCloseSuggest();
+  }
+
+  function guessRenderResult() {
+    const s = gState();
+    const t = gTarget();
+    const won = s.status === "won";
+    const tries = s.guesses.length;
+    $("#guessResult").innerHTML = `
+      ${avatarHTML(t, "r-portrait")}
+      <h2>${won ? "猜中了！" : "揭晓答案"}：${t.name}</h2>
+      <p class="r-meta">${stars(t.rarity)} · ${t.faction} · ${t.prof} · ${AKG.subNorm(t.sub)} · ${t.race} · ${t.sex} · ${t.release} 实装</p>
+      <p class="r-grade">${won ? tries : "X"}/${AKG.GUESS_MAX_TRIES} 次 · 评级 <b>${AKG.guessGrade(tries, won)}</b></p>
+      <div class="btn-row">
+        <button class="btn" id="guessShareBtn">复制分享卡</button>
+        <button class="btn ghost" id="guessAgainBtn">${Guess.mode === "daily" ? "练习模式再来一题" : "再来一题"}</button>
+      </div>`;
+    $("#guessResult").classList.remove("hidden");
+    $("#guessShareBtn").onclick = () => copyText(AKG.buildGuessShare({
+      date: TODAY, results: s.results, won, practice: Guess.mode === "practice",
+    }));
+    $("#guessAgainBtn").onclick = () => {
+      if (Guess.mode === "daily") guessSetMode("practice");
+      else { guessNewPractice(); guessRender(); }
+    };
+  }
+
+  function guessSubmit(id) {
+    const s = gState();
+    if (!s || s.status !== "playing") return;
+    if (s.guesses.includes(id)) { toast("这位干员已经猜过了"); return; }
+    const res = AKG.guessCompare(byId[id], gTarget());
+    s.guesses.push(id);
+    s.results.push(res);
+    if (res.win) s.status = "won";
+    else {
+      if (s.guesses.length >= AKG.GUESS_MAX_TRIES) s.status = "lost";
+      shakeInput($("#guessInput"));
+    }
+    gPersist();
+    guessRender();
+  }
+
+  // 自动补全（题池内干员，带头像）
+  function gCloseSuggest() { $("#guessSuggest").classList.add("hidden"); Guess.sugItems = []; Guess.sugIndex = -1; }
+  function gOpenSuggest(list) {
+    Guess.sugItems = list;
+    Guess.sugIndex = list.length ? 0 : -1;
+    const ul = $("#guessSuggest");
+    ul.innerHTML = list.map((c, i) => `
+      <li data-id="${c.id}" class="${i === Guess.sugIndex ? "active" : ""}">
+        ${avatarHTML(c)}
+        <span class="s-name">${c.name}</span>
+        <span class="s-meta">${c.rarity}★ ${c.prof}</span>
+      </li>`).join("");
+    ul.classList.toggle("hidden", !list.length);
+    ul.querySelectorAll("li").forEach((li) => {
+      li.addEventListener("pointerdown", (e) => { e.preventDefault(); gPick(li.dataset.id); });
+    });
+  }
+  function gMoveSuggest(delta) {
+    if (!Guess.sugItems.length) return;
+    Guess.sugIndex = (Guess.sugIndex + delta + Guess.sugItems.length) % Guess.sugItems.length;
+    $("#guessSuggest").querySelectorAll("li").forEach((li, i) =>
+      li.classList.toggle("active", i === Guess.sugIndex));
+  }
+  function gPick(id) {
+    $("#guessInput").value = "";
+    gCloseSuggest();
+    guessSubmit(id);
+  }
+  function guessBindInput() {
+    const input = $("#guessInput");
+    const guessed = () => gState().guesses;
+    input.addEventListener("input", () => gOpenSuggest(AKG.search(GPOOL, input.value, guessed())));
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") { e.preventDefault(); gMoveSuggest(1); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); gMoveSuggest(-1); }
+      else if (e.key === "Enter") {
+        e.preventDefault();
+        if (Guess.sugItems.length) gPick(Guess.sugItems[Math.max(Guess.sugIndex, 0)].id);
+        else {
+          const m = AKG.search(GPOOL, input.value, guessed(), 1);
+          if (m.length) gPick(m[0].id);
+        }
+      } else if (e.key === "Escape") gCloseSuggest();
+    });
+    input.addEventListener("blur", () => setTimeout(gCloseSuggest, 120));
+    input.addEventListener("focus", () => {
+      if (input.value) gOpenSuggest(AKG.search(GPOOL, input.value, guessed()));
+    });
+  }
+
+  function guessSetMode(mode) {
+    Guess.mode = mode;
+    if (mode === "practice" && !Guess.practice) guessNewPractice();
+    syncModeTabs("guess");
+    guessRender();
+  }
 
   /* ================================================================
    * 玩法 1：语音猜人
@@ -647,15 +809,15 @@
    * ================================================================ */
   const VIEWS = {
     "": "home", "#/": "home",
-    "#/voice": "voice", "#/higher-lower": "pop",
+    "#/guess": "guess", "#/voice": "voice", "#/higher-lower": "pop",
     "#/connections": "conn", "#/timeline": "tl",
   };
-  const RENDER = { voice: voiceRender, pop: popRender, conn: connRender, tl: tlRender };
+  const RENDER = { guess: guessRender, voice: voiceRender, pop: popRender, conn: connRender, tl: tlRender };
 
   function route() {
     const view = VIEWS[location.hash] || "home";
     if (view !== "voice" && Voice.audio) voiceStopAudio(); // 离开语音页时停止播放
-    ["home", "voice", "pop", "conn", "tl"].forEach((v) =>
+    ["home", "guess", "voice", "pop", "conn", "tl"].forEach((v) =>
       $(`#view-${v}`).classList.toggle("hidden", v !== view));
     if (view === "home") renderHomeDots();
     else RENDER[view]();
@@ -663,13 +825,14 @@
   }
 
   function syncModeTabs(game) {
-    const mode = { voice: Voice.mode, pop: Pop.mode, conn: Conn.mode, tl: Tl.mode }[game];
+    const mode = { guess: Guess.mode, voice: Voice.mode, pop: Pop.mode, conn: Conn.mode, tl: Tl.mode }[game];
     $$(`.mode-tabs[data-game="${game}"] .mode-tab`).forEach((b) =>
       b.classList.toggle("active", b.dataset.mode === mode));
   }
 
   function renderHomeDots() {
     const checks = {
+      guess: loadJSON(dkey("guess"), null),
       voice: loadJSON(dkey("voice"), null),
       pop: loadJSON(dkey("pop"), null),
       conn: loadJSON(dkey("conn"), null),
@@ -683,10 +846,12 @@
 
   // ---------- 启动 ----------
   function init() {
+    guessInit();
     voiceInit();
     popInit();
     connInit();
     tlInit();
+    guessBindInput();
     voiceBindInput();
     $("#voicePlayBtn").addEventListener("click", voicePlay);
     $("#voiceSkipBtn").addEventListener("click", voiceSkip);
@@ -706,7 +871,7 @@
     $("#tlSubmit").addEventListener("click", tlSubmit);
     $$(".mode-tabs").forEach((tabs) => {
       const game = tabs.dataset.game;
-      const setter = { voice: voiceSetMode, pop: popSetMode, conn: connSetMode, tl: tlSetMode }[game];
+      const setter = { guess: guessSetMode, voice: voiceSetMode, pop: popSetMode, conn: connSetMode, tl: tlSetMode }[game];
       tabs.querySelectorAll(".mode-tab").forEach((b) =>
         b.addEventListener("click", () => setter(b.dataset.mode)));
     });

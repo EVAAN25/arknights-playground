@@ -54,6 +54,15 @@ for b in banners:
         if cid not in banner_date or d < banner_date[cid]:
             banner_date[cid] = d
 
+# 性别：tl-akhr 为主，raw/sex_patch.json（PRTS 档案）补新干员
+SEX = {e['id']: e.get('sex') for e in tl if e.get('sex') in ('男', '女')}
+if os.path.exists(f'{RAW}/sex_patch.json'):
+    _sp = json.load(open(f'{RAW}/sex_patch.json'))
+    _name2id = {v['name']: cid for cid, v in chartab.items()}
+    for _n, _s in _sp.items():
+        if _s in ('男', '女') and _n in _name2id:
+            SEX.setdefault(_name2id[_n], _s)
+
 EXCLUDE = set()  # 阿米娅升变形态只保留本体
 ops = []
 seen_names = {}
@@ -77,6 +86,7 @@ for cid, v in chartab.items():
         'nation': NATION.get(v.get('nationId'), ''),
     }
     lg = lore.get(name) or {}
+    rec['sex'] = SEX.get(cid)
     rec['race'] = (lg.get('race') or '').split('/')[0].strip() or None
     rec['artist'] = lg.get('artist') or None
     rec['cvJp'] = lg.get('cvJp') or None

@@ -261,6 +261,98 @@ ok("排排坐：评级与分享卡不含答案名", () => {
   for (const id of ids) assert(!t.includes(byId[id].name), "泄露干员名 " + byId[id].name);
 });
 
+// ---------- 玩法 0：猜干员 ----------
+const GPOOL = AKG.guessPool(ARK_OPS);
+
+ok("猜干员：题池完整性（rarity≥5、release/sex 非空、名字全表唯一）", () => {
+  assert(GPOOL.length >= 300, "题池过小: " + GPOOL.length);
+  const nameCnt = {};
+  ARK_OPS.forEach((o) => { nameCnt[o.name] = (nameCnt[o.name] || 0) + 1; });
+  for (const o of GPOOL) {
+    assert(o.rarity >= 5 && o.release && o.sex, "题池杂质 " + o.id);
+    assert.strictEqual(nameCnt[o.name], 1, "名字不唯一 " + o.name);
+  }
+  // 开关 true 时允许 4★
+  const pool4 = AKG.guessPool(ARK_OPS, true);
+  assert(pool4.length > GPOOL.length);
+  for (const o of pool4) assert(o.rarity >= 4 && o.release && o.sex, "4★题池杂质 " + o.id);
+});
+
+ok("猜干员：每日确定性 + salt 与现有 4 个不冲突（抽样 10 天）", () => {
+  const date = "2026-08-05";
+  assert.strictEqual(AKG.guessDaily(date, GPOOL), AKG.guessDaily(date, GPOOL));
+  const salts = ["ak-guess", "ak-voice", "ak-pop", "ak-conn", "ak-timeline"];
+  const d = new Date(2026, 0, 1);
+  for (let day = 0; day < 10; day++) {
+    const ds = AKG.dateStr(d);
+    const picks = salts.map((s) => AKG.dailyIndex(ds, 1000, s));
+    assert.strictEqual(new Set(picks).size, salts.length, `第 ${day} 天 ${ds} 出现 salt 撞题: ${picks}`);
+    d.setDate(d.getDate() + 1);
+  }
+});
+
+ok("猜干员：比对全同全绿、箭头方向、文本维度、sub 双空算同", () => {
+  const a = byId["char_103_angel"]; // 能天使 6★ 狙击 速射手 2019-04-30 女
+  const self = AKG.guessCompare(a, a);
+  assert(self.win);
+  for (const k of AKG.GUESS_CELL_ORDER) assert.strictEqual(self.cells[k].status, "green", k);
+  // 构造一个目标：星级更高、实装更晚 → 猜低答案高应给 up
+  const fakeTarget = Object.assign({}, a, { id: "fake_t", rarity: 6, release: "2020-01-01" });
+  const fakeGuess = Object.assign({}, a, { id: "fake_g", rarity: 5, release: "2019-04-30" });
+  const r = AKG.guessCompare(fakeGuess, fakeTarget);
+  assert.strictEqual(r.cells.rarity.status, "up");    // 答案星级更高 → ⬆️
+  assert.strictEqual(r.cells.release.status, "up");   // 答案实装更晚 → ⬆️
+  assert.strictEqual(r.cells.prof.status, "green");
+  const r2 = AKG.guessCompare(fakeTarget, fakeGuess);
+  assert.strictEqual(r2.cells.rarity.status, "down"); // 反向 → ⬇️
+  assert.strictEqual(r2.cells.release.status, "down");
+  // 文本维度对错
+  const b = byId["char_102_texas"]; // 德克萨斯 5★ 先锋 企鹅物流 鲁珀
+  const r3 = AKG.guessCompare(a, b);
+  assert(!r3.win);
+  assert.strictEqual(r3.cells.prof.status, "red");
+  assert.strictEqual(r3.cells.faction.status, "green"); // 都是企鹅物流
+  assert.strictEqual(r3.cells.sex.status, "green");     // 都是女
+  assert.strictEqual(r3.cells.race.status, "red");
+  // sub 双空算相同；一空一非空不同
+  const e1 = { sub: "" }, e2 = { sub: "" }, e3 = { sub: "领主" };
+  assert.strictEqual(AKG.subNorm(e1.sub), "—");
+  const mk = (sub) => Object.assign({}, a, { id: "f_" + (sub || "empty"), sub });
+  assert.strictEqual(AKG.guessCompare(mk(""), mk("")).cells.sub.status, "green");
+  assert.strictEqual(AKG.guessCompare(mk(""), mk("领主")).cells.sub.status, "red");
+});
+
+ok("猜干员：评级档位", () => {
+  assert.strictEqual(AKG.guessGrade(1, true), "读心神探");
+  assert.strictEqual(AKG.guessGrade(3, true), "人事部资深HR");
+  assert.strictEqual(AKG.guessGrade(5, true), "档案室常客");
+  assert.strictEqual(AKG.guessGrade(6, true), "压线过关");
+  assert.strictEqual(AKG.guessGrade(6, false), "海猫听了都摇头");
+});
+
+ok("猜干员：分享卡含 SITE_URL 与 emoji、每行 7 格、未完成不含答案名", () => {
+  const targetId = AKG.guessDaily("2026-08-05", GPOOL);
+  const target = byId[targetId];
+  const others = GPOOL.filter((o) => o.id !== targetId).slice(0, 2).map((o) => byId[o.id]);
+  const results = [...others.map((o) => AKG.guessCompare(o, target)), AKG.guessCompare(target, target)];
+  const t = AKG.buildGuessShare({ date: "2026-08-05", results, won: true });
+  assert(t.includes(AKG.SITE_URL));
+  const lines = t.split("\n");
+  assert(lines[1].includes("3/6"));
+  const grid = lines.slice(2, 5);
+  assert.strictEqual(grid.length, 3);
+  for (const row of grid) {
+    const cells = [...row].filter((ch) => "🟩🟥⬆⬇".includes(ch));
+    assert.strictEqual(cells.length, 7, "每行 7 格: " + row);
+  }
+  assert(grid[2].split("🟩").length - 1 === 7, "命中行应全绿");
+  // 未完成分享：只传部分结果，不得含答案名
+  const mid = AKG.buildGuessShare({ date: "2026-08-05", results: results.slice(0, 1), won: false });
+  assert(!mid.includes(target.name), "泄露答案名");
+  assert(mid.includes("🟩") || mid.includes("🟥") || mid.includes("⬆️") || mid.includes("⬇️"));
+  console.log("---- 猜干员分享卡示例 ----\n" + t + "\n--------------------------");
+});
+
 // ---------- 通用搜索 ----------
 ok("搜索：前缀优先、排除已猜、空串为空", () => {
   const cands = VPOOL.map((e) => e.op);

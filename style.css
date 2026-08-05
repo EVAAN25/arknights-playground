@@ -14,6 +14,12 @@
   --red: #c25145;
   --red-bg: #f6e1dc;
   --radius: 12px;
+  --radius-sm: 10px;
+  /* 统一阴影语言：平面卡 / 金边卡 / 浮起 / 弹层 */
+  --shadow-card: 0 2px 0 var(--line);
+  --shadow-gold: 0 2px 0 var(--gold);
+  --shadow-hover: 0 6px 16px rgba(25, 25, 25, .12), 0 4px 0 var(--gold);
+  --shadow-layer: 0 8px 24px rgba(25, 25, 25, .18);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,10 +59,10 @@ main { width: 100%; max-width: 720px; padding: 16px 12px 40px; flex: 1; }
   display: flex; gap: 12px; align-items: center;
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 18px 16px; text-decoration: none; color: var(--ink);
-  box-shadow: 0 2px 0 var(--line);
+  box-shadow: var(--shadow-card);
   transition: transform .12s, box-shadow .12s, border-color .12s;
 }
-.home-card:hover { transform: translateY(-2px); border-color: var(--gold); box-shadow: 0 4px 0 var(--gold); }
+.home-card:hover { transform: translateY(-2px); border-color: var(--gold); box-shadow: var(--shadow-hover); }
 .hc-emoji {
   font-size: 30px; width: 54px; height: 54px; flex: none;
   display: flex; align-items: center; justify-content: center;
@@ -96,20 +102,21 @@ button.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid
 .tries-left { padding: 10px 4px; font-size: 14px; color: var(--ink-soft); white-space: nowrap; }
 .tries-left b { color: var(--gold-deep); font-size: 18px; }
 
-/* 输入 + 自动补全 */
+/* 输入 + 自动补全（语音猜人 / 猜干员共用 .guess-bar 容器，保证全覆盖） */
 .guess-bar { display: flex; gap: 10px; align-items: flex-start; margin-top: 14px; }
 .input-wrap { position: relative; flex: 1; }
-.guess-bar input {
+.guess-bar input, .input {
   width: 100%; padding: 12px 14px; font-size: 16px;
   border: 2px solid var(--line); border-radius: var(--radius);
   background: var(--card); color: var(--ink); outline: none;
+  transition: border-color .15s;
 }
-.guess-bar input:focus { border-color: var(--gold); }
-.guess-bar input:disabled { opacity: .5; }
+.guess-bar input:focus, .input:focus { border-color: var(--gold); }
+.guess-bar input:disabled, .input:disabled { opacity: .5; }
 .suggest-list {
   position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 30;
   list-style: none; background: var(--card); border: 1px solid var(--line);
-  border-radius: var(--radius); overflow: hidden; box-shadow: 0 8px 24px rgba(25, 25, 25, .18);
+  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-layer);
   max-height: 300px; overflow-y: auto;
 }
 .suggest-list li { display: flex; align-items: center; gap: 10px; padding: 8px 12px; cursor: pointer; }
@@ -137,8 +144,10 @@ button.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid
 .result {
   margin-top: 18px; background: var(--card); border: 1px solid var(--gold);
   border-radius: var(--radius); padding: 18px; text-align: center;
-  box-shadow: 0 2px 0 var(--gold);
+  box-shadow: var(--shadow-gold);
 }
+.result { animation: rise .25s ease both; }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } }
 .result .r-portrait, .result .r-portrait.avatar-fallback { width: 120px; height: 120px; border-radius: 14px; margin: 0 auto; font-size: 42px; }
 .result h2 { margin: 10px 0 4px; font-size: 21px; }
 .result .r-meta { color: var(--ink-soft); font-size: 13px; margin-bottom: 8px; }
@@ -150,6 +159,41 @@ button.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid
 .result .r-grade { font-size: 15px; margin-bottom: 4px; }
 .result .r-grade b { color: var(--gold-deep); font-size: 20px; }
 .result .btn-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 12px; }
+
+/* 图例（猜干员规则说明） */
+.legend { margin-top: 20px; font-size: 13px; color: var(--ink-soft); }
+.legend summary { cursor: pointer; }
+.legend ul { padding: 8px 0 0 18px; display: flex; flex-direction: column; gap: 4px; line-height: 1.6; }
+
+/* ---------- 猜干员（七维比对表格） ---------- */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.guess-table { min-width: 660px; }
+.guess-grid { display: grid; grid-template-columns: 1.4fr repeat(7, 1fr); gap: 6px; align-items: center; }
+.grid-head { font-size: 12px; color: var(--ink-soft); margin: 14px 0 6px; text-align: center; }
+.grid-head .c-name { text-align: left; padding-left: 6px; }
+.rows { display: flex; flex-direction: column; gap: 6px; }
+.row .cell {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-sm);
+  min-height: 52px; display: flex; flex-direction: column; justify-content: center; align-items: center;
+  font-size: 13px; padding: 4px 2px; text-align: center; line-height: 1.25;
+  font-variant-numeric: tabular-nums;
+  animation: pop .2s ease both;
+}
+/* 逐格 stagger 入场（≤300ms） */
+.row .cell:nth-child(2) { animation-delay: .03s; }
+.row .cell:nth-child(3) { animation-delay: .06s; }
+.row .cell:nth-child(4) { animation-delay: .09s; }
+.row .cell:nth-child(5) { animation-delay: .12s; }
+.row .cell:nth-child(6) { animation-delay: .15s; }
+.row .cell:nth-child(7) { animation-delay: .18s; }
+.row .cell:nth-child(8) { animation-delay: .21s; }
+.row .cell .arrow { font-size: 15px; line-height: 1; }
+.row .cell.name {
+  flex-direction: row; gap: 8px; justify-content: flex-start; padding: 4px 8px; font-weight: 600;
+}
+.row .cell.name img, .row .cell.name .avatar-fallback { width: 36px; height: 36px; border-radius: 8px; font-size: 15px; }
+.cell.green { background: var(--green-bg); border-color: var(--green); color: #1f6b3a; }
+.cell.red, .cell.up, .cell.down { background: var(--red-bg); border-color: var(--red); color: #8f352d; }
 
 /* ---------- 语音猜人 ---------- */
 .seg-bar { display: grid; grid-template-columns: 2fr 3fr 5fr 8fr; gap: 4px; margin-bottom: 12px; }
@@ -172,7 +216,7 @@ button.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid
 .pop-vs { align-self: center; font-weight: 800; color: var(--gold-deep); font-size: 18px; letter-spacing: 1px; }
 .pop-card {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 16px 10px; text-align: center; box-shadow: 0 2px 0 var(--line);
+  padding: 16px 10px; text-align: center; box-shadow: var(--shadow-card);
 }
 .pop-card .avatar, .pop-card .avatar-fallback { margin: 0 auto 8px; width: 84px; height: 84px; font-size: 32px; }
 .pop-name { font-size: 17px; font-weight: 700; }
@@ -199,15 +243,15 @@ button.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid
 .conn-row.c3 { background: #7d5ba6; }
 .conn-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .conn-card {
-  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-sm);
   min-height: 52px; display: flex; align-items: center; justify-content: center;
   font-size: 14px; font-weight: 600; cursor: pointer; padding: 4px;
   text-align: center; user-select: none; transition: all .12s;
-  box-shadow: 0 2px 0 var(--line);
+  box-shadow: var(--shadow-card);
 }
 .conn-card:hover { border-color: var(--gold); }
 .conn-card.sel { background: var(--ink); color: var(--gold); border-color: var(--gold); box-shadow: 0 2px 0 var(--gold-deep); }
-.conn-grid.shake { animation: shake .4s; }
+.shake, .conn-grid.shake { animation: shake .3s; }
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   20%, 60% { transform: translateX(-7px); }
@@ -222,7 +266,7 @@ button.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid
 .tl-card {
   display: flex; align-items: center; gap: 12px;
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 10px 14px; cursor: pointer; box-shadow: 0 2px 0 var(--line);
+  padding: 10px 14px; cursor: pointer; box-shadow: var(--shadow-card);
   transition: all .12s;
 }
 .tl-card:hover { border-color: var(--gold); }
@@ -241,19 +285,34 @@ button.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid
   text-align: center; color: var(--ink-soft); font-size: 12px; line-height: 1.8;
   padding: 18px 16px 28px; border-top: 1px solid var(--line); width: 100%; max-width: 720px;
 }
+/* toast：顶部滑入，2s 后由 JS 隐藏 */
 .toast {
-  position: fixed; left: 50%; bottom: 40px; transform: translateX(-50%);
+  position: fixed; left: 50%; top: 14px; transform: translateX(-50%);
   background: var(--ink); color: var(--gold); padding: 10px 20px; border-radius: 999px;
-  font-size: 14px; z-index: 50; box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+  font-size: 14px; z-index: 50; box-shadow: var(--shadow-layer);
   border: 1px solid var(--gold);
+  animation: toast-in .25s ease both;
+}
+@keyframes toast-in { from { opacity: 0; transform: translate(-50%, -12px); } }
+
+/* 动效收口：系统要求减少动态时全部关闭 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
 @media (max-width: 560px) {
   .site-header h1 { font-size: 25px; }
   .home-grid { grid-template-columns: 1fr; }
+  .guess-bar { flex-wrap: wrap; }
+  .guess-bar .input-wrap { flex: 1 1 100%; }
+  .voice-controls { flex-wrap: wrap; }
+  .seg { font-size: 11px; }
   .conn-grid { gap: 6px; }
-  .conn-card { font-size: 12px; min-height: 46px; }
+  .conn-card { font-size: 12px; min-height: 48px; }
+  .pop-card { padding: 12px 6px; }
   .pop-card .avatar, .pop-card .avatar-fallback { width: 64px; height: 64px; font-size: 24px; }
   .pop-name { font-size: 15px; }
   .pop-play { font-size: 18px; }
+  .tl-card { padding: 8px 10px; gap: 8px; }
+  .tl-card .tname { font-size: 14px; }
 }
