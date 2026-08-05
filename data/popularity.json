@@ -1,0 +1,1407 @@
+{
+ "snapshot": "2026-08-05",
+ "source": "B站官号「明日方舟」(mid=161775300) 空间视频列表",
+ "note": "播放量为页面显示值取整（如236.5万→2365000），精度到千位；官号联合投稿视频不在其空间列表，相关干员未收录",
+ "entries": [
+  {
+   "id": "char_164_nightm",
+   "name": "夜魔",
+   "play": 1983000,
+   "title": "《明日方舟》「骑兵与猎人」活动宣传PV",
+   "videoDate": "2019-05-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_263_skadi",
+   "name": "斯卡蒂",
+   "play": 1983000,
+   "title": "《明日方舟》「骑兵与猎人」活动宣传PV",
+   "videoDate": "2019-05-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_010_chen",
+   "name": "陈",
+   "play": 1957000,
+   "title": "《明日方舟》新章节「靶向药物」限时纪念活动宣传PV",
+   "videoDate": "2019-07-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_241_panda",
+   "name": "食铁兽",
+   "play": 1957000,
+   "title": "《明日方舟》新章节「靶向药物」限时纪念活动宣传PV",
+   "videoDate": "2019-07-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_308_swire",
+   "name": "诗怀雅",
+   "play": 1957000,
+   "title": "《明日方舟》新章节「靶向药物」限时纪念活动宣传PV",
+   "videoDate": "2019-07-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_326_glacus",
+   "name": "格劳克斯",
+   "play": 4220000,
+   "title": "《明日方舟》「火蓝之心」活动宣传PV",
+   "videoDate": "2019-08-21",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_340_shwaz",
+   "name": "黑",
+   "play": 4220000,
+   "title": "《明日方舟》「火蓝之心」活动宣传PV",
+   "videoDate": "2019-08-21",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_348_ceylon",
+   "name": "锡兰",
+   "play": 4220000,
+   "title": "《明日方舟》「火蓝之心」活动宣传PV",
+   "videoDate": "2019-08-21",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_188_helage",
+   "name": "赫拉格",
+   "play": 4220000,
+   "title": "《明日方舟》「火蓝之心」活动宣传PV",
+   "videoDate": "2019-08-21",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_274_astesi",
+   "name": "星极",
+   "play": 4220000,
+   "title": "《明日方舟》「火蓝之心」活动宣传PV",
+   "videoDate": "2019-08-21",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_131_flameb",
+   "name": "炎客",
+   "play": 1209000,
+   "title": "《明日方舟》微型故事「战地秘闻」活动宣传PV",
+   "videoDate": "2019-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_248_mgllan",
+   "name": "麦哲伦",
+   "play": 1209000,
+   "title": "《明日方舟》微型故事「战地秘闻」活动宣传PV",
+   "videoDate": "2019-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_279_excu",
+   "name": "送葬人",
+   "play": 1209000,
+   "title": "《明日方舟》微型故事「战地秘闻」活动宣传PV",
+   "videoDate": "2019-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_275_breeze",
+   "name": "微风",
+   "play": 1209000,
+   "title": "《明日方舟》微型故事「战地秘闻」活动宣传PV",
+   "videoDate": "2019-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_017_huang",
+   "name": "煌",
+   "play": 1779000,
+   "title": "《明日方舟》新章节「局部坏死」限时纪念活动宣传PV",
+   "videoDate": "2019-12-20",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_367_swllow",
+   "name": "灰喉",
+   "play": 1779000,
+   "title": "《明日方舟》新章节「局部坏死」限时纪念活动宣传PV",
+   "videoDate": "2019-12-20",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_383_snsant",
+   "name": "雪雉",
+   "play": 2652000,
+   "title": "《明日方舟》微型故事「洪炉示岁」活动宣传PV",
+   "videoDate": "2020-01-04",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_2014_nian",
+   "name": "年",
+   "play": 2652000,
+   "title": "《明日方舟》微型故事「洪炉示岁」活动宣传PV",
+   "videoDate": "2020-01-04",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_225_haak",
+   "name": "阿",
+   "play": 2652000,
+   "title": "《明日方舟》微型故事「洪炉示岁」活动宣传PV",
+   "videoDate": "2020-01-04",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_226_hmau",
+   "name": "吽",
+   "play": 2652000,
+   "title": "《明日方舟》微型故事「洪炉示岁」活动宣传PV",
+   "videoDate": "2020-01-04",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_2013_cerber",
+   "name": "刻俄柏",
+   "play": 1340000,
+   "title": "《明日方舟》微型故事「午间逸话」活动宣传PV",
+   "videoDate": "2020-02-20",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_306_leizi",
+   "name": "惊蛰",
+   "play": 1340000,
+   "title": "《明日方舟》微型故事「午间逸话」活动宣传PV",
+   "videoDate": "2020-02-20",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_250_phatom",
+   "name": "傀影",
+   "play": 2764000,
+   "title": "《明日方舟》SideStory「生于黑夜」活动宣传PV",
+   "videoDate": "2020-04-14",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_254_vodfox",
+   "name": "巫恋",
+   "play": 2764000,
+   "title": "《明日方舟》SideStory「生于黑夜」活动宣传PV",
+   "videoDate": "2020-04-14",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_333_sidero",
+   "name": "铸铁",
+   "play": 2764000,
+   "title": "《明日方舟》SideStory「生于黑夜」活动宣传PV",
+   "videoDate": "2020-04-14",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_113_cqbw",
+   "name": "W",
+   "play": 3654000,
+   "title": "《明日方舟》一周年限时纪念活动宣传PV",
+   "videoDate": "2020-04-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_400_weedy",
+   "name": "温蒂",
+   "play": 3654000,
+   "title": "《明日方舟》一周年限时纪念活动宣传PV",
+   "videoDate": "2020-04-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_401_elysm",
+   "name": "极境",
+   "play": 3654000,
+   "title": "《明日方舟》一周年限时纪念活动宣传PV",
+   "videoDate": "2020-04-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_197_poca",
+   "name": "早露",
+   "play": 2174000,
+   "title": "《明日方舟》全新故事「乌萨斯的孩子们」活动宣传PV",
+   "videoDate": "2020-06-12",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_373_lionhd",
+   "name": "莱恩哈特",
+   "play": 2174000,
+   "title": "《明日方舟》全新故事「乌萨斯的孩子们」活动宣传PV",
+   "videoDate": "2020-06-12",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_405_absin",
+   "name": "苦艾",
+   "play": 2174000,
+   "title": "《明日方舟》全新故事「乌萨斯的孩子们」活动宣传PV",
+   "videoDate": "2020-06-12",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_294_ayer",
+   "name": "断崖",
+   "play": 3138000,
+   "title": "《明日方舟》SideStory「沃伦姆德的薄暮」活动宣传PV",
+   "videoDate": "2020-07-03",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_345_folnic",
+   "name": "亚叶",
+   "play": 3138000,
+   "title": "《明日方舟》SideStory「沃伦姆德的薄暮」活动宣传PV",
+   "videoDate": "2020-07-03",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_358_lisa",
+   "name": "铃兰",
+   "play": 3138000,
+   "title": "《明日方舟》SideStory「沃伦姆德的薄暮」活动宣传PV",
+   "videoDate": "2020-07-03",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_411_tomimi",
+   "name": "特米米",
+   "play": 2773000,
+   "title": "《明日方舟》SideStory「密林悍将归来」活动宣传PV",
+   "videoDate": "2020-08-20",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_415_flint",
+   "name": "燧石",
+   "play": 2773000,
+   "title": "《明日方舟》SideStory「密林悍将归来」活动宣传PV",
+   "videoDate": "2020-08-20",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_416_zumama",
+   "name": "森蚺",
+   "play": 2773000,
+   "title": "《明日方舟》SideStory「密林悍将归来」活动宣传PV",
+   "videoDate": "2020-08-20",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_350_surtr",
+   "name": "史尔特尔",
+   "play": 1987000,
+   "title": "金秋系列限时活动宣传PV",
+   "videoDate": "2020-09-17",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_365_aprl",
+   "name": "四月",
+   "play": 1987000,
+   "title": "金秋系列限时活动宣传PV",
+   "videoDate": "2020-09-17",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_388_mint",
+   "name": "薄绿",
+   "play": 1987000,
+   "title": "金秋系列限时活动宣传PV",
+   "videoDate": "2020-09-17",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_265_sophia",
+   "name": "鞭刃",
+   "play": 2421000,
+   "title": "《明日方舟》SideStory「玛莉娅·临光」活动宣传PV",
+   "videoDate": "2020-10-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_346_aosta",
+   "name": "奥斯塔",
+   "play": 2421000,
+   "title": "《明日方舟》SideStory「玛莉娅·临光」活动宣传PV",
+   "videoDate": "2020-10-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_423_blemsh",
+   "name": "瑕光",
+   "play": 2421000,
+   "title": "《明日方舟》SideStory「玛莉娅·临光」活动宣传PV",
+   "videoDate": "2020-10-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_311_mudrok",
+   "name": "泥岩",
+   "play": 2421000,
+   "title": "《明日方舟》SideStory「玛莉娅·临光」活动宣传PV",
+   "videoDate": "2020-10-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_391_rosmon",
+   "name": "迷迭香",
+   "play": 2421000,
+   "title": "《明日方舟》SideStory「玛莉娅·临光」活动宣传PV",
+   "videoDate": "2020-10-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_436_whispr",
+   "name": "絮雨",
+   "play": 2421000,
+   "title": "《明日方舟》SideStory「玛莉娅·临光」活动宣传PV",
+   "videoDate": "2020-10-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_369_bena",
+   "name": "贝娜",
+   "play": 2282000,
+   "title": "《明日方舟》全新故事「灯火序曲」活动宣传PV",
+   "videoDate": "2021-05-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_426_billro",
+   "name": "卡涅利安",
+   "play": 2282000,
+   "title": "《明日方舟》全新故事「灯火序曲」活动宣传PV",
+   "videoDate": "2021-05-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_478_kirara",
+   "name": "绮良",
+   "play": 2282000,
+   "title": "《明日方舟》全新故事「灯火序曲」活动宣传PV",
+   "videoDate": "2021-05-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1013_chen2",
+   "name": "假日威龙陈",
+   "play": 18718000,
+   "title": "《明日方舟》夏日嘉年华限时活动宣传PV",
+   "videoDate": "2021-07-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_421_crow",
+   "name": "羽毛笔",
+   "play": 18718000,
+   "title": "《明日方舟》夏日嘉年华限时活动宣传PV",
+   "videoDate": "2021-07-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_437_mizuki",
+   "name": "水月",
+   "play": 18718000,
+   "title": "《明日方舟》夏日嘉年华限时活动宣传PV",
+   "videoDate": "2021-07-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_486_takila",
+   "name": "龙舌兰",
+   "play": 18718000,
+   "title": "《明日方舟》夏日嘉年华限时活动宣传PV",
+   "videoDate": "2021-07-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_473_mberry",
+   "name": "桑葚",
+   "play": 2730000,
+   "title": "《明日方舟》主题曲【风暴瞭望】开放 限时纪念活动宣传pv",
+   "videoDate": "2021-09-10",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_479_sleach",
+   "name": "琴柳",
+   "play": 2730000,
+   "title": "《明日方舟》主题曲【风暴瞭望】开放 限时纪念活动宣传pv",
+   "videoDate": "2021-09-10",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_430_fartth",
+   "name": "远牙",
+   "play": 1632000,
+   "title": "《明日方舟》全新故事「红松林」活动宣传PV",
+   "videoDate": "2021-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_431_ashlok",
+   "name": "灰毫",
+   "play": 1632000,
+   "title": "《明日方舟》全新故事「红松林」活动宣传PV",
+   "videoDate": "2021-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1014_nearl2",
+   "name": "耀骑士临光",
+   "play": 4323000,
+   "title": "《明日方舟》SideStory「长夜临光」活动先导PV",
+   "videoDate": "2021-10-24",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_420_flamtl",
+   "name": "焰尾",
+   "play": 4323000,
+   "title": "《明日方舟》SideStory「长夜临光」活动先导PV",
+   "videoDate": "2021-10-24",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_449_glider",
+   "name": "蜜莓",
+   "play": 4323000,
+   "title": "《明日方舟》SideStory「长夜临光」活动先导PV",
+   "videoDate": "2021-10-24",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_489_serum",
+   "name": "蚀清",
+   "play": 4323000,
+   "title": "《明日方舟》SideStory「长夜临光」活动先导PV",
+   "videoDate": "2021-10-24",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_496_wildmn",
+   "name": "野鬃",
+   "play": 4323000,
+   "title": "《明日方舟》SideStory「长夜临光」活动先导PV",
+   "videoDate": "2021-10-24",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1023_ghost2",
+   "name": "归溟幽灵鲨",
+   "play": 2270000,
+   "title": "《明日方舟》限定干员「归溟幽灵鲨」前瞻PV",
+   "videoDate": "2022-04-28",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_1024_hbisc2",
+   "name": "濯尘芙蓉",
+   "play": 2843000,
+   "title": "《明日方舟》SideStory「尘影余音」活动宣传PV",
+   "videoDate": "2022-06-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4046_ebnhlz",
+   "name": "黑键",
+   "play": 2843000,
+   "title": "《明日方舟》SideStory「尘影余音」活动宣传PV",
+   "videoDate": "2022-06-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4047_pianst",
+   "name": "车尔尼",
+   "play": 2843000,
+   "title": "《明日方舟》SideStory「尘影余音」活动宣传PV",
+   "videoDate": "2022-06-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1027_greyy2",
+   "name": "承曦格雷伊",
+   "play": 2995000,
+   "title": "《明日方舟》SideStory「绿野幻梦」活动宣传PV",
+   "videoDate": "2022-06-29",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_135_halo",
+   "name": "星源",
+   "play": 2995000,
+   "title": "《明日方舟》SideStory「绿野幻梦」活动宣传PV",
+   "videoDate": "2022-06-29",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4048_doroth",
+   "name": "多萝西",
+   "play": 2995000,
+   "title": "《明日方舟》SideStory「绿野幻梦」活动宣传PV",
+   "videoDate": "2022-06-29",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1026_gvial2",
+   "name": "百炼嘉维尔",
+   "play": 3376000,
+   "title": "《明日方舟》2022夏日嘉年华限时活动宣传PV",
+   "videoDate": "2022-08-06",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4054_malist",
+   "name": "至简",
+   "play": 3376000,
+   "title": "《明日方舟》2022夏日嘉年华限时活动宣传PV",
+   "videoDate": "2022-08-06",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4055_bgsnow",
+   "name": "鸿雪",
+   "play": 3376000,
+   "title": "《明日方舟》2022夏日嘉年华限时活动宣传PV",
+   "videoDate": "2022-08-06",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_497_ctable",
+   "name": "晓歌",
+   "play": 3376000,
+   "title": "《明日方舟》2022夏日嘉年华限时活动宣传PV",
+   "videoDate": "2022-08-06",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4032_provs",
+   "name": "但书",
+   "play": 3932000,
+   "title": "《明日方舟》全新故事「日暮寻路」活动宣传PV",
+   "videoDate": "2022-09-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4064_mlynar",
+   "name": "玛恩纳",
+   "play": 3932000,
+   "title": "《明日方舟》全新故事「日暮寻路」活动宣传PV",
+   "videoDate": "2022-09-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4066_highmo",
+   "name": "海沫",
+   "play": 3422000,
+   "title": "【明日方舟x罗小黑战记】全新故事「好久不见」活动宣传PV",
+   "videoDate": "2022-09-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_157_dagda",
+   "name": "达格达",
+   "play": 1844000,
+   "title": "《明日方舟》主题曲【淬火尘霾】概念pv",
+   "videoDate": "2022-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4071_peper",
+   "name": "明椒",
+   "play": 1844000,
+   "title": "《明日方舟》主题曲【淬火尘霾】概念pv",
+   "videoDate": "2022-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4072_ironmn",
+   "name": "白铁",
+   "play": 1844000,
+   "title": "《明日方舟》主题曲【淬火尘霾】概念pv",
+   "videoDate": "2022-10-11",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1028_texas2",
+   "name": "缄默德克萨斯",
+   "play": 3464000,
+   "title": "《明日方舟》2022「感谢庆典」活动宣传PV",
+   "videoDate": "2022-10-23",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4014_lunacu",
+   "name": "子月",
+   "play": 3464000,
+   "title": "《明日方舟》2022「感谢庆典」活动宣传PV",
+   "videoDate": "2022-10-23",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4065_judge",
+   "name": "斥罪",
+   "play": 3464000,
+   "title": "《明日方舟》2022「感谢庆典」活动宣传PV",
+   "videoDate": "2022-10-23",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_427_vigil",
+   "name": "伺夜",
+   "play": 3464000,
+   "title": "《明日方舟》2022「感谢庆典」活动宣传PV",
+   "videoDate": "2022-10-23",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_466_qanik",
+   "name": "雪绒",
+   "play": 3464000,
+   "title": "《明日方舟》2022「感谢庆典」活动宣传PV",
+   "videoDate": "2022-10-23",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_249_mlyss",
+   "name": "缪尔赛思",
+   "play": 1444000,
+   "title": "《明日方舟》限定干员「缪尔赛思」前瞻PV",
+   "videoDate": "2023-04-28",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4006_melnte",
+   "name": "玫拉",
+   "play": 2362000,
+   "title": "《明日方舟》SideStory「孤星」活动先导PV",
+   "videoDate": "2023-04-22",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4027_heyak",
+   "name": "霍尔海雅",
+   "play": 2362000,
+   "title": "《明日方舟》SideStory「孤星」活动先导PV",
+   "videoDate": "2023-04-22",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1031_slent2",
+   "name": "淬羽赫默",
+   "play": 2362000,
+   "title": "《明日方舟》SideStory「孤星」活动先导PV",
+   "videoDate": "2023-04-22",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1032_excu2",
+   "name": "圣约送葬人",
+   "play": 3154000,
+   "title": "《明日方舟》SideStory「空想花庭」活动宣传PV",
+   "videoDate": "2023-06-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4015_spuria",
+   "name": "空构",
+   "play": 3154000,
+   "title": "《明日方舟》SideStory「空想花庭」活动宣传PV",
+   "videoDate": "2023-06-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_498_inside",
+   "name": "隐现",
+   "play": 3154000,
+   "title": "《明日方舟》SideStory「空想花庭」活动宣传PV",
+   "videoDate": "2023-06-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_2012_typhon",
+   "name": "提丰",
+   "play": 2248000,
+   "title": "《明日方舟》全新故事「眠于树影之中」活动宣传PV",
+   "videoDate": "2023-06-30",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_341_sntlla",
+   "name": "寒檀",
+   "play": 2248000,
+   "title": "《明日方舟》全新故事「眠于树影之中」活动宣传PV",
+   "videoDate": "2023-06-30",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4102_threye",
+   "name": "凛视",
+   "play": 2248000,
+   "title": "《明日方舟》全新故事「眠于树影之中」活动宣传PV",
+   "videoDate": "2023-06-30",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1016_agoat2",
+   "name": "纯烬艾雅法拉",
+   "play": 1602000,
+   "title": "《明日方舟》限定干员「纯烬艾雅法拉」前瞻PV",
+   "videoDate": "2023-07-28",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_1033_swire2",
+   "name": "琳琅诗怀雅",
+   "play": 2351000,
+   "title": "《明日方舟》2023「夏日嘉年华」限时活动宣传PV",
+   "videoDate": "2023-07-23",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4106_bryota",
+   "name": "苍苔",
+   "play": 2351000,
+   "title": "《明日方舟》2023「夏日嘉年华」限时活动宣传PV",
+   "videoDate": "2023-07-23",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_488_buildr",
+   "name": "青枳",
+   "play": 2351000,
+   "title": "《明日方舟》2023「夏日嘉年华」限时活动宣传PV",
+   "videoDate": "2023-07-23",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1034_jesca2",
+   "name": "涤火杰西卡",
+   "play": 2644000,
+   "title": "《明日方舟》SideStory「不义之财」活动宣传PV",
+   "videoDate": "2023-09-01",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4104_coldst",
+   "name": "冰酿",
+   "play": 2644000,
+   "title": "《明日方舟》SideStory「不义之财」活动宣传PV",
+   "videoDate": "2023-09-01",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4105_almond",
+   "name": "杏仁",
+   "play": 2644000,
+   "title": "《明日方舟》SideStory「不义之财」活动宣传PV",
+   "videoDate": "2023-09-01",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4131_odda",
+   "name": "奥达",
+   "play": 4238000,
+   "title": "《明日方舟》SideStory「巴别塔」活动宣传PV",
+   "videoDate": "2024-04-05",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4132_ascln",
+   "name": "阿斯卡纶",
+   "play": 4238000,
+   "title": "《明日方舟》SideStory「巴别塔」活动宣传PV",
+   "videoDate": "2024-04-05",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_446_aroma",
+   "name": "阿罗玛",
+   "play": 4238000,
+   "title": "《明日方舟》SideStory「巴别塔」活动宣传PV",
+   "videoDate": "2024-04-05",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1035_wisdel",
+   "name": "维什戴尔",
+   "play": 4125000,
+   "title": "《明日方舟》五周年庆典活动宣传PV",
+   "videoDate": "2024-04-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1036_fang2",
+   "name": "历阵锐枪芬",
+   "play": 4125000,
+   "title": "《明日方舟》五周年庆典活动宣传PV",
+   "videoDate": "2024-04-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4133_logos",
+   "name": "逻各斯",
+   "play": 4125000,
+   "title": "《明日方舟》五周年庆典活动宣传PV",
+   "videoDate": "2024-04-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4134_cetsyr",
+   "name": "魔王",
+   "play": 4125000,
+   "title": "《明日方舟》五周年庆典活动宣传PV",
+   "videoDate": "2024-04-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4079_haini",
+   "name": "海霓",
+   "play": 3375000,
+   "title": "《明日方舟》SideStory「生路」活动宣传PV",
+   "videoDate": "2024-05-29",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4137_udflow",
+   "name": "深巡",
+   "play": 3375000,
+   "title": "《明日方舟》SideStory「生路」活动宣传PV",
+   "videoDate": "2024-05-29",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4145_ulpia",
+   "name": "乌尔比安",
+   "play": 3375000,
+   "title": "《明日方舟》SideStory「生路」活动宣传PV",
+   "videoDate": "2024-05-29",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4146_nymph",
+   "name": "妮芙",
+   "play": 2621000,
+   "title": "《明日方舟》全新故事「熔炉“还魂”记」活动宣传PV",
+   "videoDate": "2024-07-03",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4147_mitm",
+   "name": "渡桥",
+   "play": 2621000,
+   "title": "《明日方舟》全新故事「熔炉“还魂”记」活动宣传PV",
+   "videoDate": "2024-07-03",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4151_tinman",
+   "name": "锡人",
+   "play": 2621000,
+   "title": "《明日方舟》全新故事「熔炉“还魂”记」活动宣传PV",
+   "videoDate": "2024-07-03",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4058_pepe",
+   "name": "佩佩",
+   "play": 1478000,
+   "title": "《明日方舟》限定干员「佩佩」前瞻PV",
+   "videoDate": "2024-07-30",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4138_narant",
+   "name": "娜仁图亚",
+   "play": 2336000,
+   "title": "《明日方舟》2024「夏日嘉年华」限时活动宣传PV",
+   "videoDate": "2024-07-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4139_papyrs",
+   "name": "莎草",
+   "play": 2336000,
+   "title": "《明日方舟》2024「夏日嘉年华」限时活动宣传PV",
+   "videoDate": "2024-07-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4140_lasher",
+   "name": "衡沙",
+   "play": 2336000,
+   "title": "《明日方舟》2024「夏日嘉年华」限时活动宣传PV",
+   "videoDate": "2024-07-27",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4141_marcil",
+   "name": "玛露西尔",
+   "play": 3136000,
+   "title": "【明日方舟×迷宫饭】SideStory「泰拉饭」活动宣传PV",
+   "videoDate": "2024-08-28",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4142_laios",
+   "name": "莱欧斯",
+   "play": 3136000,
+   "title": "【明日方舟×迷宫饭】SideStory「泰拉饭」活动宣传PV",
+   "videoDate": "2024-08-28",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4143_sensi",
+   "name": "森西",
+   "play": 3136000,
+   "title": "【明日方舟×迷宫饭】SideStory「泰拉饭」活动宣传PV",
+   "videoDate": "2024-08-28",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4144_chilc",
+   "name": "齐尔查克",
+   "play": 3136000,
+   "title": "【明日方舟×迷宫饭】SideStory「泰拉饭」活动宣传PV",
+   "videoDate": "2024-08-28",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1019_siege2",
+   "name": "维娜·维多利亚",
+   "play": 2097000,
+   "title": "《明日方舟》干员「维娜·维多利亚」前瞻PV",
+   "videoDate": "2024-10-05",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4162_cathy",
+   "name": "凯瑟琳",
+   "play": 3402000,
+   "title": "《明日方舟》SideStory「追迹日落以西」活动宣传PV",
+   "videoDate": "2024-10-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_487_bobb",
+   "name": "波卜",
+   "play": 3402000,
+   "title": "《明日方舟》SideStory「追迹日落以西」活动宣传PV",
+   "videoDate": "2024-10-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1038_whitw2",
+   "name": "荒芜拉普兰德",
+   "play": 1204000,
+   "title": "《明日方舟》限定干员「荒芜拉普兰德」前瞻PV",
+   "videoDate": "2024-10-30",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_1502_crosly",
+   "name": "弑君者",
+   "play": 2787000,
+   "title": "《明日方舟》2024「感谢庆典」活动宣传PV",
+   "videoDate": "2024-10-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4026_vulpis",
+   "name": "忍冬",
+   "play": 2787000,
+   "title": "《明日方舟》2024「感谢庆典」活动宣传PV",
+   "videoDate": "2024-10-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4148_philae",
+   "name": "菲莱",
+   "play": 2787000,
+   "title": "《明日方舟》2024「感谢庆典」活动宣传PV",
+   "videoDate": "2024-10-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4155_talr",
+   "name": "裁度",
+   "play": 2787000,
+   "title": "《明日方舟》2024「感谢庆典」活动宣传PV",
+   "videoDate": "2024-10-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1039_thorn2",
+   "name": "引星棘刺",
+   "play": 3145000,
+   "title": "《明日方舟》SideStory「出苍白海」活动宣传PV",
+   "videoDate": "2024-11-30",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4163_rosesa",
+   "name": "瑰盐",
+   "play": 3145000,
+   "title": "《明日方舟》SideStory「出苍白海」活动宣传PV",
+   "videoDate": "2024-11-30",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4164_tecno",
+   "name": "特克诺",
+   "play": 3145000,
+   "title": "《明日方舟》SideStory「出苍白海」活动宣传PV",
+   "videoDate": "2024-11-30",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1040_blaze2",
+   "name": "烛煌",
+   "play": 2090000,
+   "title": "《明日方舟》SideStory「相见欢」活动宣传PV",
+   "videoDate": "2025-01-18",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_2026_yu",
+   "name": "余",
+   "play": 1040000,
+   "title": "《明日方舟》限定干员「余」前瞻PV",
+   "videoDate": "2025-01-20",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4052_surfer",
+   "name": "寻澜",
+   "play": 2090000,
+   "title": "《明日方舟》SideStory「相见欢」活动宣传PV",
+   "videoDate": "2025-01-18",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4172_xingzh",
+   "name": "行箸",
+   "play": 2090000,
+   "title": "《明日方舟》SideStory「相见欢」活动宣传PV",
+   "videoDate": "2025-01-18",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4010_etlchi",
+   "name": "隐德来希",
+   "play": 2560000,
+   "title": "《明日方舟》全新故事「我们明日见」活动宣传PV",
+   "videoDate": "2025-02-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4173_nowell",
+   "name": "诺威尔",
+   "play": 2560000,
+   "title": "《明日方舟》全新故事「我们明日见」活动宣传PV",
+   "videoDate": "2025-02-09",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4171_wulfen",
+   "name": "钼铅",
+   "play": 2636000,
+   "title": "《明日方舟》SideStory「挽歌燃烧殆尽」活动宣传PV",
+   "videoDate": "2025-03-01",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4177_brigid",
+   "name": "水灯心",
+   "play": 2636000,
+   "title": "《明日方舟》SideStory「挽歌燃烧殆尽」活动宣传PV",
+   "videoDate": "2025-03-01",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_450_necras",
+   "name": "死芒",
+   "play": 1861000,
+   "title": "《明日方舟》干员「死芒」技能展示PV",
+   "videoDate": "2025-03-04",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4178_alanna",
+   "name": "阿兰娜",
+   "play": 4852000,
+   "title": "《明日方舟》主题曲【离解复合】开放 限时纪念活动宣传pv",
+   "videoDate": "2025-04-03",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4179_monstr",
+   "name": "Mon3tr",
+   "play": 2437000,
+   "title": "《明日方舟》干员「Mon3tr」技能展示PV",
+   "videoDate": "2025-04-06",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_1041_angel2",
+   "name": "新约能天使",
+   "play": 2365000,
+   "title": "《明日方舟》限定干员「新约能天使」前瞻pv",
+   "videoDate": "2025-04-29",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4187_graceb",
+   "name": "聆音",
+   "play": 5003000,
+   "title": "《明日方舟》六周年庆典活动宣传PV",
+   "videoDate": "2025-04-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4193_lemuen",
+   "name": "蕾缪安",
+   "play": 5003000,
+   "title": "《明日方舟》六周年庆典活动宣传PV",
+   "videoDate": "2025-04-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4194_rmixer",
+   "name": "信仰搅拌机",
+   "play": 5003000,
+   "title": "《明日方舟》六周年庆典活动宣传PV",
+   "videoDate": "2025-04-26",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1042_phatm2",
+   "name": "酒神",
+   "play": 2034000,
+   "title": "《明日方舟》干员「酒神」技能展示PV",
+   "videoDate": "2025-06-02",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4191_tippi",
+   "name": "蒂比",
+   "play": 2660000,
+   "title": "《明日方舟》SideStory「红丝绒」活动宣传PV",
+   "videoDate": "2025-05-30",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4198_christ",
+   "name": "Miss.Christine",
+   "play": 2660000,
+   "title": "《明日方舟》SideStory「红丝绒」活动宣传PV",
+   "videoDate": "2025-05-30",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1045_svash2",
+   "name": "凛御银灰",
+   "play": 1554000,
+   "title": "《明日方舟》限定干员「凛御银灰」前瞻PV",
+   "videoDate": "2025-10-29",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4212_nasti",
+   "name": "娜斯提",
+   "play": 1244000,
+   "title": "《明日方舟》干员「娜斯提」技能展示PV",
+   "videoDate": "2025-12-03",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4056_titi",
+   "name": "缇缇",
+   "play": 1061000,
+   "title": "《明日方舟》干员「缇缇」技能展示PV",
+   "videoDate": "2026-01-06",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_1050_chen3",
+   "name": "赤刃明霄陈",
+   "play": 1579000,
+   "title": "《明日方舟》干员「赤刃明霄陈」前瞻PV",
+   "videoDate": "2026-02-08",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_2027_wang",
+   "name": "望",
+   "play": 1255000,
+   "title": "《明日方舟》限定干员「望」前瞻PV",
+   "videoDate": "2026-02-09",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4221_ju",
+   "name": "矩",
+   "play": 2376000,
+   "title": "《明日方舟》SideStory「辞岁行」活动宣传PV",
+   "videoDate": "2026-02-06",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4222_taraxa",
+   "name": "风絮",
+   "play": 2376000,
+   "title": "《明日方舟》SideStory「辞岁行」活动宣传PV",
+   "videoDate": "2026-02-06",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4031_liesel",
+   "name": "复奏",
+   "play": 2199000,
+   "title": "《明日方舟》全新故事「十字路口」活动宣传PV",
+   "videoDate": "2026-03-05",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4037_demetr",
+   "name": "贝洛内",
+   "play": 1166000,
+   "title": "《明日方舟》干员「贝洛内」技能展示PV",
+   "videoDate": "2026-03-08",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_1051_headb2",
+   "name": "怒潮凛冬",
+   "play": 1448000,
+   "title": "《明日方舟》干员「怒潮凛冬」技能展示PV",
+   "videoDate": "2026-04-04",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4223_botany",
+   "name": "伯塔尼",
+   "play": 3479000,
+   "title": "《明日方舟》SideStory「人们，我们」活动宣传PV",
+   "videoDate": "2026-04-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4224_turdus",
+   "name": "乌啾",
+   "play": 3479000,
+   "title": "《明日方舟》SideStory「人们，我们」活动宣传PV",
+   "videoDate": "2026-04-02",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1052_kalts2",
+   "name": "凯尔希·思衡托",
+   "play": 1229000,
+   "title": "《明日方舟》限定干员「凯尔希·思衡托」前瞻PV",
+   "videoDate": "2026-04-29",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4225_tanya",
+   "name": "裂响",
+   "play": 4230000,
+   "title": "《明日方舟》七周年庆典活动宣传PV",
+   "videoDate": "2026-04-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4226_veen",
+   "name": "维伊",
+   "play": 4230000,
+   "title": "《明日方舟》七周年庆典活动宣传PV",
+   "videoDate": "2026-04-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4228_closur",
+   "name": "可露希尔",
+   "play": 4230000,
+   "title": "《明日方舟》七周年庆典活动宣传PV",
+   "videoDate": "2026-04-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1048_orchd2",
+   "name": "焰狐龙梓兰",
+   "play": 1970000,
+   "title": "《明日方舟》干员「焰狐龙梓兰」技能展示PV",
+   "videoDate": "2026-05-29",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4229_aphris",
+   "name": "谬因",
+   "play": 978000,
+   "title": "《明日方舟》干员「谬因」技能展示PV",
+   "videoDate": "2026-07-08",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4234_pedro",
+   "name": "佩德洛",
+   "play": 2014000,
+   "title": "《明日方舟》全新故事「丛林症结」活动宣传PV",
+   "videoDate": "2026-07-05",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4230_mcnist",
+   "name": "机械师",
+   "play": 2014000,
+   "title": "《明日方舟》全新故事「丛林症结」活动宣传PV",
+   "videoDate": "2026-07-05",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_1015_aglna2",
+   "name": "予愿安洁莉娜",
+   "play": 1071000,
+   "title": "《明日方舟》限定干员「予愿安洁莉娜」前瞻PV",
+   "videoDate": "2026-07-28",
+   "type": "干员PV"
+  },
+  {
+   "id": "char_4235_thumpy",
+   "name": "珊比",
+   "play": 528000,
+   "title": "《明日方舟》限时活动「奇象巡展」宣传PV",
+   "videoDate": "2026-07-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4236_tmslot",
+   "name": "时隙",
+   "play": 528000,
+   "title": "《明日方舟》限时活动「奇象巡展」宣传PV",
+   "videoDate": "2026-07-25",
+   "type": "活动PV"
+  },
+  {
+   "id": "char_4237_jcinta",
+   "name": "嘉辛塔",
+   "play": 528000,
+   "title": "《明日方舟》限时活动「奇象巡展」宣传PV",
+   "videoDate": "2026-07-25",
+   "type": "活动PV"
+  }
+ ]
+}

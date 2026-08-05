@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>明日方舟游乐场 · 粉丝同人小游戏</title>
+<meta name="description" content="非官方明日方舟粉丝同人小游戏：语音猜人、人气对决、阵营连线、版本排排坐，每日一题。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1><a href="#/">明日方舟<span class="accent">游乐场</span></a></h1>
+  <p class="tagline">明日方舟粉丝同人小游戏</p>
+</header>
+
+<main>
+  <!-- 首页：四玩法导航 -->
+  <section id="view-home" class="view">
+    <div class="home-grid">
+      <a class="home-card" href="#/voice">
+        <div class="hc-emoji">🎧</div>
+        <div class="hc-body">
+          <h2>语音猜人<span class="dot" id="dot-voice"></span></h2>
+          <p>听中文语音猜干员，从 2 秒片段开始逐段解锁，共 6 次机会。</p>
+        </div>
+      </a>
+      <a class="home-card" href="#/higher-lower">
+        <div class="hc-emoji">🔥</div>
+        <div class="hc-body">
+          <h2>人气对决<span class="dot" id="dot-pop"></span></h2>
+          <p>B 站官号视频播放量比拼：右边这位的播放量是更高还是更低？</p>
+        </div>
+      </a>
+      <a class="home-card" href="#/connections">
+        <div class="hc-emoji">🧩</div>
+        <div class="hc-body">
+          <h2>阵营连线<span class="dot" id="dot-conn"></span></h2>
+          <p>16 位干员里找出 4 组四人羁绊：势力、画师、声优、种族……</p>
+        </div>
+      </a>
+      <a class="home-card" href="#/timeline">
+        <div class="hc-emoji">⏳</div>
+        <div class="hc-body">
+          <h2>版本排排坐<span class="dot" id="dot-tl"></span></h2>
+          <p>把 5 位干员按实装日期从早到晚排好，3 次提交机会。</p>
+        </div>
+      </a>
+    </div>
+    <p class="home-note">每个玩法每天一道题（按本地日期，全站同题），也有不限次的练习模式。进度存在本机浏览器里。</p>
+  </section>
+
+  <!-- 玩法 1：语音猜人 -->
+  <section id="view-voice" class="view hidden">
+    <div class="game-head">
+      <h2>🎧 语音猜人</h2>
+      <div class="mode-tabs" data-game="voice">
+        <button class="mode-tab active" data-mode="daily">每日挑战</button>
+        <button class="mode-tab" data-mode="practice">练习模式</button>
+      </div>
+    </div>
+    <p class="mode-banner" id="voiceBanner"></p>
+
+    <div class="seg-bar" id="voiceSegBar"></div>
+    <div class="voice-controls">
+      <button class="btn" id="voicePlayBtn">▶ 播放片段</button>
+      <span class="tries-left" id="voiceTries"></span>
+    </div>
+    <div class="voice-hint hidden" id="voiceHint"></div>
+    <div class="chips" id="voiceRounds"></div>
+
+    <div class="guess-bar" id="voiceGuessBar">
+      <div class="input-wrap">
+        <input id="voiceInput" type="text" placeholder="输入干员名，如：能天使"
+               autocomplete="off" autocapitalize="off" spellcheck="false">
+        <ul id="voiceSuggest" class="suggest-list hidden"></ul>
+      </div>
+      <button class="btn ghost" id="voiceSkipBtn">跳过 ⏭</button>
+    </div>
+
+    <div id="voiceResult" class="result hidden"></div>
+  </section>
+
+  <!-- 玩法 2：人气对决 -->
+  <section id="view-pop" class="view hidden">
+    <div class="game-head">
+      <h2>🔥 人气对决</h2>
+      <div class="mode-tabs" data-game="pop">
+        <button class="mode-tab active" data-mode="daily">每日挑战</button>
+        <button class="mode-tab" data-mode="practice">练习模式</button>
+      </div>
+    </div>
+    <p class="mode-banner" id="popBanner"></p>
+
+    <div class="pop-arena">
+      <div class="pop-card" id="popLeft"></div>
+      <div class="pop-vs">VS</div>
+      <div class="pop-card" id="popRight"></div>
+    </div>
+    <div class="pop-actions" id="popActions">
+      <button class="btn" id="popHigher">更高 ⬆️</button>
+      <button class="btn" id="popLower">更低 ⬇️</button>
+    </div>
+    <p class="pop-streak" id="popStreak"></p>
+    <div id="popResult" class="result hidden"></div>
+
+    <p class="data-note">播放量为 B 站官号「明日方舟」视频快照（2026-08-05）：优先取干员个人 PV，无个人 PV 的干员取其实装活动宣传 PV。</p>
+  </section>
+
+  <!-- 玩法 3：阵营连线 -->
+  <section id="view-conn" class="view hidden">
+    <div class="game-head">
+      <h2>🧩 阵营连线</h2>
+      <div class="mode-tabs" data-game="conn">
+        <button class="mode-tab active" data-mode="daily">每日挑战</button>
+        <button class="mode-tab" data-mode="practice">练习模式</button>
+      </div>
+    </div>
+    <p class="mode-banner" id="connBanner"></p>
+
+    <div id="connSolved" class="conn-solved"></div>
+    <div id="connGrid" class="conn-grid"></div>
+    <div class="conn-actions">
+      <button class="btn" id="connSubmit" disabled>提交</button>
+      <button class="btn ghost" id="connDeselect">取消选择</button>
+      <button class="btn ghost" id="connShuffle">洗牌</button>
+      <span class="conn-mistakes" id="connMistakes"></span>
+    </div>
+    <div id="connResult" class="result hidden"></div>
+  </section>
+
+  <!-- 玩法 4：版本排排坐 -->
+  <section id="view-tl" class="view hidden">
+    <div class="game-head">
+      <h2>⏳ 版本排排坐</h2>
+      <div class="mode-tabs" data-game="tl">
+        <button class="mode-tab active" data-mode="daily">每日挑战</button>
+        <button class="mode-tab" data-mode="practice">练习模式</button>
+      </div>
+    </div>
+    <p class="mode-banner" id="tlBanner">点两张卡片交换位置，把 5 位干员按实装日期从早到晚排好（上早下晚）。</p>
+
+    <div id="tlList" class="tl-list"></div>
+    <div class="tl-actions">
+      <button class="btn" id="tlSubmit">提交排序</button>
+      <span class="tries-left" id="tlTries"></span>
+    </div>
+    <div id="tlAttempts" class="tl-attempts"></div>
+    <div id="tlResult" class="result hidden"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>非官方粉丝同人作品，与鹰角网络（Hypergryph）无关。游戏素材版权归原厂商所有。</p>
+  <p>数据来源：Kengxxiao/ArknightsGameData（游戏数据）、PRTS Wiki（种族/画师/声优）、Aceship（头像与语音）、B站官号「明日方舟」视频播放量（快照 2026-08-05）。</p>
+</footer>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="data/operators.js"></script>
+<script src="data/voice.js"></script>
+<script src="data/popularity.js"></script>
+<script src="data/connections.js"></script>
+<script src="game.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
