@@ -165,6 +165,33 @@ button.btn.ghost { background: var(--card); color: var(--ink); border: 1px solid
 .legend { margin-top: 20px; font-size: 13px; color: var(--ink-soft); }
 .legend summary { cursor: pointer; }
 .legend ul { padding: 8px 0 0 18px; display: flex; flex-direction: column; gap: 4px; line-height: 1.6; }
+/* 创意参考标注：低调小字不抢戏 */
+.ref-note { margin-top: 10px; font-size: 12px; color: var(--ink-soft); opacity: .75; }
+.ref-note a { color: var(--ink-soft); text-decoration: underline; }
+
+/* 档案线索：暖纸卡片列表 + 左竖金线，新解锁点亮 */
+.clue-list { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.clue-list:empty { margin-top: 0; }
+.clue {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--gold);
+  border-radius: var(--radius-sm); padding: 9px 12px; font-size: 14px; line-height: 1.55;
+  box-shadow: var(--shadow-card);
+}
+.clue.fresh { animation: pop .25s ease both; }
+.clue .clue-text { color: var(--navy); }
+.clue-sil {
+  width: 56px; height: 56px; border-radius: 8px; flex: none; cursor: pointer;
+  filter: brightness(0) blur(2px); transition: filter .2s;
+  background: var(--paper-deep);
+}
+.clue-sil.lite { filter: brightness(.38) blur(1px); } /* 「再看清一点」：减淡但不揭晓 */
+.clue-sil.reveal { filter: none; cursor: default; }   /* 结算后显示原图 */
+.clue-sil-missing {
+  width: 56px; height: 56px; border-radius: 8px; flex: none;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--ink); color: var(--gold); font-size: 24px; font-weight: 700;
+}
 
 /* ---------- 猜干员（七维比对表格） ---------- */
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }

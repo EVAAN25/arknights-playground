@@ -32,6 +32,7 @@ python3 tools/refine_voice.py         # 语音选句优化（8~60 字）→ data
 # 5. 玩法题库
 python3 tools/build_popularity.py     # → data/popularity.*（175 条播放量）
 python3 tools/build_connections.py    # → data/connections.*（72 题，exact-cover 校验唯一解）
+python3 tools/build_clues.py          # → data/clues.*（猜干员档案线索：台词/天赋/技能/活动名，需 raw/skill_table.json）
 
 # 6. 校验
 node test.js

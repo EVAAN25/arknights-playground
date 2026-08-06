@@ -149,19 +149,59 @@
   }
 
   // results: guessCompare 的结果数组；只含 emoji 与成绩，不含答案名
+  // 末行「线索用了 X/5 条」：X = 猜错数（赢局去掉最后一次命中），封顶 5
   function buildGuessShare(opts) {
     const { date, results, won, practice } = opts;
     const label = practice ? "猜干员·练习" : `猜干员 #${date}`;
     const rows = results.map((r) =>
       GUESS_CELL_ORDER.map((k) => GUESS_CELL_EMOJI[r.cells[k].status]).join(""));
+    const wrongs = won ? results.length - 1 : results.length;
+    const clueCount = Math.min(Math.max(wrongs, 0), 5);
     const lines = [
       `${SITE_NAME} · ${label}`,
       won ? `🎯 ${results.length}/${GUESS_MAX_TRIES}` : `🎯 X/${GUESS_MAX_TRIES}`,
       ...rows,
       `评级：${guessGrade(results.length, won)}`,
+      `线索用了 ${clueCount}/5 条`,
       SITE_URL,
     ];
     return lines.join("\n");
+  }
+
+  /*
+   * 档案线索：每猜错一次解锁一条，最多 5 条。确定性纯函数，UI 只负责渲染。
+   * 档位顺序：台词 → 天赋/技能 → 画师+声优 → 立绘剪影 → 职业分支(+实装活动)。
+   * 某档数据缺失则跳过、后续档顺位提前；文本含答案名的条目跳过（不剧透）。
+   * 返回 [{kind, text}]，剪影档 kind="silhouette" 无 text（由 UI 用头像渲染）。
+   */
+  function cluesForTarget(opId, cluesData, opsById, wrongCount) {
+    const op = opsById[opId];
+    if (!op) return [];
+    const c = (cluesData && cluesData[opId]) || {};
+    const safe = (txt) => typeof txt === "string" && txt.length > 0 && !txt.includes(op.name);
+    const cands = [];
+    // 1. 台词（{@nickname} 占位替换为博士）
+    if (safe(c.quote)) cands.push({ kind: "quote", text: `📜 台词："${c.quote.replace(/\{@nickname\}/g, "博士")}"` });
+    // 2. 天赋/技能名（优先天赋，可附 1 个技能）
+    const tals = (c.talents || []).filter(safe);
+    const sks = (c.skills || []).filter(safe);
+    if (tals.length && sks.length) cands.push({ kind: "talent", text: `💡 天赋：${tals[0]} · 技能：${sks[0]}` });
+    else if (tals.length) cands.push({ kind: "talent", text: `💡 天赋：${tals[0]}` });
+    else if (sks.length) cands.push({ kind: "talent", text: `💡 技能：${sks[0]}` });
+    // 3. 画师 + 声优（cvCn 空用 cvJp 兜底并标注日文配音；都缺则只给画师）
+    if (op.artist && (op.cvCn || op.cvJp)) {
+      const cv = op.cvCn ? `中文配音：${op.cvCn}` : `日文配音：${op.cvJp}`;
+      cands.push({ kind: "artist", text: `🎨 画师：${op.artist} · ${cv}` });
+    } else if (op.artist) {
+      cands.push({ kind: "artist", text: `🎨 画师：${op.artist}` });
+    }
+    // 4. 立绘剪影（UI 用 assets/avatars/<id>.png + CSS 滤镜渲染）
+    cands.push({ kind: "silhouette" });
+    // 5. 直白线索：职业分支（sub 空则只 prof）；有 event 追加实装活动
+    let direct = `🗂 职业分支：${op.prof}${op.sub ? " · " + op.sub : ""}`;
+    if (safe(c.event)) direct += `；实装活动：${c.event}`;
+    cands.push({ kind: "direct", text: direct });
+    return cands.slice(0, Math.max(0, Math.min(wrongCount, cands.length)));
   }
 
   // ---------- 玩法 1：语音猜人 ----------
@@ -463,6 +503,7 @@
     // 猜干员
     GUESS_INCLUDE_R4, GUESS_MAX_TRIES, GUESS_CELL_ORDER, GUESS_CELL_LABEL, GUESS_CELL_EMOJI,
     guessPool, guessDaily, guessRandom, cmpNumeric, numCell, subNorm, guessCompare, guessGrade, buildGuessShare,
+    cluesForTarget,
     // 语音猜人
     VOICE_SEGMENTS, VOICE_MAX_TRIES, voicePool, voiceDaily, voiceRandom, voiceGrade, buildVoiceShare,
     // 人气对决

@@ -48,6 +48,14 @@
       alt="${op.name}" data-id="${op.id}" data-name="${op.name}" onerror="window.__akAv(this)">`;
   }
 
+  // 剪影专用兜底：首字色块会剧透答案名，换成「?」块
+  window.__akAvSil = function (img) {
+    const div = document.createElement("div");
+    div.className = "clue-sil-missing";
+    div.textContent = "?";
+    img.replaceWith(div);
+  };
+
   // ---------- 复制与提示 ----------
   let toastTimer = null;
   function toast(msg) {
@@ -83,7 +91,7 @@
    * 玩法 0：猜干员（wordle 七维比对）
    * state = {targetId, guesses:[id...], results:[...], status}
    * ================================================================ */
-  const Guess = { mode: "daily", daily: null, practice: null, sugItems: [], sugIndex: -1 };
+  const Guess = { mode: "daily", daily: null, practice: null, sugItems: [], sugIndex: -1, clueShown: 0 };
 
   function gState() { return Guess.mode === "daily" ? Guess.daily : Guess.practice; }
   function gTarget() { return byId[gState().targetId]; }
@@ -132,9 +140,40 @@
     const playing = s.status === "playing";
     $("#guessInput").disabled = !playing;
     $("#guessInput").placeholder = playing ? "输入干员名，如：能天使" : "本局已结束";
+    guessRenderClues();
     if (playing) $("#guessResult").classList.add("hidden");
     else guessRenderResult();
     gCloseSuggest();
+  }
+
+  /*
+   * 档案线索区：猜错数 = 已解锁条数（localStorage 里存的猜测记录可推导，无需额外字段）。
+   * 新解锁的一条给 .fresh 点亮动画；剪影档用 CSS 滤镜，点击减淡「再看清一点」，结算后才显示原图。
+   */
+  function guessRenderClues() {
+    const s = gState();
+    if (s.guesses.length === 0) Guess.clueShown = 0; // 新局重置
+    const wrongs = s.results.filter((r) => !r.win).length;
+    const clues = AKG.cluesForTarget(s.targetId, window.ARK_CLUES, byId, wrongs);
+    const done = s.status !== "playing";
+    const freshIdx = clues.length > (Guess.clueShown || 0) ? clues.length - 1 : -1;
+    Guess.clueShown = clues.length;
+    $("#guessClues").innerHTML = clues.map((cl, i) => {
+      const cls = "clue" + (i === freshIdx ? " fresh" : "");
+      if (cl.kind === "silhouette") {
+        // 剪影缺失时用「?」块兜底（首字色块会剧透答案名，不能用）
+        const img = done
+          ? `<img class="clue-sil reveal" src="assets/avatars/${s.targetId}.png" alt="" onerror="window.__akAvSil(this)">`
+          : `<img class="clue-sil" src="assets/avatars/${s.targetId}.png" alt="" title="点我看清一点" onerror="window.__akAvSil(this)">`;
+        return `<div class="${cls}">${img}<span class="clue-text">🕵 立绘剪影${done ? "" : "（点图片看清一点）"}</span></div>`;
+      }
+      return `<div class="${cls}"><span class="clue-text">${cl.text}</span></div>`;
+    }).join("");
+    if (!done) {
+      $("#guessClues").querySelectorAll(".clue-sil").forEach((img) => {
+        img.addEventListener("click", () => img.classList.toggle("lite"));
+      });
+    }
   }
 
   function guessRenderResult() {

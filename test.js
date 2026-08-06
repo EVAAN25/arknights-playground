@@ -5,12 +5,12 @@ const path = require("path");
 
 // 数据 js 注入假 window（浏览器全局变量的 node 等价物）
 const win = {};
-for (const f of ["operators", "voice", "popularity", "connections"]) {
+for (const f of ["operators", "clues", "voice", "popularity", "connections"]) {
   const code = fs.readFileSync(path.join(__dirname, "data", f + ".js"), "utf8");
   new Function("window", code)(win);
 }
-const { ARK_OPS, ARK_VOICE, ARK_POP, ARK_CONN } = win;
-assert(ARK_OPS && ARK_VOICE && ARK_POP && ARK_CONN, "数据全局变量未正确挂载");
+const { ARK_OPS, ARK_CLUES, ARK_VOICE, ARK_POP, ARK_CONN } = win;
+assert(ARK_OPS && ARK_CLUES && ARK_VOICE && ARK_POP && ARK_CONN, "数据全局变量未正确挂载");
 
 const AKG = require("./game.js");
 
@@ -351,6 +351,70 @@ ok("猜干员：分享卡含 SITE_URL 与 emoji、每行 7 格、未完成不含
   assert(!mid.includes(target.name), "泄露答案名");
   assert(mid.includes("🟩") || mid.includes("🟥") || mid.includes("⬆️") || mid.includes("⬇️"));
   console.log("---- 猜干员分享卡示例 ----\n" + t + "\n--------------------------");
+});
+
+// ---------- 档案线索 ----------
+ok("线索：确定性 + wrongCount 0→5 条数单调不减", () => {
+  for (const o of GPOOL.slice(0, 30)) {
+    let prev = -1;
+    for (let w = 0; w <= 6; w++) {
+      const a = AKG.cluesForTarget(o.id, ARK_CLUES, byId, w);
+      const b = AKG.cluesForTarget(o.id, ARK_CLUES, byId, w);
+      assert.deepStrictEqual(a, b, `同参数两次不一致 ${o.id} w=${w}`);
+      assert(a.length >= prev, `条数非单调 ${o.id} w=${w}`);
+      prev = a.length;
+    }
+    // 满档一般 5 条；quote 含答案名被跳过的干员（如白面鸮）为 4 条
+    assert(prev >= 4 && prev <= 5, `w=6 应解锁 4~5 条 ${o.id} 实际 ${prev}`);
+  }
+});
+
+ok("线索：不剧透——题池全量干员的线索文本都不含答案名", () => {
+  for (const o of GPOOL) {
+    const clues = AKG.cluesForTarget(o.id, ARK_CLUES, byId, 5);
+    for (const cl of clues) {
+      if (cl.text) assert(!cl.text.includes(o.name), `线索剧透 ${o.id} ${o.name}: ${cl.text}`);
+    }
+  }
+});
+
+ok("线索：数据完整性与兜底（quote/talents 必有其一；画师档与声优兜底）", () => {
+  let cvFallback = 0, noCv = 0;
+  for (const o of GPOOL) {
+    const c = ARK_CLUES[o.id];
+    assert(c, "缺 clues 记录 " + o.id);
+    assert(c.quote || (c.talents && c.talents.length), "quote/talents 都缺 " + o.id);
+    const full = AKG.cluesForTarget(o.id, ARK_CLUES, byId, 6);
+    assert(full.length >= 4 && full.length <= 5, "满档 4~5 条 " + o.id);
+    assert(full.some((cl) => cl.kind === "silhouette"), "剪影档缺失 " + o.id);
+    const direct = full.find((cl) => cl.kind === "direct");
+    assert(direct && direct.text.includes("职业分支：" + o.prof), "直白线索缺失 " + o.id);
+    if (c.event && !c.event.includes(o.name)) assert(direct.text.includes("实装活动：" + c.event), "event 未进线索 " + o.id);
+    const artist = full.find((cl) => cl.kind === "artist");
+    assert(artist && artist.text.includes("画师："), "画师档缺失 " + o.id);
+    if (o.cvCn) assert(artist.text.includes("中文配音：" + o.cvCn), "cvCn 未进线索 " + o.id);
+    else if (o.cvJp) { cvFallback++; assert(artist.text.includes("日文配音：" + o.cvJp), "cvJp 兜底缺失 " + o.id); }
+    else noCv++; // 联动干员两种声优都缺：只给画师
+  }
+  assert.strictEqual(noCv, 18, "双声优缺失数变化，需复查兜底逻辑: " + noCv);
+});
+
+ok("线索：分享卡新增「线索用了 X/5 条」，仍含 SITE_URL 不含答案名", () => {
+  const target = byId[AKG.guessDaily("2026-08-05", GPOOL)];
+  const others = GPOOL.filter((o) => o.id !== target.id).slice(0, 3).map((o) => byId[o.id]);
+  const mk = (arr, won) => arr.map((o) => AKG.guessCompare(o, target));
+  // 赢局第 3 次中：错 2 次 → 线索 2 条
+  const r1 = [...mk(others.slice(0, 2)), AKG.guessCompare(target, target)];
+  const t1 = AKG.buildGuessShare({ date: "2026-08-05", results: r1, won: true });
+  assert(t1.includes("线索用了 2/5 条"), t1);
+  assert(t1.includes(AKG.SITE_URL) && !t1.includes(target.name));
+  // 1 次就中：0 条线索
+  const t2 = AKG.buildGuessShare({ date: "2026-08-05", results: [AKG.guessCompare(target, target)], won: true });
+  assert(t2.includes("线索用了 0/5 条"));
+  // 6 次全错：5 条封顶
+  const r3 = mk([...others, ...GPOOL.filter((o) => o.id !== target.id && !others.includes(o)).slice(0, 3).map((o) => byId[o.id])]);
+  const t3 = AKG.buildGuessShare({ date: "2026-08-05", results: r3, won: false });
+  assert(t3.includes("线索用了 5/5 条") && t3.includes("X/6"));
 });
 
 // ---------- 续玩不干扰每日题 ----------
