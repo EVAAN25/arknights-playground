@@ -125,7 +125,7 @@
     const s = gState();
     $("#guessBanner").innerHTML = Guess.mode === "daily"
       ? `今日题目 <b>#${TODAY}</b> · 全站同题 · 进度自动保存`
-      : `练习模式 · 随机出题 · 不计入每日成绩`;
+      : `无限模式 · 随机出题 · 不计入每日成绩`;
     const left = AKG.GUESS_MAX_TRIES - s.guesses.length;
     $("#guessTries").innerHTML = `剩 <b>${left}</b> / ${AKG.GUESS_MAX_TRIES} 次`;
     $("#guessRows").innerHTML = s.guesses.map((id, i) => gRowHTML(byId[id], s.results[i])).join("");
@@ -148,16 +148,19 @@
       <p class="r-meta">${stars(t.rarity)} · ${t.faction} · ${t.prof} · ${AKG.subNorm(t.sub)} · ${t.race} · ${t.sex} · ${t.release} 实装</p>
       <p class="r-grade">${won ? tries : "X"}/${AKG.GUESS_MAX_TRIES} 次 · 评级 <b>${AKG.guessGrade(tries, won)}</b></p>
       <div class="btn-row">
-        <button class="btn" id="guessShareBtn">复制分享卡</button>
-        <button class="btn ghost" id="guessAgainBtn">${Guess.mode === "daily" ? "练习模式再来一题" : "再来一题"}</button>
+        <button class="btn" id="guessAgainBtn">🔄 再来一题</button>
+        <button class="btn ghost" id="guessShareBtn">复制分享卡</button>
       </div>`;
     $("#guessResult").classList.remove("hidden");
     $("#guessShareBtn").onclick = () => copyText(AKG.buildGuessShare({
       date: TODAY, results: s.results, won, practice: Guess.mode === "practice",
     }));
+    // 每日题结束后原地开随机局续玩；每日进度（localStorage）不受影响
     $("#guessAgainBtn").onclick = () => {
-      if (Guess.mode === "daily") guessSetMode("practice");
-      else { guessNewPractice(); guessRender(); }
+      Guess.mode = "practice";
+      guessNewPractice();
+      syncModeTabs("guess");
+      guessRender();
     };
   }
 
@@ -291,7 +294,7 @@
     const s = vState();
     $("#voiceBanner").innerHTML = Voice.mode === "daily"
       ? `今日题目 <b>#${TODAY}</b> · 全站同题 · 进度自动保存`
-      : `练习模式 · 随机出题 · 不计入每日成绩`;
+      : `无限模式 · 随机出题 · 不计入每日成绩`;
     // 分段进度条
     const labels = ["2 秒", "5 秒", "10 秒", "完整"];
     const seg = vSeg();
@@ -334,16 +337,19 @@
       <p class="r-quote">「${clip.x}」<br><small>—— 语音：${clip.t}</small></p>
       <p class="r-grade">${won ? tries : "X"}/${AKG.VOICE_MAX_TRIES} 次 · 评级 <b>${AKG.voiceGrade(tries, won)}</b></p>
       <div class="btn-row">
-        <button class="btn" id="voiceShareBtn">复制分享卡</button>
-        <button class="btn ghost" id="voiceAgainBtn">${Voice.mode === "daily" ? "练习模式再来一题" : "再来一题"}</button>
+        <button class="btn" id="voiceAgainBtn">🔄 再来一题</button>
+        <button class="btn ghost" id="voiceShareBtn">复制分享卡</button>
       </div>`;
     $("#voiceResult").classList.remove("hidden");
     $("#voiceShareBtn").onclick = () => copyText(AKG.buildVoiceShare({
       date: TODAY, rounds: s.rounds, won, practice: Voice.mode === "practice",
     }));
+    // 每日题结束后原地开随机局续玩；每日进度（localStorage）不受影响
     $("#voiceAgainBtn").onclick = () => {
-      if (Voice.mode === "daily") voiceSetMode("practice");
-      else { voiceNewPractice(); voiceRender(); }
+      Voice.mode = "practice";
+      voiceNewPractice();
+      syncModeTabs("voice");
+      voiceRender();
     };
   }
 
@@ -430,7 +436,7 @@
    * daily    = {chain:[11 ids], pos, score, trail:[{dir,ok}], status}
    * practice = {leftId, rightId, streak, trail, status}
    * ================================================================ */
-  const Pop = { mode: "daily", daily: null, practice: null };
+  const Pop = { mode: "daily", daily: null, practice: null, revealing: false };
 
   function pState() { return Pop.mode === "daily" ? Pop.daily : Pop.practice; }
   function pPair() {
@@ -463,8 +469,8 @@
     const playPart = (side === "left" || reveal)
       ? `<div class="pop-play">${AKG.formatPlay(e.play)}<small>次播放</small></div>`
       : `<div class="pop-play unknown">？</div>`;
-    const titlePart = reveal
-      ? `<p class="pop-title">[${e.type}] ${e.title}</p>` : "";
+    // 视频名猜之前也常显，标注 PV 类型，让玩家知道比的是哪支 PV
+    const titlePart = `<p class="pop-title">[${e.type}] ${e.title}</p>`;
     return `${avatarHTML(byId[e.id])}<div class="pop-name">${e.name}</div>${playPart}${titlePart}`;
   }
 
@@ -474,10 +480,15 @@
     const done = s.status !== "playing";
     $("#popBanner").innerHTML = Pop.mode === "daily"
       ? `今日题目 <b>#${TODAY}</b> · 固定 ${AKG.POP_DAILY_ROUNDS} 轮 · 答错即结算`
-      : `练习模式 · 直到答错 · 最高连击 <b>${loadJSON("ak_pop_best", 0)}</b>`;
+      : `无限模式 · 直到答错 · 最高连击 <b>${loadJSON("ak_pop_best", 0)}</b>`;
     $("#popLeft").innerHTML = popCardHTML(left, "left", done);
     $("#popRight").innerHTML = popCardHTML(right, "right", done || reveal);
+    // 作答反馈：揭示期间右卡绿/红描边
+    const mark = (reveal && !done && s.trail.length) ? (s.trail[s.trail.length - 1].ok ? "ok" : "bad") : "";
+    $("#popRight").classList.toggle("ok", mark === "ok");
+    $("#popRight").classList.toggle("bad", mark === "bad");
     $("#popActions").classList.toggle("hidden", done);
+    $("#popHigher").disabled = $("#popLower").disabled = !!reveal;
     $("#popStreak").innerHTML = Pop.mode === "daily"
       ? `第 <b>${Math.min(s.pos + 1, AKG.POP_DAILY_ROUNDS)}</b> / ${AKG.POP_DAILY_ROUNDS} 轮 · 已连对 ${s.score}`
       : `当前连击 <b>${s.streak}</b>`;
@@ -502,46 +513,55 @@
       <p class="r-grade">评级 <b>${AKG.popGrade(score, Pop.mode === "daily" ? AKG.POP_DAILY_ROUNDS : 0)}</b></p>
       ${bestLine}
       <div class="btn-row">
-        <button class="btn" id="popShareBtn">复制分享卡</button>
-        <button class="btn ghost" id="popAgainBtn">${Pop.mode === "daily" ? "去练习模式冲连击" : "再来一局"}</button>
+        <button class="btn" id="popAgainBtn">🔄 再来一题</button>
+        <button class="btn ghost" id="popShareBtn">复制分享卡</button>
       </div>`;
     $("#popResult").classList.remove("hidden");
     $("#popShareBtn").onclick = () => copyText(AKG.buildPopShare({
       date: TODAY, score, trail: s.trail, practice: Pop.mode === "practice",
     }));
+    // 每日题结束后原地开随机局续玩；每日进度（localStorage）不受影响
     $("#popAgainBtn").onclick = () => {
-      if (Pop.mode === "daily") popSetMode("practice");
-      else { popNewPractice(); popRender(); }
+      Pop.mode = "practice";
+      popNewPractice();
+      syncModeTabs("pop");
+      popRender();
     };
   }
 
   function popAnswer(dir) {
     const s = pState();
-    if (!s || s.status !== "playing") return;
+    if (!s || s.status !== "playing" || Pop.revealing) return;
     const [left, right] = pPair();
     const ok = AKG.popJudge(dir, left, right);
     s.trail.push({ dir, ok });
-    if (Pop.mode === "daily") {
-      if (ok) {
-        s.score++;
-        s.pos++;
-        if (s.pos >= AKG.POP_DAILY_ROUNDS) s.status = "won";
-      } else s.status = "lost";
-      pPersist();
-      popRender(!ok); // 答错瞬间先揭示右边播放量，随后结算
-    } else {
-      if (ok) {
-        s.streak++;
-        s.leftId = s.rightId;
-        s.rightId = AKG.popNext(window.ARK_POP.entries, right).id;
+    // 先揭示右边播放量给 900ms 反馈，再推进到下一对
+    Pop.revealing = true;
+    popRender(true);
+    setTimeout(() => {
+      Pop.revealing = false;
+      if (Pop.mode === "daily") {
+        if (ok) {
+          s.score++;
+          s.pos++;
+          if (s.pos >= AKG.POP_DAILY_ROUNDS) s.status = "won";
+        } else s.status = "lost";
+        pPersist();
         popRender();
       } else {
-        s.status = "lost";
-        const best = loadJSON("ak_pop_best", 0);
-        if (s.streak > best) store.set("ak_pop_best", JSON.stringify(s.streak));
-        popRender(true);
+        if (ok) {
+          s.streak++;
+          s.leftId = s.rightId; // 右卡移左，刚揭示的数字继续可见（左卡常显数字）
+          s.rightId = AKG.popNext(window.ARK_POP.entries, right).id;
+          popRender();
+        } else {
+          s.status = "lost";
+          const best = loadJSON("ak_pop_best", 0);
+          if (s.streak > best) store.set("ak_pop_best", JSON.stringify(s.streak));
+          popRender(true);
+        }
       }
-    }
+    }, 900);
   }
 
   function popSetMode(mode) {
@@ -588,7 +608,7 @@
     Conn.sel = new Set([...Conn.sel].filter((id) => cRemaining().includes(id)));
     $("#connBanner").innerHTML = Conn.mode === "daily"
       ? `今日题目 <b>#${TODAY}</b> · 找出 4 组四人羁绊 · 错满 ${AKG.CONN_MAX_MISTAKES} 次判负`
-      : `练习模式 · 随机题目 · 不计入每日成绩`;
+      : `无限模式 · 随机题目 · 不计入每日成绩`;
     // 已解出的组
     $("#connSolved").innerHTML = s.solved.map((gi) => {
       const g = puzzle.groups[gi];
@@ -661,8 +681,8 @@
       <h2>${won ? "全部找出！" : "揭晓全部答案"}</h2>
       <p class="r-grade">错误 ${s.mistakes} 次 · 评级 <b>${AKG.connGrade(s.mistakes, won)}</b></p>
       <div class="btn-row">
-        <button class="btn" id="connShareBtn">复制分享卡</button>
-        <button class="btn ghost" id="connAgainBtn">${Conn.mode === "daily" ? "练习模式再来一题" : "再来一题"}</button>
+        <button class="btn" id="connAgainBtn">🔄 再来一题</button>
+        <button class="btn ghost" id="connShareBtn">复制分享卡</button>
       </div>`;
     $("#connResult").classList.remove("hidden");
     $("#connShareBtn").onclick = () => {
@@ -671,9 +691,13 @@
         date: TODAY, solveOrder: s.solveLog || [], mistakes: s.mistakes, won, practice: Conn.mode === "practice",
       }));
     };
+    // 每日题结束后原地开随机局续玩；每日进度（localStorage）不受影响
     $("#connAgainBtn").onclick = () => {
-      if (Conn.mode === "daily") connSetMode("practice");
-      else { connNewPractice(); connRender(); }
+      Conn.mode = "practice";
+      connNewPractice();
+      Conn.sel.clear();
+      syncModeTabs("conn");
+      connRender();
     };
   }
 
@@ -722,7 +746,7 @@
     Tl.sel = -1;
     $("#tlBanner").innerHTML = Tl.mode === "daily"
       ? `今日题目 <b>#${TODAY}</b> · 点两张卡片交换位置 · 按实装日期上早下晚`
-      : `练习模式 · 随机出题 · 点两张卡片交换位置 · 上早下晚`;
+      : `无限模式 · 随机出题 · 点两张卡片交换位置 · 上早下晚`;
     const done = s.status !== "playing";
     $("#tlList").innerHTML = s.ids.map((id, i) => {
       const op = byId[id];
@@ -784,16 +808,19 @@
       <p class="r-meta">${s.ids.map((id) => `${byId[id].name}（${byId[id].release}）`).join(" → ")}</p>
       <p class="r-grade">${won ? s.attempts.length : "X"}/${AKG.TL_MAX_TRIES} 次 · 评级 <b>${AKG.timelineGrade(s.attempts.length, won)}</b></p>
       <div class="btn-row">
-        <button class="btn" id="tlShareBtn">复制分享卡</button>
-        <button class="btn ghost" id="tlAgainBtn">${Tl.mode === "daily" ? "练习模式再来一题" : "再来一题"}</button>
+        <button class="btn" id="tlAgainBtn">🔄 再来一题</button>
+        <button class="btn ghost" id="tlShareBtn">复制分享卡</button>
       </div>`;
     $("#tlResult").classList.remove("hidden");
     $("#tlShareBtn").onclick = () => copyText(AKG.buildTimelineShare({
       date: TODAY, attempts: s.attempts, won, practice: Tl.mode === "practice",
     }));
+    // 每日题结束后原地开随机局续玩；每日进度（localStorage）不受影响
     $("#tlAgainBtn").onclick = () => {
-      if (Tl.mode === "daily") tlSetMode("practice");
-      else { tlNewPractice(); tlRender(); }
+      Tl.mode = "practice";
+      tlNewPractice();
+      syncModeTabs("tl");
+      tlRender();
     };
   }
 

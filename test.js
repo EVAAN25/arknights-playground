@@ -353,6 +353,31 @@ ok("猜干员：分享卡含 SITE_URL 与 emoji、每行 7 格、未完成不含
   console.log("---- 猜干员分享卡示例 ----\n" + t + "\n--------------------------");
 });
 
+// ---------- 续玩不干扰每日题 ----------
+ok("续玩：随机选题函数任意调用后，五玩法每日题结果不变", () => {
+  const date = "2026-08-05";
+  const before = {
+    guess: AKG.guessDaily(date, GPOOL),
+    voice: AKG.voiceDaily(date, VPOOL),
+    pop: AKG.popDailyChain(date, ARK_POP.entries),
+    conn: AKG.connPuzzleDaily(date, ARK_CONN).id,
+    tl: AKG.timelineDaily(date, TPOOL),
+  };
+  // 模拟「再来一题」续玩：各玩法的随机选题跑 20 轮
+  for (let i = 0; i < 20; i++) {
+    AKG.guessRandom(GPOOL);
+    AKG.voiceRandom(VPOOL);
+    AKG.popNext(ARK_POP.entries, ARK_POP.entries[i % ARK_POP.entries.length]);
+    AKG.connPuzzleRandom(ARK_CONN);
+    AKG.timelineRandom(TPOOL);
+  }
+  assert.strictEqual(AKG.guessDaily(date, GPOOL), before.guess);
+  assert.deepStrictEqual(AKG.voiceDaily(date, VPOOL), before.voice);
+  assert.deepStrictEqual(AKG.popDailyChain(date, ARK_POP.entries), before.pop);
+  assert.strictEqual(AKG.connPuzzleDaily(date, ARK_CONN).id, before.conn);
+  assert.deepStrictEqual(AKG.timelineDaily(date, TPOOL), before.tl);
+});
+
 // ---------- 通用搜索 ----------
 ok("搜索：前缀优先、排除已猜、空串为空", () => {
   const cands = VPOOL.map((e) => e.op);
