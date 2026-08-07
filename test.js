@@ -21,11 +21,11 @@ const byId = {};
 ARK_OPS.forEach((o) => { byId[o.id] = o; });
 
 // ---------- 数据完整性 ----------
-ok("数据：operators 392 条、id 唯一、字段齐全", () => {
-  assert.strictEqual(ARK_OPS.length, 392);
+ok("数据：operators 409 条、id 唯一、字段齐全", () => {
+  assert.strictEqual(ARK_OPS.length, 409);
   const ids = new Set();
   for (const o of ARK_OPS) {
-    assert(o.id && o.name && [4, 5, 6].includes(o.rarity), "基本字段 " + o.id);
+    assert(o.id && o.name && [3, 4, 5, 6].includes(o.rarity), "基本字段 " + o.id);
     assert(o.release === null || /^\d{4}-\d{2}-\d{2}$/.test(o.release), "release " + o.id);
     assert(!ids.has(o.id)); ids.add(o.id);
   }
@@ -116,9 +116,9 @@ ok("确定性：dateStr 本地日期格式", () => {
 });
 
 // ---------- 玩法 1：语音猜人 ----------
-ok("语音：题池全部稀有度≥5 且有语音，每日题索引合法", () => {
+ok("语音：题池全部稀有度≥3 且有语音，每日题索引合法", () => {
   assert(VPOOL.length >= 200, "题池过小: " + VPOOL.length);
-  for (const e of VPOOL) assert(e.op.rarity >= 5 && e.clips.length > 0);
+  for (const e of VPOOL) assert(e.op.rarity >= 3 && e.clips.length > 0);
   const pick = AKG.voiceDaily("2026-08-05", VPOOL);
   const entry = VPOOL.find((e) => e.op.id === pick.opId);
   assert(entry && pick.clipIdx >= 0 && pick.clipIdx < entry.clips.length);
@@ -264,18 +264,18 @@ ok("排排坐：评级与分享卡不含答案名", () => {
 // ---------- 玩法 0：猜干员 ----------
 const GPOOL = AKG.guessPool(ARK_OPS);
 
-ok("猜干员：题池完整性（rarity≥5、release/sex 非空、名字全表唯一）", () => {
+ok("猜干员：题池完整性（rarity≥3、release/sex 非空、名字全表唯一）", () => {
   assert(GPOOL.length >= 300, "题池过小: " + GPOOL.length);
   const nameCnt = {};
   ARK_OPS.forEach((o) => { nameCnt[o.name] = (nameCnt[o.name] || 0) + 1; });
   for (const o of GPOOL) {
-    assert(o.rarity >= 5 && o.release && o.sex, "题池杂质 " + o.id);
+    assert(o.rarity >= 3 && o.release && o.sex, "题池杂质 " + o.id);
     assert.strictEqual(nameCnt[o.name], 1, "名字不唯一 " + o.name);
   }
-  // 开关 true 时允许 4★
-  const pool4 = AKG.guessPool(ARK_OPS, true);
-  assert(pool4.length > GPOOL.length);
-  for (const o of pool4) assert(o.rarity >= 4 && o.release && o.sex, "4★题池杂质 " + o.id);
+  // 显式传 minR=5 时只含 5★+
+  const pool5 = AKG.guessPool(ARK_OPS, 5);
+  assert(pool5.length < GPOOL.length);
+  for (const o of pool5) assert(o.rarity >= 5 && o.release && o.sex, "5★题池杂质 " + o.id);
 });
 
 ok("猜干员：每日确定性 + salt 与现有 4 个不冲突（抽样 10 天）", () => {

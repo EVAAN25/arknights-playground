@@ -77,7 +77,7 @@ n_e = sum(1 for v in out.values() if 'event' in v)
 print(f'clues: {len(out)} ops | quote {n_q} | talents {n_t} | skills {n_s} | event {n_e}')
 print('amiya:', json.dumps(out['char_002_amiya'], ensure_ascii=False)[:260])
 # 画师/声优覆盖（猜干员题池）
-pool = [o for o in ops if o['rarity'] >= 5 and o.get('release') and o.get('sex')]
+pool = [o for o in ops if o['rarity'] >= 3 and o.get('release') and o.get('sex')]
 n_a = sum(1 for o in pool if o.get('artist'))
 n_c = sum(1 for o in pool if o.get('cvCn'))
 print(f'guess pool {len(pool)} | artist {n_a} | cvCn {n_c}')

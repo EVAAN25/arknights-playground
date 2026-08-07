@@ -20,7 +20,7 @@
 #    - bili_pvs.json：B 站官号视频列表（标题/日期/播放量），浏览器 DOM 抓取后整理
 
 # 2. 干员主数据
-python3 tools/build_operators.py      # → data/operators.json / operators.js（392 干员，359 有实装日期）
+python3 tools/build_operators.py      # → data/operators.json / operators.js（409 干员，376 有实装日期）
 
 # 3. 头像与语音（gh api，约 10 分钟）
 python3 tools/fetch_assets.py         # → assets/avatars/*.png、assets/voice/*.mp3
@@ -40,7 +40,8 @@ node test.js
 
 ## 关键口径
 
-- **题池**：可获取的 5★+6★ 干员（392 含 61 个 4★，玩法内按稀有度过滤；4★ 开关预留在数据层）。
-- **实装日期**：优先 wiki.gg 卡池 startTimeCN（+8h 修正时区）；与 PRTS 页面创建时间相差 >30 天取较早者；无卡池记录的赠送/商店干员用 PRTS 创建时间。
+- **题池**：可获取的 3★~6★ 干员（409 = 17×3★ + 61×4★ + 195×5★ + 136×6★；玩法内按稀有度 ≥3 过滤）。
+- **实装日期**：优先 wiki.gg 卡池 startTimeCN（+8h 修正时区）；与 PRTS 页面创建时间相差 >30 天取较早者；无卡池记录的赠送/商店干员用 PRTS 创建时间；3★ 等低星干员取 PRTS 干员页「上线时间」（raw/prts_online.json，PRTS wikitext 获得方式模板）。
+- **3★ 档案**：种族/画师/声优来自 PRTS wikitext（raw/prts_lore.json），性别来自 tl-akhr，头像从 PRTS `File:头像_<干员名>.png`（media.prts.wiki 按 md5 路径直链 curl）。
 - **播放量**：优先干员个人「前瞻PV/技能展示PV」；无个人 PV 的取「实装活动宣传PV」（实装日前 24 天窗口内最近的活动 PV）。官号联合投稿视频不在其空间列表中，相关干员不进入人气对决题池。
 - **连线唯一解**：枚举 16 人中所有共享某维度同值的四人组，exact-cover 计数必须为 1；组内 4 人必须是该值在 16 人中的全部命中。

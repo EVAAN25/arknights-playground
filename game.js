@@ -81,8 +81,8 @@
 
   // ---------- 玩法 0：猜干员（wordle 式七维比对） ----------
 
-  // 题池开关：true 时把 4★ 也放进题池（默认只 5★+6★）
-  const GUESS_INCLUDE_R4 = false;
+  // 题池最低星级：3（3★~6★ 全部入池）
+  const GUESS_MIN_RARITY = 3;
   const GUESS_MAX_TRIES = 6;
   const GUESS_CELL_ORDER = ["rarity", "prof", "sub", "faction", "race", "sex", "release"];
   const GUESS_CELL_LABEL = {
@@ -91,9 +91,9 @@
   };
   const GUESS_CELL_EMOJI = { green: "🟩", red: "🟥", up: "⬆️", down: "⬇️" };
 
-  // 题池：release 非空、sex 非空（排除谜语人），星级按开关
-  function guessPool(ops, includeR4) {
-    const minR = (includeR4 == null ? GUESS_INCLUDE_R4 : includeR4) ? 4 : 5;
+  // 题池：release 非空、sex 非空（排除谜语人），星级 ≥ GUESS_MIN_RARITY
+  function guessPool(ops, minR) {
+    minR = minR == null ? GUESS_MIN_RARITY : minR;
     return ops.filter((o) => o.rarity >= minR && o.release && o.sex);
   }
 
@@ -209,14 +209,14 @@
   const VOICE_SEGMENTS = [2, 5, 10, Infinity]; // 分段解锁秒数，Infinity = 完整
   const VOICE_MAX_TRIES = 6;
 
-  // 题池：有中文语音且稀有度 ≥5 的干员，元素 {op, clips}
+  // 题池：有中文语音且稀有度 ≥3 的干员，元素 {op, clips}
   function voicePool(ops, voice) {
     const byId = {};
     ops.forEach((o) => { byId[o.id] = o; });
     const pool = [];
     for (const id of Object.keys(voice)) {
       const op = byId[id];
-      if (op && op.rarity >= 5 && voice[id].length) pool.push({ op, clips: voice[id] });
+      if (op && op.rarity >= 3 && voice[id].length) pool.push({ op, clips: voice[id] });
     }
     pool.sort((a, b) => a.op.id.localeCompare(b.op.id));
     return pool;
@@ -426,9 +426,9 @@
   const TL_MAX_TRIES = 3;
   const TL_MIN_GAP_DAYS = 30;
 
-  // 题池：release 非空的 5★+6★
+  // 题池：release 非空的 3★~6★
   function timelinePool(ops) {
-    return ops.filter((o) => o.release && o.rarity >= 5);
+    return ops.filter((o) => o.release && o.rarity >= 3);
   }
 
   function dayDiff(a, b) {
@@ -501,7 +501,7 @@
     SITE_NAME, SITE_URL,
     hash32, mulberry32, dateStr, dailyIndex, shuffle, normalize, search,
     // 猜干员
-    GUESS_INCLUDE_R4, GUESS_MAX_TRIES, GUESS_CELL_ORDER, GUESS_CELL_LABEL, GUESS_CELL_EMOJI,
+    GUESS_MIN_RARITY, GUESS_MAX_TRIES, GUESS_CELL_ORDER, GUESS_CELL_LABEL, GUESS_CELL_EMOJI,
     guessPool, guessDaily, guessRandom, cmpNumeric, numCell, subNorm, guessCompare, guessGrade, buildGuessShare,
     cluesForTarget,
     // 语音猜人
