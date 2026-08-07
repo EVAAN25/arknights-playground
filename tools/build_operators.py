@@ -11,12 +11,13 @@ lore = json.load(open(f'{RAW}/prts_lore.json'))
 created = json.load(open(f'{RAW}/prts_created.json'))
 banners = json.load(open(f'{RAW}/banners_cn.json'))
 tl = json.load(open(f'{RAW}/tl-akhr.json'))
+charinfo = json.load(open(f'{RAW}/prts_charinfo.json')) if os.path.exists(f'{RAW}/prts_charinfo.json') else {}
 
 PROF = {'MEDIC':'医疗','PIONEER':'先锋','WARRIOR':'近卫','SNIPER':'狙击','CASTER':'术师','SUPPORT':'辅助','TANK':'重装','SPECIAL':'特种'}
 NATION = {'columbia':'哥伦比亚','victoria':'维多利亚','iberia':'伊比利亚','ursus':'乌萨斯','lungmen':'龙门','siracusa':'叙拉古','sargon':'萨尔贡','higashi':'东国','kazimierz':'卡西米尔','rhodes':'罗德岛','yan':'炎国','rim':'雷姆必拓','sami':'萨米','egir':'阿戈尔','minos':'米诺斯','bolivar':'玻利瓦尔','laterano':'拉特兰','kjerag':'谢拉格','leithanien':'莱塔尼亚'}
 GROUP = {'rhine':'莱茵生命','penguin':'企鹅物流','siesta':'汐斯塔','pinus':'红松骑士团','blacksteel':'黑钢国际','lgd':'龙门近卫局','glasgow':'格拉斯哥帮','abyssal':'深海猎人','tara':'塔拉','sweep':'S.W.E.E.P.','babel':'巴别塔','elite':'罗德岛精英干员','sui':'岁','karlan':'喀兰贸易'}
 TEAM = {'student':'乌萨斯学生自治团','rainbow':'彩虹小队','followers':'使徒','laios':'莱欧斯小队','mujica':'Ave Mujica','lee':'鲤氏侦探事务所','chiave':'贾维团伙','action4':'行动组A4','reserve1':'行动预备组A1','reserve4':'行动预备组A4','reserve6':'行动预备组A6'}
-SUBPROF = {'pioneer':'尖兵','charger':'冲锋手','tactician':'战术家','agent':'情报官','bearer':'执旗手','fastshot':'速射手','aoesniper':'炮手','deadeye':'神射手','heavyshooter':'重射手','shotprotector':'哨戒铁卫','protector':'铁卫','primprotector':'本源铁卫','guardian':'守护者','juggernaut':'不屈者','duelist':'决战者','artsprotector':'驭法铁卫','physician':'医师','ringhealer':'疗养师','grouphealer':'群愈师','wanderer':'巡旅者','incantation':'咒愈师','chainhealer':'链愈师','corecaster':'中坚术师','splashcaster':'扩散术师','primcaster':'秘术师','funnel':'驭械术师','chain':'链术师','phalanx':'阵法术师','mystic':'链术师','blastcaster':'轰击术师','slower':'凝滞师','summoner':'召唤师','blessing':'护佑者','craftsman':'工匠','hymn':'吟游者','ritualist':'巫役','fearless':'无畏者','centurion':'强攻手','lord':'领主','sword':'剑豪','fighter':'斗士','artsfghter':'术战者','instructor':'教官','musha':'武者','reaper':'收割者','hammer':'撼地者','librator':'解放者','executor':'处决者','traper':'陷阱师','pusher':'推击手','hook':'钩索师','stalker':'行商','geek':'怪杰','ambusher':'伏击客','merchant':'行商','dollkeeper':'傀儡师','sacrifice':'快速复活','apostle':'怪杰'}
+SUBPROF = {"agent": "情报官", "alchemist": "炼金师", "aoesniper": "炮手", "artsfghter": "术战者", "artsprotector": "驭法铁卫", "bard": "吟游者", "bearer": "执旗手", "blastcaster": "轰击术师", "blessing": "护佑者", "bombarder": "投掷手", "centurion": "强攻手", "chain": "链术师", "chainhealer": "链愈师", "charger": "冲锋手", "closerange": "重射手", "corecaster": "中坚术师", "counsellor": "策士", "craftsman": "工匠", "crusher": "重剑手", "dollkeeper": "傀儡师", "duelist": "决战者", "executor": "处决者", "fastshot": "速射手", "fearless": "无畏者", "fighter": "斗士", "fortress": "要塞", "funnel": "驭械术师", "geek": "怪杰", "guardian": "守护者", "hammer": "撼地者", "healer": "疗养师", "hookmaster": "钩索师", "hunter": "猎手", "incantationmedic": "咒愈师", "instructor": "教官", "librator": "解放者", "longrange": "神射手", "loopshooter": "回环射手", "lord": "领主", "mercenary": "佣兵", "merchant": "行商", "musha": "武者", "mystic": "秘术师", "phalanx": "阵法术师", "physician": "医师", "pioneer": "尖兵", "primcaster": "本源术师", "primguard": "本源近卫", "primprotector": "本源铁卫", "protector": "铁卫", "pusher": "推击手", "reaper": "收割者", "reaperrange": "散射手", "ringhealer": "群愈师", "ritualist": "巫役", "shotprotector": "哨戒铁卫", "siegesniper": "攻城手", "skybreaker": "裂空炮手", "skywalker": "巡空者", "slower": "凝滞师", "soulcaster": "塑灵术师", "splashcaster": "扩散术师", "stalker": "伏击客", "summoner": "召唤师", "supportiveranger": "游击手", "sword": "剑豪", "tactician": "战术家", "traper": "陷阱师", "underminer": "削弱者", "unyield": "不屈者", "wandermedic": "行医", "watchman": "守望者"}
 
 def norm(s):
     s = unicodedata.normalize('NFKD', s or '')
@@ -82,7 +83,7 @@ for cid, v in chartab.items():
         'id': cid, 'name': name,
         'rarity': int(r[-1]),
         'prof': PROF.get(v['profession'], v['profession']),
-        'sub': SUBPROF.get(v.get('subProfessionId'), ''),
+        'sub': (charinfo.get(v['name']) or {}).get('sub') or SUBPROF.get(v.get('subProfessionId'), ''),
         'faction': GROUP.get(v.get('groupId')) or TEAM.get(v.get('teamId')) or NATION.get(v.get('nationId')) or '罗德岛',
         'nation': NATION.get(v.get('nationId'), ''),
     }

@@ -1,5 +1,53 @@
 [
  {
+  "id": "char_002_amiya",
+  "name": "阿米娅",
+  "rarity": 5,
+  "prof": "术师",
+  "sub": "中坚术师",
+  "faction": "罗德岛",
+  "nation": "罗德岛",
+  "sex": "女",
+  "race": "卡特斯",
+  "artist": "唯@W",
+  "cvJp": "黑泽朋世",
+  "cvCn": "陶典",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_101_sora",
+  "name": "空",
+  "rarity": 5,
+  "prof": "辅助",
+  "sub": "吟游者",
+  "faction": "企鹅物流",
+  "nation": "龙门",
+  "sex": "女",
+  "race": "因经纪公司要求不公开",
+  "artist": "幻象黑兔",
+  "cvJp": "铃木实里",
+  "cvCn": "侯小菲",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_102_texas",
+  "name": "德克萨斯",
+  "rarity": 5,
+  "prof": "先锋",
+  "sub": "尖兵",
+  "faction": "企鹅物流",
+  "nation": "龙门",
+  "sex": "女",
+  "race": "鲁珀",
+  "artist": "幻象黑兔",
+  "cvJp": "田所梓",
+  "cvCn": "杨梦露",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
   "id": "char_103_angel",
   "name": "能天使",
   "rarity": 6,
@@ -13,7 +61,55 @@
   "cvJp": "石见舞菜香",
   "cvCn": "蔡书瑾",
   "release": "2019-04-30",
-  "releaseSrc": "mixed"
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_106_franka",
+  "name": "芙兰卡",
+  "rarity": 5,
+  "prof": "近卫",
+  "sub": "无畏者",
+  "faction": "黑钢国际",
+  "nation": "哥伦比亚",
+  "sex": "女",
+  "race": "沃尔珀",
+  "artist": "TOKI",
+  "cvJp": "加隈亚衣",
+  "cvCn": "Vila",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_107_liskam",
+  "name": "雷蛇",
+  "rarity": 5,
+  "prof": "重装",
+  "sub": "哨戒铁卫",
+  "faction": "黑钢国际",
+  "nation": "哥伦比亚",
+  "sex": "女",
+  "race": "瓦伊凡",
+  "artist": "TOKI",
+  "cvJp": "石川由依",
+  "cvCn": "张若瑜",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_108_silent",
+  "name": "赫默",
+  "rarity": 5,
+  "prof": "医疗",
+  "sub": "医师",
+  "faction": "莱茵生命",
+  "nation": "哥伦比亚",
+  "sex": "女",
+  "race": "黎博利",
+  "artist": "NoriZC",
+  "cvJp": "鬼头明里",
+  "cvCn": "梁爽",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_109_fmout",
@@ -44,6 +140,38 @@
   "artist": "REALMBW",
   "cvJp": "大地叶",
   "cvCn": "米糊",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_112_siege",
+  "name": "推进之王",
+  "rarity": 6,
+  "prof": "先锋",
+  "sub": "尖兵",
+  "faction": "格拉斯哥帮",
+  "nation": "维多利亚",
+  "sex": "女",
+  "race": "阿斯兰",
+  "artist": "Infukun",
+  "cvJp": "川澄绫子",
+  "cvCn": "梁爽",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_115_headbr",
+  "name": "凛冬",
+  "rarity": 5,
+  "prof": "先锋",
+  "sub": "尖兵",
+  "faction": "乌萨斯学生自治团",
+  "nation": "乌萨斯",
+  "sex": "女",
+  "race": "乌萨斯",
+  "artist": "Skade",
+  "cvJp": "小清水亚美",
+  "cvCn": "有匪",
   "release": "2019-04-30",
   "releaseSrc": "prts-online"
  },
@@ -192,6 +320,38 @@
   "releaseSrc": "prts-online"
  },
  {
+  "id": "char_128_plosis",
+  "name": "白面鸮",
+  "rarity": 5,
+  "prof": "医疗",
+  "sub": "群愈师",
+  "faction": "莱茵生命",
+  "nation": "哥伦比亚",
+  "sex": "女",
+  "race": "黎博利",
+  "artist": "竜崎いち",
+  "cvJp": "金元寿子",
+  "cvCn": "龟娘",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_129_bluep",
+  "name": "蓝毒",
+  "rarity": 5,
+  "prof": "狙击",
+  "sub": "速射手",
+  "faction": "伊比利亚",
+  "nation": "伊比利亚",
+  "sex": "女",
+  "race": "安努拉",
+  "artist": "LLC",
+  "cvJp": "种崎敦美",
+  "cvCn": "陈彦亦",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
   "id": "char_130_doberm",
   "name": "杜宾",
   "rarity": 4,
@@ -208,6 +368,54 @@
   "releaseSrc": "prts-online"
  },
  {
+  "id": "char_134_ifrit",
+  "name": "伊芙利特",
+  "rarity": 6,
+  "prof": "术师",
+  "sub": "轰击术师",
+  "faction": "莱茵生命",
+  "nation": "哥伦比亚",
+  "sex": "女",
+  "race": "萨卡兹",
+  "artist": "NoriZC",
+  "cvJp": "花守由美里",
+  "cvCn": "琦雯",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_136_hsguma",
+  "name": "星熊",
+  "rarity": 6,
+  "prof": "重装",
+  "sub": "铁卫",
+  "faction": "龙门近卫局",
+  "nation": "龙门",
+  "sex": "女",
+  "race": "鬼",
+  "artist": "Infukun",
+  "cvJp": "安野希世乃",
+  "cvCn": "陈雨",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_140_whitew",
+  "name": "拉普兰德",
+  "rarity": 5,
+  "prof": "近卫",
+  "sub": "领主",
+  "faction": "叙拉古",
+  "nation": "叙拉古",
+  "sex": "女",
+  "race": "鲁珀",
+  "artist": "幻象黑兔",
+  "cvJp": "今井麻美",
+  "cvCn": "陈彦亦",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
   "id": "char_141_nights",
   "name": "夜烟",
   "rarity": 4,
@@ -220,6 +428,86 @@
   "artist": "Skade",
   "cvJp": "卢婷",
   "cvCn": "钟可",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_143_ghost",
+  "name": "幽灵鲨",
+  "rarity": 5,
+  "prof": "近卫",
+  "sub": "强攻手",
+  "faction": "深海猎人",
+  "nation": "阿戈尔",
+  "sex": "女",
+  "race": "未公开",
+  "artist": "Skade",
+  "cvJp": "浅仓杏美",
+  "cvCn": "张安琪",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_144_red",
+  "name": "红",
+  "rarity": 5,
+  "prof": "特种",
+  "sub": "处决者",
+  "faction": "S.W.E.E.P.",
+  "nation": "罗德岛",
+  "sex": "女",
+  "race": "鲁珀",
+  "artist": "Infukun",
+  "cvJp": "小清水亚美",
+  "cvCn": "木雅瑞林",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_145_prove",
+  "name": "普罗旺斯",
+  "rarity": 5,
+  "prof": "狙击",
+  "sub": "重射手",
+  "faction": "叙拉古",
+  "nation": "叙拉古",
+  "sex": "女",
+  "race": "鲁珀",
+  "artist": "渣念",
+  "cvJp": "影山灯",
+  "cvCn": "徐晨",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_147_shining",
+  "name": "闪灵",
+  "rarity": 6,
+  "prof": "医疗",
+  "sub": "医师",
+  "faction": "使徒",
+  "nation": "",
+  "sex": "女",
+  "race": "萨卡兹",
+  "artist": "竜崎いち",
+  "cvJp": "清水理沙",
+  "cvCn": "琦雯",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_148_nearl",
+  "name": "临光",
+  "rarity": 5,
+  "prof": "重装",
+  "sub": "守护者",
+  "faction": "使徒",
+  "nation": "",
+  "sex": "女",
+  "race": "库兰塔",
+  "artist": "竜崎いち",
+  "cvJp": "佐仓绫音",
+  "cvCn": "穆雪婷",
   "release": "2019-04-30",
   "releaseSrc": "prts-online"
  },
@@ -256,6 +544,54 @@
   "releaseSrc": "prts-online"
  },
  {
+  "id": "char_155_tiger",
+  "name": "因陀罗",
+  "rarity": 5,
+  "prof": "近卫",
+  "sub": "斗士",
+  "faction": "格拉斯哥帮",
+  "nation": "维多利亚",
+  "sex": "女",
+  "race": "菲林",
+  "artist": "Infukun",
+  "cvJp": "原优子",
+  "cvCn": "苗洋",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_158_milu",
+  "name": "守林人",
+  "rarity": 5,
+  "prof": "狙击",
+  "sub": "神射手",
+  "faction": "罗德岛",
+  "nation": "罗德岛",
+  "sex": "女",
+  "race": "埃拉菲亚",
+  "artist": "aZLing4",
+  "cvJp": "卢婷",
+  "cvCn": "刘十四",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_163_hpsts",
+  "name": "火神",
+  "rarity": 5,
+  "prof": "重装",
+  "sub": "不屈者",
+  "faction": "米诺斯",
+  "nation": "米诺斯",
+  "sex": "女",
+  "race": "丰蹄",
+  "artist": "neco",
+  "cvJp": "佐藤利奈",
+  "cvCn": "小米",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
   "id": "char_166_skfire",
   "name": "天火",
   "rarity": 5,
@@ -269,14 +605,110 @@
   "cvJp": "植田佳奈",
   "cvCn": "许潇文",
   "release": "2019-04-30",
-  "releaseSrc": "mixed"
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_171_bldsk",
+  "name": "华法琳",
+  "rarity": 5,
+  "prof": "医疗",
+  "sub": "医师",
+  "faction": "罗德岛",
+  "nation": "罗德岛",
+  "sex": "女",
+  "race": "萨卡兹",
+  "artist": "时辰",
+  "cvJp": "石见舞菜香",
+  "cvCn": "格林",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_172_svrash",
+  "name": "银灰",
+  "rarity": 6,
+  "prof": "近卫",
+  "sub": "领主",
+  "faction": "喀兰贸易",
+  "nation": "谢拉格",
+  "sex": "男",
+  "race": "菲林",
+  "artist": "竜崎いち",
+  "cvJp": "小西克幸",
+  "cvCn": "吴磊",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_173_slchan",
+  "name": "崖心",
+  "rarity": 5,
+  "prof": "特种",
+  "sub": "钩索师",
+  "faction": "谢拉格",
+  "nation": "谢拉格",
+  "sex": "女",
+  "race": "菲林",
+  "artist": "竜崎いち",
+  "cvJp": "白石凉子",
+  "cvCn": "富贵",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_174_slbell",
+  "name": "初雪",
+  "rarity": 5,
+  "prof": "辅助",
+  "sub": "削弱者",
+  "faction": "谢拉格",
+  "nation": "谢拉格",
+  "sex": "女",
+  "race": "菲林",
+  "artist": "竜崎いち",
+  "cvJp": "早见沙织",
+  "cvCn": "穆雪婷",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_179_cgbird",
+  "name": "夜莺",
+  "rarity": 6,
+  "prof": "医疗",
+  "sub": "群愈师",
+  "faction": "使徒",
+  "nation": "",
+  "sex": "女",
+  "race": "萨卡兹",
+  "artist": "Skade",
+  "cvJp": "石川由依",
+  "cvCn": "时音",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_180_amgoat",
+  "name": "艾雅法拉",
+  "rarity": 6,
+  "prof": "术师",
+  "sub": "中坚术师",
+  "faction": "莱塔尼亚",
+  "nation": "莱塔尼亚",
+  "sex": "女",
+  "race": "卡普里尼",
+  "artist": "Anmi",
+  "cvJp": "种田梨沙",
+  "cvCn": "降温",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_181_flower",
   "name": "调香师",
   "rarity": 4,
   "prof": "医疗",
-  "sub": "疗养师",
+  "sub": "群愈师",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -368,6 +800,22 @@
   "releaseSrc": "prts-online"
  },
  {
+  "id": "char_195_glassb",
+  "name": "真理",
+  "rarity": 5,
+  "prof": "辅助",
+  "sub": "凝滞师",
+  "faction": "乌萨斯学生自治团",
+  "nation": "乌萨斯",
+  "sex": "女",
+  "race": "乌萨斯",
+  "artist": "Skade",
+  "cvJp": "悠木碧",
+  "cvCn": "Z君",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
   "id": "char_196_sunbr",
   "name": "古米",
   "rarity": 4,
@@ -400,6 +848,22 @@
   "releaseSrc": "prts-online"
  },
  {
+  "id": "char_199_yak",
+  "name": "角峰",
+  "rarity": 4,
+  "prof": "重装",
+  "sub": "铁卫",
+  "faction": "喀兰贸易",
+  "nation": "谢拉格",
+  "sex": "男",
+  "race": "丰蹄",
+  "artist": "竜崎いち",
+  "cvJp": "武内骏辅",
+  "cvCn": "黑石稔",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
   "id": "char_201_moeshd",
   "name": "可颂",
   "rarity": 5,
@@ -413,7 +877,39 @@
   "cvJp": "久保百合花",
   "cvCn": "刘雯",
   "release": "2019-04-30",
-  "releaseSrc": "mixed"
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_202_demkni",
+  "name": "塞雷娅",
+  "rarity": 6,
+  "prof": "重装",
+  "sub": "守护者",
+  "faction": "莱茵生命",
+  "nation": "哥伦比亚",
+  "sex": "女",
+  "race": "瓦伊凡",
+  "artist": "NoriZC",
+  "cvJp": "井口裕香",
+  "cvCn": "陈彦亦",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_204_platnm",
+  "name": "白金",
+  "rarity": 5,
+  "prof": "狙击",
+  "sub": "速射手",
+  "faction": "卡西米尔",
+  "nation": "卡西米尔",
+  "sex": "女",
+  "race": "库兰塔",
+  "artist": "Skade",
+  "cvJp": "北岛瑞月",
+  "cvCn": "张琦",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_208_melan",
@@ -496,6 +992,54 @@
   "releaseSrc": "prts-online"
  },
  {
+  "id": "char_215_mantic",
+  "name": "狮蝎",
+  "rarity": 5,
+  "prof": "特种",
+  "sub": "伏击客",
+  "faction": "萨尔贡",
+  "nation": "萨尔贡",
+  "sex": "女",
+  "race": "曼提柯",
+  "artist": "竜崎いち",
+  "cvJp": "诹访彩花",
+  "cvCn": "吱毛",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_219_meteo",
+  "name": "陨星",
+  "rarity": 5,
+  "prof": "狙击",
+  "sub": "炮手",
+  "faction": "罗德岛",
+  "nation": "罗德岛",
+  "sex": "女",
+  "race": "萨卡兹",
+  "artist": "TOKI",
+  "cvJp": "种田梨沙",
+  "cvCn": "钟可",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_230_savage",
+  "name": "暴行",
+  "rarity": 5,
+  "prof": "近卫",
+  "sub": "强攻手",
+  "faction": "雷姆必拓",
+  "nation": "雷姆必拓",
+  "sex": "女",
+  "race": "卡特斯",
+  "artist": "TOKI",
+  "cvJp": "平井祥惠",
+  "cvCn": "木雅瑞林",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
   "id": "char_235_jesica",
   "name": "杰西卡",
   "rarity": 4,
@@ -508,6 +1052,22 @@
   "artist": "m9nokuro",
   "cvJp": "广桥凉",
   "cvCn": "侯小菲",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_236_rope",
+  "name": "暗索",
+  "rarity": 4,
+  "prof": "特种",
+  "sub": "钩索师",
+  "faction": "龙门",
+  "nation": "龙门",
+  "sex": "女",
+  "race": "卡特斯",
+  "artist": "m9nokuro",
+  "cvJp": "三浦千幸",
+  "cvCn": "张琦",
   "release": "2019-04-30",
   "releaseSrc": "prts-online"
  },
@@ -540,6 +1100,38 @@
   "artist": "m9nokuro",
   "cvJp": "杉浦栞",
   "cvCn": "张若瑜",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_241_panda",
+  "name": "食铁兽",
+  "rarity": 5,
+  "prof": "特种",
+  "sub": "推击手",
+  "faction": "龙门",
+  "nation": "龙门",
+  "sex": "女",
+  "race": "乌萨斯",
+  "artist": "RAN",
+  "cvJp": "园崎未惠",
+  "cvCn": "辛悦",
+  "release": "2019-04-30",
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_242_otter",
+  "name": "梅尔",
+  "rarity": 5,
+  "prof": "辅助",
+  "sub": "召唤师",
+  "faction": "莱茵生命",
+  "nation": "哥伦比亚",
+  "sex": "女",
+  "race": "阿纳缇",
+  "artist": "幻象黑兔",
+  "cvJp": "斋藤千和",
+  "cvCn": "吱毛",
   "release": "2019-04-30",
   "releaseSrc": "prts-online"
  },
@@ -621,151 +1213,7 @@
   "cvJp": "大桥彩香",
   "cvCn": "何雨薇",
   "release": "2019-04-30",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_102_texas",
-  "name": "德克萨斯",
-  "rarity": 5,
-  "prof": "先锋",
-  "sub": "尖兵",
-  "faction": "企鹅物流",
-  "nation": "龙门",
-  "sex": "女",
-  "race": "鲁珀",
-  "artist": "幻象黑兔",
-  "cvJp": "田所梓",
-  "cvCn": "杨梦露",
-  "release": "2019-05-15",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_106_franka",
-  "name": "芙兰卡",
-  "rarity": 5,
-  "prof": "近卫",
-  "sub": "无畏者",
-  "faction": "黑钢国际",
-  "nation": "哥伦比亚",
-  "sex": "女",
-  "race": "沃尔珀",
-  "artist": "TOKI",
-  "cvJp": "加隈亚衣",
-  "cvCn": "Vila",
-  "release": "2019-05-15",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_112_siege",
-  "name": "推进之王",
-  "rarity": 6,
-  "prof": "先锋",
-  "sub": "尖兵",
-  "faction": "格拉斯哥帮",
-  "nation": "维多利亚",
-  "sex": "女",
-  "race": "阿斯兰",
-  "artist": "Infukun",
-  "cvJp": "川澄绫子",
-  "cvCn": "梁爽",
-  "release": "2019-05-15",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_179_cgbird",
-  "name": "夜莺",
-  "rarity": 6,
-  "prof": "医疗",
-  "sub": "疗养师",
-  "faction": "使徒",
-  "nation": "",
-  "sex": "女",
-  "race": "萨卡兹",
-  "artist": "Skade",
-  "cvJp": "石川由依",
-  "cvCn": "时音",
-  "release": "2019-05-15",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_204_platnm",
-  "name": "白金",
-  "rarity": 5,
-  "prof": "狙击",
-  "sub": "速射手",
-  "faction": "卡西米尔",
-  "nation": "卡西米尔",
-  "sex": "女",
-  "race": "库兰塔",
-  "artist": "Skade",
-  "cvJp": "北岛瑞月",
-  "cvCn": "张琦",
-  "release": "2019-05-15",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_172_svrash",
-  "name": "银灰",
-  "rarity": 6,
-  "prof": "近卫",
-  "sub": "领主",
-  "faction": "喀兰贸易",
-  "nation": "谢拉格",
-  "sex": "男",
-  "race": "菲林",
-  "artist": "竜崎いち",
-  "cvJp": "小西克幸",
-  "cvCn": "吴磊",
-  "release": "2019-05-23",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_173_slchan",
-  "name": "崖心",
-  "rarity": 5,
-  "prof": "特种",
-  "sub": "",
-  "faction": "谢拉格",
-  "nation": "谢拉格",
-  "sex": "女",
-  "race": "菲林",
-  "artist": "竜崎いち",
-  "cvJp": "白石凉子",
-  "cvCn": "富贵",
-  "release": "2019-05-23",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_174_slbell",
-  "name": "初雪",
-  "rarity": 5,
-  "prof": "辅助",
-  "sub": "",
-  "faction": "谢拉格",
-  "nation": "谢拉格",
-  "sex": "女",
-  "race": "菲林",
-  "artist": "竜崎いち",
-  "cvJp": "早见沙织",
-  "cvCn": "穆雪婷",
-  "release": "2019-05-23",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_199_yak",
-  "name": "角峰",
-  "rarity": 4,
-  "prof": "重装",
-  "sub": "铁卫",
-  "faction": "喀兰贸易",
-  "nation": "谢拉格",
-  "sex": "男",
-  "race": "丰蹄",
-  "artist": "竜崎いち",
-  "cvJp": "武内骏辅",
-  "cvCn": "黑石稔",
-  "release": "2019-05-23",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_282_catap",
@@ -784,38 +1232,6 @@
   "releaseSrc": "prts-online"
  },
  {
-  "id": "char_108_silent",
-  "name": "赫默",
-  "rarity": 5,
-  "prof": "医疗",
-  "sub": "医师",
-  "faction": "莱茵生命",
-  "nation": "哥伦比亚",
-  "sex": "女",
-  "race": "黎博利",
-  "artist": "NoriZC",
-  "cvJp": "鬼头明里",
-  "cvCn": "梁爽",
-  "release": "2019-05-30",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_134_ifrit",
-  "name": "伊芙利特",
-  "rarity": 6,
-  "prof": "术师",
-  "sub": "轰击术师",
-  "faction": "莱茵生命",
-  "nation": "哥伦比亚",
-  "sex": "女",
-  "race": "萨卡兹",
-  "artist": "NoriZC",
-  "cvJp": "花守由美里",
-  "cvCn": "琦雯",
-  "release": "2019-05-30",
-  "releaseSrc": "banner"
- },
- {
   "id": "char_137_brownb",
   "name": "猎蜂",
   "rarity": 4,
@@ -829,39 +1245,7 @@
   "cvJp": "原优子",
   "cvCn": "忙音",
   "release": "2019-05-30",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_140_whitew",
-  "name": "拉普兰德",
-  "rarity": 5,
-  "prof": "近卫",
-  "sub": "领主",
-  "faction": "叙拉古",
-  "nation": "叙拉古",
-  "sex": "女",
-  "race": "鲁珀",
-  "artist": "幻象黑兔",
-  "cvJp": "今井麻美",
-  "cvCn": "陈彦亦",
-  "release": "2019-05-30",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_148_nearl",
-  "name": "临光",
-  "rarity": 5,
-  "prof": "重装",
-  "sub": "守护者",
-  "faction": "使徒",
-  "nation": "",
-  "sex": "女",
-  "race": "库兰塔",
-  "artist": "竜崎いち",
-  "cvJp": "佐仓绫音",
-  "cvCn": "穆雪婷",
-  "release": "2019-05-30",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_164_nightm",
@@ -877,55 +1261,23 @@
   "cvJp": "高桥李依",
   "cvCn": "张洪",
   "release": "2019-05-30",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
-  "id": "char_180_amgoat",
-  "name": "艾雅法拉",
-  "rarity": 6,
-  "prof": "术师",
-  "sub": "中坚术师",
-  "faction": "莱塔尼亚",
-  "nation": "莱塔尼亚",
-  "sex": "女",
-  "race": "卡普里尼",
-  "artist": "Anmi",
-  "cvJp": "种田梨沙",
-  "cvCn": "降温",
-  "release": "2019-05-30",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_236_rope",
-  "name": "暗索",
-  "rarity": 4,
-  "prof": "特种",
-  "sub": "",
-  "faction": "龙门",
-  "nation": "龙门",
-  "sex": "女",
-  "race": "卡特斯",
-  "artist": "m9nokuro",
-  "cvJp": "三浦千幸",
-  "cvCn": "张琦",
-  "release": "2019-05-30",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_242_otter",
-  "name": "梅尔",
+  "id": "char_220_grani",
+  "name": "格拉尼",
   "rarity": 5,
-  "prof": "辅助",
-  "sub": "召唤师",
-  "faction": "莱茵生命",
-  "nation": "哥伦比亚",
+  "prof": "先锋",
+  "sub": "冲锋手",
+  "faction": "维多利亚",
+  "nation": "维多利亚",
   "sex": "女",
-  "race": "阿纳缇",
-  "artist": "幻象黑兔",
-  "cvJp": "斋藤千和",
-  "cvCn": "吱毛",
+  "race": "库兰塔",
+  "artist": "alchemaniac",
+  "cvJp": "山崎遥",
+  "cvCn": "木雅瑞林",
   "release": "2019-05-30",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_263_skadi",
@@ -941,7 +1293,7 @@
   "cvJp": "佐藤利奈",
   "cvCn": "张琦",
   "release": "2019-05-30",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_283_midn",
@@ -960,342 +1312,6 @@
   "releaseSrc": "prts-online"
  },
  {
-  "id": "char_143_ghost",
-  "name": "幽灵鲨",
-  "rarity": 5,
-  "prof": "近卫",
-  "sub": "强攻手",
-  "faction": "深海猎人",
-  "nation": "阿戈尔",
-  "sex": "女",
-  "race": "未公开",
-  "artist": "Skade",
-  "cvJp": "浅仓杏美",
-  "cvCn": "张安琪",
-  "release": "2019-06-12",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_144_red",
-  "name": "红",
-  "rarity": 5,
-  "prof": "特种",
-  "sub": "处决者",
-  "faction": "S.W.E.E.P.",
-  "nation": "罗德岛",
-  "sex": "女",
-  "race": "鲁珀",
-  "artist": "Infukun",
-  "cvJp": "小清水亚美",
-  "cvCn": "木雅瑞林",
-  "release": "2019-06-12",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_147_shining",
-  "name": "闪灵",
-  "rarity": 6,
-  "prof": "医疗",
-  "sub": "医师",
-  "faction": "使徒",
-  "nation": "",
-  "sex": "女",
-  "race": "萨卡兹",
-  "artist": "竜崎いち",
-  "cvJp": "清水理沙",
-  "cvCn": "琦雯",
-  "release": "2019-06-12",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_202_demkni",
-  "name": "塞雷娅",
-  "rarity": 6,
-  "prof": "重装",
-  "sub": "守护者",
-  "faction": "莱茵生命",
-  "nation": "哥伦比亚",
-  "sex": "女",
-  "race": "瓦伊凡",
-  "artist": "NoriZC",
-  "cvJp": "井口裕香",
-  "cvCn": "陈彦亦",
-  "release": "2019-06-12",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_002_amiya",
-  "name": "阿米娅",
-  "rarity": 5,
-  "prof": "术师",
-  "sub": "中坚术师",
-  "faction": "罗德岛",
-  "nation": "罗德岛",
-  "sex": "女",
-  "race": "卡特斯",
-  "artist": "唯@W",
-  "cvJp": "黑泽朋世",
-  "cvCn": "陶典",
-  "release": "2019-06-21",
-  "releaseSrc": "prts-created"
- },
- {
-  "id": "char_101_sora",
-  "name": "空",
-  "rarity": 5,
-  "prof": "辅助",
-  "sub": "",
-  "faction": "企鹅物流",
-  "nation": "龙门",
-  "sex": "女",
-  "race": "因经纪公司要求不公开",
-  "artist": "幻象黑兔",
-  "cvJp": "铃木实里",
-  "cvCn": "侯小菲",
-  "release": "2019-06-21",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_115_headbr",
-  "name": "凛冬",
-  "rarity": 5,
-  "prof": "先锋",
-  "sub": "尖兵",
-  "faction": "乌萨斯学生自治团",
-  "nation": "乌萨斯",
-  "sex": "女",
-  "race": "乌萨斯",
-  "artist": "Skade",
-  "cvJp": "小清水亚美",
-  "cvCn": "有匪",
-  "release": "2019-06-21",
-  "releaseSrc": "prts-created"
- },
- {
-  "id": "char_128_plosis",
-  "name": "白面鸮",
-  "rarity": 5,
-  "prof": "医疗",
-  "sub": "疗养师",
-  "faction": "莱茵生命",
-  "nation": "哥伦比亚",
-  "sex": "女",
-  "race": "黎博利",
-  "artist": "竜崎いち",
-  "cvJp": "金元寿子",
-  "cvCn": "龟娘",
-  "release": "2019-06-21",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_129_bluep",
-  "name": "蓝毒",
-  "rarity": 5,
-  "prof": "狙击",
-  "sub": "速射手",
-  "faction": "伊比利亚",
-  "nation": "伊比利亚",
-  "sex": "女",
-  "race": "安努拉",
-  "artist": "LLC",
-  "cvJp": "种崎敦美",
-  "cvCn": "陈彦亦",
-  "release": "2019-06-21",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_145_prove",
-  "name": "普罗旺斯",
-  "rarity": 5,
-  "prof": "狙击",
-  "sub": "",
-  "faction": "叙拉古",
-  "nation": "叙拉古",
-  "sex": "女",
-  "race": "鲁珀",
-  "artist": "渣念",
-  "cvJp": "影山灯",
-  "cvCn": "徐晨",
-  "release": "2019-06-21",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_155_tiger",
-  "name": "因陀罗",
-  "rarity": 5,
-  "prof": "近卫",
-  "sub": "斗士",
-  "faction": "格拉斯哥帮",
-  "nation": "维多利亚",
-  "sex": "女",
-  "race": "菲林",
-  "artist": "Infukun",
-  "cvJp": "原优子",
-  "cvCn": "苗洋",
-  "release": "2019-06-21",
-  "releaseSrc": "prts-created"
- },
- {
-  "id": "char_158_milu",
-  "name": "守林人",
-  "rarity": 5,
-  "prof": "狙击",
-  "sub": "",
-  "faction": "罗德岛",
-  "nation": "罗德岛",
-  "sex": "女",
-  "race": "埃拉菲亚",
-  "artist": "aZLing4",
-  "cvJp": "卢婷",
-  "cvCn": "刘十四",
-  "release": "2019-06-21",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_163_hpsts",
-  "name": "火神",
-  "rarity": 5,
-  "prof": "重装",
-  "sub": "",
-  "faction": "米诺斯",
-  "nation": "米诺斯",
-  "sex": "女",
-  "race": "丰蹄",
-  "artist": "neco",
-  "cvJp": "佐藤利奈",
-  "cvCn": "小米",
-  "release": "2019-06-21",
-  "releaseSrc": "prts-created"
- },
- {
-  "id": "char_171_bldsk",
-  "name": "华法琳",
-  "rarity": 5,
-  "prof": "医疗",
-  "sub": "医师",
-  "faction": "罗德岛",
-  "nation": "罗德岛",
-  "sex": "女",
-  "race": "萨卡兹",
-  "artist": "时辰",
-  "cvJp": "石见舞菜香",
-  "cvCn": "格林",
-  "release": "2019-06-21",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_195_glassb",
-  "name": "真理",
-  "rarity": 5,
-  "prof": "辅助",
-  "sub": "凝滞师",
-  "faction": "乌萨斯学生自治团",
-  "nation": "乌萨斯",
-  "sex": "女",
-  "race": "乌萨斯",
-  "artist": "Skade",
-  "cvJp": "悠木碧",
-  "cvCn": "Z君",
-  "release": "2019-06-21",
-  "releaseSrc": "prts-created"
- },
- {
-  "id": "char_215_mantic",
-  "name": "狮蝎",
-  "rarity": 5,
-  "prof": "特种",
-  "sub": "行商",
-  "faction": "萨尔贡",
-  "nation": "萨尔贡",
-  "sex": "女",
-  "race": "曼提柯",
-  "artist": "竜崎いち",
-  "cvJp": "诹访彩花",
-  "cvCn": "吱毛",
-  "release": "2019-06-21",
-  "releaseSrc": "mixed"
- },
- {
-  "id": "char_220_grani",
-  "name": "格拉尼",
-  "rarity": 5,
-  "prof": "先锋",
-  "sub": "冲锋手",
-  "faction": "维多利亚",
-  "nation": "维多利亚",
-  "sex": "女",
-  "race": "库兰塔",
-  "artist": "alchemaniac",
-  "cvJp": "山崎遥",
-  "cvCn": "木雅瑞林",
-  "release": "2019-06-21",
-  "releaseSrc": "prts-created"
- },
- {
-  "id": "char_230_savage",
-  "name": "暴行",
-  "rarity": 5,
-  "prof": "近卫",
-  "sub": "强攻手",
-  "faction": "雷姆必拓",
-  "nation": "雷姆必拓",
-  "sex": "女",
-  "race": "卡特斯",
-  "artist": "TOKI",
-  "cvJp": "平井祥惠",
-  "cvCn": "木雅瑞林",
-  "release": "2019-06-21",
-  "releaseSrc": "prts-created"
- },
- {
-  "id": "char_107_liskam",
-  "name": "雷蛇",
-  "rarity": 5,
-  "prof": "重装",
-  "sub": "哨戒铁卫",
-  "faction": "黑钢国际",
-  "nation": "哥伦比亚",
-  "sex": "女",
-  "race": "瓦伊凡",
-  "artist": "TOKI",
-  "cvJp": "石川由依",
-  "cvCn": "张若瑜",
-  "release": "2019-06-22",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_136_hsguma",
-  "name": "星熊",
-  "rarity": 6,
-  "prof": "重装",
-  "sub": "铁卫",
-  "faction": "龙门近卫局",
-  "nation": "龙门",
-  "sex": "女",
-  "race": "鬼",
-  "artist": "Infukun",
-  "cvJp": "安野希世乃",
-  "cvCn": "陈雨",
-  "release": "2019-06-22",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_219_meteo",
-  "name": "陨星",
-  "rarity": 5,
-  "prof": "狙击",
-  "sub": "炮手",
-  "faction": "罗德岛",
-  "nation": "罗德岛",
-  "sex": "女",
-  "race": "萨卡兹",
-  "artist": "TOKI",
-  "cvJp": "种田梨沙",
-  "cvCn": "钟可",
-  "release": "2019-06-22",
-  "releaseSrc": "banner"
- },
- {
   "id": "char_010_chen",
   "name": "陈",
   "rarity": 6,
@@ -1309,23 +1325,7 @@
   "cvJp": "石上静香",
   "cvCn": "虫虫",
   "release": "2019-07-09",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_241_panda",
-  "name": "食铁兽",
-  "rarity": 5,
-  "prof": "特种",
-  "sub": "推击手",
-  "faction": "龙门",
-  "nation": "龙门",
-  "sex": "女",
-  "race": "乌萨斯",
-  "artist": "RAN",
-  "cvJp": "园崎未惠",
-  "cvCn": "辛悦",
-  "release": "2019-07-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_253_greyy",
@@ -1341,7 +1341,7 @@
   "cvJp": "渕上舞",
   "cvCn": "Z君",
   "release": "2019-07-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_281_popka",
@@ -1389,7 +1389,7 @@
   "cvJp": "德井青空",
   "cvCn": "谢莹",
   "release": "2019-07-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_298_susuro",
@@ -1405,7 +1405,7 @@
   "cvJp": "照井春佳",
   "cvCn": "辛悦",
   "release": "2019-08-27",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_326_glacus",
@@ -1421,14 +1421,14 @@
   "cvJp": "野中蓝",
   "cvCn": "张雯",
   "release": "2019-08-27",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_340_shwaz",
   "name": "黑",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "重射手",
   "faction": "汐斯塔",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -1437,14 +1437,14 @@
   "cvJp": "伊藤静",
   "cvCn": "梁上飞猫",
   "release": "2019-08-27",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_348_ceylon",
   "name": "锡兰",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "疗养师",
   "faction": "汐斯塔",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -1453,7 +1453,7 @@
   "cvJp": "荒川美穗",
   "cvCn": "橙璃",
   "release": "2019-08-27",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_151_myrtle",
@@ -1469,7 +1469,7 @@
   "cvJp": "下地紫野",
   "cvCn": "降温",
   "release": "2019-09-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_188_helage",
@@ -1485,7 +1485,7 @@
   "cvJp": "速水奖",
   "cvCn": "刘若班",
   "release": "2019-09-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_274_astesi",
@@ -1501,7 +1501,7 @@
   "cvJp": "名塚佳织",
   "cvCn": "kiyo",
   "release": "2019-09-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_260_durnar",
@@ -1533,7 +1533,7 @@
   "cvJp": "中村悠一",
   "cvCn": "冷泉夜月",
   "release": "2019-10-15",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_190_clour",
@@ -1549,7 +1549,7 @@
   "cvJp": "斋藤彩夏",
   "cvCn": "钟可",
   "release": "2019-10-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_248_mgllan",
@@ -1565,14 +1565,14 @@
   "cvJp": "伊瀬茉莉也",
   "cvCn": "瞿子兰",
   "release": "2019-10-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_279_excu",
   "name": "送葬人",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "散射手",
   "faction": "拉特兰",
   "nation": "拉特兰",
   "sex": "男",
@@ -1581,14 +1581,14 @@
   "cvJp": "近藤隆",
   "cvCn": "冷泉夜月",
   "release": "2019-10-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_275_breeze",
   "name": "微风",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "疗养师",
+  "sub": "群愈师",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -1596,15 +1596,15 @@
   "artist": "藻",
   "cvJp": "池泽春菜",
   "cvCn": "陈瑜瑾",
-  "release": "2019-10-30",
-  "releaseSrc": "prts-created"
+  "release": "2019-11-01",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_355_ethan",
   "name": "伊桑",
   "rarity": 4,
   "prof": "特种",
-  "sub": "行商",
+  "sub": "伏击客",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "男",
@@ -1629,7 +1629,7 @@
   "cvJp": "水桥香织",
   "cvCn": "刘雯",
   "release": "2019-11-19",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_213_mostma",
@@ -1645,7 +1645,7 @@
   "cvJp": "水树奈奈",
   "cvCn": "若舞",
   "release": "2019-11-19",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_243_waaifu",
@@ -1661,7 +1661,7 @@
   "cvJp": "小林优",
   "cvCn": "kiyo",
   "release": "2019-11-19",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_325_bison",
@@ -1677,7 +1677,7 @@
   "cvJp": "皆川纯子",
   "cvCn": "卢晓彤",
   "release": "2019-11-19",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_261_sddrag",
@@ -1693,7 +1693,7 @@
   "cvJp": "能登麻美子",
   "cvCn": "浮梦若薇",
   "release": "2019-12-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_356_broca",
@@ -1709,7 +1709,7 @@
   "cvJp": "鸟海浩辅",
   "cvCn": "刘照坤",
   "release": "2019-12-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_017_huang",
@@ -1725,14 +1725,14 @@
   "cvJp": "中原麻衣",
   "cvCn": "周童",
   "release": "2019-12-24",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_302_glaze",
   "name": "安比尔",
   "rarity": 4,
   "prof": "狙击",
-  "sub": "",
+  "sub": "神射手",
   "faction": "拉特兰",
   "nation": "拉特兰",
   "sex": "女",
@@ -1741,7 +1741,7 @@
   "cvJp": "西田望见",
   "cvCn": "柳知萧",
   "release": "2019-12-24",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_367_swllow",
@@ -1757,14 +1757,14 @@
   "cvJp": "福圆美里",
   "cvCn": "翁媛",
   "release": "2019-12-24",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_383_snsant",
   "name": "雪雉",
   "rarity": 5,
   "prof": "特种",
-  "sub": "",
+  "sub": "钩索师",
   "faction": "龙门",
   "nation": "龙门",
   "sex": "女",
@@ -1772,8 +1772,8 @@
   "artist": "NoriZC",
   "cvJp": "阿澄佳奈",
   "cvCn": "周童",
-  "release": "2020-01-08",
-  "releaseSrc": "prts-created"
+  "release": "2020-01-09",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2014_nian",
@@ -1789,7 +1789,7 @@
   "cvJp": "悠木碧",
   "cvCn": "杨鸥",
   "release": "2020-01-16",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_225_haak",
@@ -1805,7 +1805,7 @@
   "cvJp": "三瓶由布子",
   "cvCn": "Vila",
   "release": "2020-01-16",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_226_hmau",
@@ -1821,7 +1821,7 @@
   "cvJp": "日野聪",
   "cvCn": "吕书君",
   "release": "2020-01-16",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2013_cerber",
@@ -1837,7 +1837,7 @@
   "cvJp": "濑户麻沙美",
   "cvCn": "吱毛",
   "release": "2020-02-25",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_306_leizi",
@@ -1853,14 +1853,14 @@
   "cvJp": "甲斐田裕子",
   "cvCn": "徐徐",
   "release": "2020-02-25",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_385_finlpp",
   "name": "清流",
   "rarity": 4,
   "prof": "医疗",
-  "sub": "",
+  "sub": "疗养师",
   "faction": "炎国",
   "nation": "炎国",
   "sex": "女",
@@ -1885,7 +1885,7 @@
   "cvJp": "丰崎爱生",
   "cvCn": "沈玥",
   "release": "2020-03-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_252_bibeak",
@@ -1901,7 +1901,7 @@
   "cvJp": "藤田茜",
   "cvCn": "柳知萧",
   "release": "2020-03-17",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_337_utage",
@@ -1917,7 +1917,7 @@
   "cvJp": "吉冈茉祐",
   "cvCn": "徐徐",
   "release": "2020-03-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_379_sesa",
@@ -1933,7 +1933,7 @@
   "cvJp": "小野友树",
   "cvCn": "徐翔",
   "release": "2020-03-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_159_peacok",
@@ -1965,14 +1965,14 @@
   "cvJp": "石田彰",
   "cvCn": "刘照坤",
   "release": "2020-04-21",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_254_vodfox",
   "name": "巫恋",
   "rarity": 5,
   "prof": "辅助",
-  "sub": "",
+  "sub": "削弱者",
   "faction": "叙拉古",
   "nation": "叙拉古",
   "sex": "女",
@@ -1981,7 +1981,7 @@
   "cvJp": "藤田茜",
   "cvCn": "富贵",
   "release": "2020-04-21",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_301_cutter",
@@ -1997,7 +1997,7 @@
   "cvJp": "矢作纱友里",
   "cvCn": "苏婉",
   "release": "2020-04-21",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_333_sidero",
@@ -2013,7 +2013,7 @@
   "cvJp": "桑原由气",
   "cvCn": "陈瑜瑾",
   "release": "2020-04-21",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_113_cqbw",
@@ -2029,7 +2029,7 @@
   "cvJp": "竹达彩奈",
   "cvCn": "阮从青",
   "release": "2020-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_400_weedy",
@@ -2045,7 +2045,7 @@
   "cvJp": "长绳麻理亚",
   "cvCn": "宋媛媛",
   "release": "2020-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_401_elysm",
@@ -2061,7 +2061,7 @@
   "cvJp": "山中真寻",
   "cvCn": "杨凯祺",
   "release": "2020-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_343_tknogi",
@@ -2077,7 +2077,7 @@
   "cvJp": "大原沙耶香",
   "cvCn": "梁爽",
   "release": "2020-06-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_378_asbest",
@@ -2093,14 +2093,14 @@
   "cvJp": "真堂圭",
   "cvCn": "骆妍倩",
   "release": "2020-06-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_197_poca",
   "name": "早露",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "攻城手",
   "faction": "乌萨斯学生自治团",
   "nation": "乌萨斯",
   "sex": "女",
@@ -2109,7 +2109,7 @@
   "cvJp": "上田丽奈",
   "cvCn": "叶知秋",
   "release": "2020-06-18",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_258_podego",
@@ -2125,7 +2125,7 @@
   "cvJp": "植田光",
   "cvCn": "富贵",
   "release": "2020-06-18",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_373_lionhd",
@@ -2141,7 +2141,7 @@
   "cvJp": "齐藤壮马",
   "cvCn": "大白",
   "release": "2020-06-18",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_405_absin",
@@ -2157,7 +2157,7 @@
   "cvJp": "村川梨衣",
   "cvCn": "邵敏佳",
   "release": "2020-06-18",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_294_ayer",
@@ -2173,7 +2173,7 @@
   "cvJp": "梶裕贵",
   "cvCn": "黄进泽",
   "release": "2020-07-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_328_cammou",
@@ -2189,7 +2189,7 @@
   "cvJp": "黑濑优子",
   "cvCn": "张洪",
   "release": "2020-07-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_345_folnic",
@@ -2205,7 +2205,7 @@
   "cvJp": "近藤玲奈",
   "cvCn": "浮梦若薇",
   "release": "2020-07-09",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_358_lisa",
@@ -2221,7 +2221,7 @@
   "cvJp": "本渡枫",
   "cvCn": "皛四白",
   "release": "2020-07-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_336_folivo",
@@ -2237,7 +2237,7 @@
   "cvJp": "天野聪美",
   "cvCn": "米糊",
   "release": "2020-07-28",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_344_beewax",
@@ -2253,7 +2253,7 @@
   "cvJp": "喜多村英梨",
   "cvCn": "翁媛",
   "release": "2020-07-28",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_349_chiave",
@@ -2269,14 +2269,14 @@
   "cvJp": "羽多野涉",
   "cvCn": "张桐铭",
   "release": "2020-07-28",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_218_cuttle",
   "name": "安哲拉",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "神射手",
   "faction": "深海猎人",
   "nation": "阿戈尔",
   "sex": "女",
@@ -2285,7 +2285,7 @@
   "cvJp": "佐仓薰",
   "cvCn": "神隐",
   "release": "2020-08-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_272_strong",
@@ -2301,7 +2301,7 @@
   "cvJp": "白井悠介",
   "cvCn": "孙晔",
   "release": "2020-08-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_293_thorns",
@@ -2317,14 +2317,14 @@
   "cvJp": "石川界人",
   "cvCn": "徐翔",
   "release": "2020-08-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_366_acdrop",
   "name": "酸糖",
   "rarity": 4,
   "prof": "狙击",
-  "sub": "",
+  "sub": "重射手",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -2333,7 +2333,7 @@
   "cvJp": "中岛唯",
   "cvCn": "貔貅肛",
   "release": "2020-08-25",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_411_tomimi",
@@ -2349,7 +2349,7 @@
   "cvJp": "高桥美佳子",
   "cvCn": "穆雪婷",
   "release": "2020-08-25",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_415_flint",
@@ -2365,7 +2365,7 @@
   "cvJp": "山村响",
   "cvCn": "侯小菲",
   "release": "2020-08-25",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_416_zumama",
@@ -2381,7 +2381,7 @@
   "cvJp": "桑岛法子",
   "cvCn": "张小豆",
   "release": "2020-08-25",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_271_spikes",
@@ -2397,7 +2397,7 @@
   "cvJp": "松冈祯丞",
   "cvCn": "风袖",
   "release": "2020-09-24",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_350_surtr",
@@ -2413,7 +2413,7 @@
   "cvJp": "堀江由衣",
   "cvCn": "云鹤追",
   "release": "2020-09-24",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_365_aprl",
@@ -2429,7 +2429,7 @@
   "cvJp": "田中美海",
   "cvCn": "宋媛媛",
   "release": "2020-09-24",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_388_mint",
@@ -2445,7 +2445,7 @@
   "cvJp": "大和田仁美",
   "cvCn": "宋媛媛",
   "release": "2020-09-24",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_265_sophia",
@@ -2461,14 +2461,14 @@
   "cvJp": "高桥未奈美",
   "cvCn": "孙羽婷",
   "release": "2020-10-15",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_346_aosta",
   "name": "奥斯塔",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "散射手",
   "faction": "贾维团伙",
   "nation": "叙拉古",
   "sex": "男",
@@ -2477,7 +2477,7 @@
   "cvJp": "铃木达央",
   "cvCn": "王宁",
   "release": "2020-10-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_381_bubble",
@@ -2493,7 +2493,7 @@
   "cvJp": "赤尾光",
   "cvCn": "米糊",
   "release": "2020-10-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_423_blemsh",
@@ -2509,14 +2509,14 @@
   "cvJp": "花泽香菜",
   "cvCn": "王晓彤",
   "release": "2020-10-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_311_mudrok",
   "name": "泥岩",
   "rarity": 6,
   "prof": "重装",
-  "sub": "",
+  "sub": "不屈者",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -2525,7 +2525,7 @@
   "cvJp": "内田真礼",
   "cvCn": "忙音",
   "release": "2020-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_347_jaksel",
@@ -2541,14 +2541,14 @@
   "cvJp": "铃代纱弓",
   "cvCn": "琦雯",
   "release": "2020-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_391_rosmon",
   "name": "迷迭香",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "投掷手",
   "faction": "罗德岛精英干员",
   "nation": "罗德岛",
   "sex": "女",
@@ -2557,14 +2557,14 @@
   "cvJp": "小仓唯",
   "cvCn": "张若瑜",
   "release": "2020-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_436_whispr",
   "name": "絮雨",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "疗养师",
   "faction": "伊比利亚",
   "nation": "伊比利亚",
   "sex": "女",
@@ -2573,7 +2573,7 @@
   "cvJp": "后藤沙绪里",
   "cvCn": "刘十四",
   "release": "2020-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_214_kafka",
@@ -2589,7 +2589,7 @@
   "cvJp": "富田美忧",
   "cvCn": "皛四白",
   "release": "2020-12-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_264_f12yin",
@@ -2605,14 +2605,14 @@
   "cvJp": "中井和哉",
   "cvCn": "王西瓜",
   "release": "2020-12-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_440_pinecn",
   "name": "松果",
   "rarity": 4,
   "prof": "狙击",
-  "sub": "",
+  "sub": "散射手",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -2621,7 +2621,7 @@
   "cvJp": "津田里穗",
   "cvCn": "木雅瑞林",
   "release": "2020-12-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_451_robin",
@@ -2637,7 +2637,7 @@
   "cvJp": "小野凉子",
   "cvCn": "邵敏佳",
   "release": "2020-12-17",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_332_archet",
@@ -2653,14 +2653,14 @@
   "cvJp": "水濑祈",
   "cvCn": "木雅瑞林",
   "release": "2021-01-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_338_iris",
   "name": "爱丽丝",
   "rarity": 5,
   "prof": "术师",
-  "sub": "链术师",
+  "sub": "秘术师",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -2669,7 +2669,7 @@
   "cvJp": "白石晴香",
   "cvCn": "kiyo",
   "release": "2021-01-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_452_bstalk",
@@ -2685,7 +2685,7 @@
   "cvJp": "伊藤彩沙",
   "cvCn": "牛奶君",
   "release": "2021-01-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_402_tuye",
@@ -2701,7 +2701,7 @@
   "cvJp": "中野彩麻",
   "cvCn": "Z君",
   "release": "2021-01-19",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1011_lava2",
@@ -2717,7 +2717,7 @@
   "cvJp": "水桥香织",
   "cvCn": "谢莹",
   "release": "2021-02-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2015_dusk",
@@ -2733,7 +2733,7 @@
   "cvJp": "yukana",
   "cvCn": "空无的念",
   "release": "2021-02-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_362_saga",
@@ -2749,7 +2749,7 @@
   "cvJp": "小林沙苗",
   "cvCn": "绿绮",
   "release": "2021-02-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_455_nothin",
@@ -2765,7 +2765,7 @@
   "cvJp": "诹访部顺一",
   "cvCn": "刘飞",
   "release": "2021-02-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_456_ash",
@@ -2781,7 +2781,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2021-03-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_457_blitz",
@@ -2797,7 +2797,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2021-03-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_458_rfrost",
@@ -2813,7 +2813,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2021-03-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_459_tachak",
@@ -2829,7 +2829,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2021-03-09",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_304_zebra",
@@ -2845,14 +2845,14 @@
   "cvJp": "石原夏织",
   "cvCn": "闲踏梧桐",
   "release": "2021-04-15",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_363_toddi",
   "name": "熔泉",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "攻城手",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -2861,7 +2861,7 @@
   "cvJp": "仙台绘里",
   "cvCn": "银子宝宝",
   "release": "2021-04-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_472_pasngr",
@@ -2877,7 +2877,7 @@
   "cvJp": "樱井孝宏",
   "cvCn": "张福正",
   "release": "2021-04-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_003_kalts",
@@ -2893,14 +2893,14 @@
   "cvJp": "日笠阳子",
   "cvCn": "刘雪",
   "release": "2021-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1012_skadi2",
   "name": "浊心斯卡蒂",
   "rarity": 6,
   "prof": "辅助",
-  "sub": "",
+  "sub": "吟游者",
   "faction": "阿戈尔",
   "nation": "阿戈尔",
   "sex": "女",
@@ -2909,14 +2909,14 @@
   "cvJp": "佐藤利奈",
   "cvCn": "张琦",
   "release": "2021-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_474_glady",
   "name": "歌蕾蒂娅",
   "rarity": 6,
   "prof": "特种",
-  "sub": "",
+  "sub": "钩索师",
   "faction": "深海猎人",
   "nation": "阿戈尔",
   "sex": "女",
@@ -2925,7 +2925,7 @@
   "cvJp": "生天目仁美",
   "cvCn": "黄莺",
   "release": "2021-05-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_475_akafyu",
@@ -2941,7 +2941,7 @@
   "cvJp": "内山夕实",
   "cvCn": "卢晓彤",
   "release": "2021-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_369_bena",
@@ -2957,7 +2957,7 @@
   "cvJp": "森永千才",
   "cvCn": "王晓彤",
   "release": "2021-06-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_426_billro",
@@ -2973,14 +2973,14 @@
   "cvJp": "喜多村英梨",
   "cvCn": "蔡娜",
   "release": "2021-06-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_469_indigo",
   "name": "深靛",
   "rarity": 4,
   "prof": "术师",
-  "sub": "链术师",
+  "sub": "秘术师",
   "faction": "伊比利亚",
   "nation": "伊比利亚",
   "sex": "女",
@@ -2989,14 +2989,14 @@
   "cvJp": "冰青",
   "cvCn": "孙羽婷",
   "release": "2021-06-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_478_kirara",
   "name": "绮良",
   "rarity": 5,
   "prof": "特种",
-  "sub": "行商",
+  "sub": "伏击客",
   "faction": "东国",
   "nation": "东国",
   "sex": "女",
@@ -3005,7 +3005,7 @@
   "cvJp": "春野杏",
   "cvCn": "陈婷婷",
   "release": "2021-06-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_485_pallas",
@@ -3021,14 +3021,14 @@
   "cvJp": "井上麻里奈",
   "cvCn": "周一菡",
   "release": "2021-07-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1013_chen2",
   "name": "假日威龙陈",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "散射手",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -3037,7 +3037,7 @@
   "cvJp": "石上静香",
   "cvCn": "虫虫",
   "release": "2021-08-03",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_421_crow",
@@ -3053,14 +3053,14 @@
   "cvJp": "高野麻里佳",
   "cvCn": "刘一蕾",
   "release": "2021-08-03",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_437_mizuki",
   "name": "水月",
   "rarity": 6,
   "prof": "特种",
-  "sub": "行商",
+  "sub": "伏击客",
   "faction": "东国",
   "nation": "东国",
   "sex": "男",
@@ -3069,7 +3069,7 @@
   "cvJp": "村濑步",
   "cvCn": "绿绮",
   "release": "2021-08-03",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_486_takila",
@@ -3085,14 +3085,14 @@
   "cvJp": "岛崎信长",
   "cvCn": "郑武文杰",
   "release": "2021-08-03",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_473_mberry",
   "name": "桑葚",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "行医",
   "faction": "炎国",
   "nation": "炎国",
   "sex": "女",
@@ -3101,7 +3101,7 @@
   "cvJp": "小原莉子",
   "cvCn": "张雨曦",
   "release": "2021-09-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_479_sleach",
@@ -3117,7 +3117,7 @@
   "cvJp": "户松遥",
   "cvCn": "翁媛",
   "release": "2021-09-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_484_robrta",
@@ -3133,14 +3133,14 @@
   "cvJp": "龟谷理子",
   "cvCn": "罗玉婷",
   "release": "2021-09-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_430_fartth",
   "name": "远牙",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "神射手",
   "faction": "红松骑士团",
   "nation": "卡西米尔",
   "sex": "女",
@@ -3149,14 +3149,14 @@
   "cvJp": "三森铃子",
   "cvCn": "刘雯",
   "release": "2021-10-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_431_ashlok",
   "name": "灰毫",
   "rarity": 5,
   "prof": "重装",
-  "sub": "",
+  "sub": "要塞",
   "faction": "红松骑士团",
   "nation": "卡西米尔",
   "sex": "女",
@@ -3165,7 +3165,7 @@
   "cvJp": "上田瞳",
   "cvCn": "龟娘",
   "release": "2021-10-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1014_nearl2",
@@ -3181,7 +3181,7 @@
   "cvJp": "佐仓绫音",
   "cvCn": "穆雪婷",
   "release": "2021-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4004_pudd",
@@ -3213,14 +3213,14 @@
   "cvJp": "平野绫",
   "cvCn": "苏婉",
   "release": "2021-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_449_glider",
   "name": "蜜莓",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "行医",
   "faction": "雷姆必拓",
   "nation": "雷姆必拓",
   "sex": "女",
@@ -3229,7 +3229,7 @@
   "cvJp": "井上穗乃花",
   "cvCn": "张洪",
   "release": "2021-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_489_serum",
@@ -3245,7 +3245,7 @@
   "cvJp": "岸尾大辅",
   "cvCn": "风袖",
   "release": "2021-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_496_wildmn",
@@ -3261,14 +3261,14 @@
   "cvJp": "村中知",
   "cvCn": "刘十四",
   "release": "2021-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_206_gnosis",
   "name": "灵知",
   "rarity": 6,
   "prof": "辅助",
-  "sub": "",
+  "sub": "削弱者",
   "faction": "喀兰贸易",
   "nation": "谢拉格",
   "sex": "男",
@@ -3277,7 +3277,7 @@
   "cvJp": "绿川光",
   "cvCn": "刘飞",
   "release": "2021-12-21",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4013_kjera",
@@ -3293,7 +3293,7 @@
   "cvJp": "久川绫",
   "cvCn": "陈超群",
   "release": "2021-12-21",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_422_aurora",
@@ -3309,7 +3309,7 @@
   "cvJp": "明坂聪美",
   "cvCn": "刘十四",
   "release": "2021-12-21",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4025_aprot2",
@@ -3325,7 +3325,7 @@
   "cvJp": "立花慎之介",
   "cvCn": "郑武文杰",
   "release": "2022-01-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4019_ncdeer",
@@ -3341,7 +3341,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2022-01-10",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1021_kroos2",
@@ -3357,7 +3357,7 @@
   "cvJp": "田所梓",
   "cvCn": "苏婉",
   "release": "2022-01-25",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2023_ling",
@@ -3373,7 +3373,7 @@
   "cvJp": "井上喜久子",
   "cvCn": "余珊",
   "release": "2022-01-25",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_322_lmlee",
@@ -3389,7 +3389,7 @@
   "cvJp": "三木真一郎",
   "cvCn": "刘飞",
   "release": "2022-01-25",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_476_blkngt",
@@ -3405,7 +3405,7 @@
   "cvJp": "野田顺子",
   "cvCn": "琦雯",
   "release": "2022-01-25",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_377_gdglow",
@@ -3421,7 +3421,7 @@
   "cvJp": "佐仓绫音",
   "cvCn": "白灯",
   "release": "2022-02-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_492_quercu",
@@ -3437,7 +3437,7 @@
   "cvJp": "高野麻美",
   "cvCn": "苗洋",
   "release": "2022-02-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_300_phenxi",
@@ -3453,7 +3453,7 @@
   "cvJp": "折笠富美子",
   "cvCn": "许潇文",
   "release": "2022-03-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4016_kazema",
@@ -3469,7 +3469,7 @@
   "cvJp": "本多真梨子",
   "cvCn": "张琦",
   "release": "2022-03-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4036_forcer",
@@ -3485,14 +3485,14 @@
   "cvJp": "小野贤章",
   "cvCn": "杜光祎",
   "release": "2022-03-15",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4039_horn",
   "name": "号角",
   "rarity": 6,
   "prof": "重装",
-  "sub": "",
+  "sub": "要塞",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -3501,7 +3501,7 @@
   "cvJp": "丰口惠美",
   "cvCn": "翁媛",
   "release": "2022-04-14",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4040_rockr",
@@ -3517,14 +3517,14 @@
   "cvJp": "千菅春香",
   "cvCn": "宋媛媛",
   "release": "2022-04-14",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4041_chnut",
   "name": "褐果",
   "rarity": 4,
   "prof": "医疗",
-  "sub": "",
+  "sub": "行医",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "男",
@@ -3533,14 +3533,14 @@
   "cvJp": "千叶翔也",
   "cvCn": "安志",
   "release": "2022-04-14",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4045_heidi",
   "name": "海蒂",
   "rarity": 5,
   "prof": "辅助",
-  "sub": "",
+  "sub": "吟游者",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -3549,7 +3549,7 @@
   "cvJp": "关根明良",
   "cvCn": "谢莹",
   "release": "2022-04-14",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1023_ghost2",
@@ -3565,7 +3565,7 @@
   "cvJp": "浅仓杏美",
   "cvCn": "张安琪",
   "release": "2022-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4009_irene",
@@ -3581,14 +3581,14 @@
   "cvJp": "钉宫理惠",
   "cvCn": "刘雯",
   "release": "2022-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4042_lumen",
   "name": "流明",
   "rarity": 6,
   "prof": "医疗",
-  "sub": "",
+  "sub": "疗养师",
   "faction": "伊比利亚",
   "nation": "伊比利亚",
   "sex": "男",
@@ -3597,7 +3597,7 @@
   "cvJp": "小林裕介",
   "cvCn": "孙晔",
   "release": "2022-05-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_433_windft",
@@ -3613,14 +3613,14 @@
   "cvJp": "八代拓",
   "cvCn": "大白",
   "release": "2022-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4043_erato",
   "name": "埃拉托",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "攻城手",
   "faction": "米诺斯",
   "nation": "米诺斯",
   "sex": "女",
@@ -3629,14 +3629,14 @@
   "cvJp": "蓝原琴美",
   "cvCn": "吱毛",
   "release": "2022-05-19",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1024_hbisc2",
   "name": "濯尘芙蓉",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "咒愈师",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -3645,14 +3645,14 @@
   "cvJp": "井口裕香",
   "cvCn": "龟娘",
   "release": "2022-06-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4046_ebnhlz",
   "name": "黑键",
   "rarity": 6,
   "prof": "术师",
-  "sub": "链术师",
+  "sub": "秘术师",
   "faction": "莱塔尼亚",
   "nation": "莱塔尼亚",
   "sex": "男",
@@ -3661,7 +3661,7 @@
   "cvJp": "逢坂良太",
   "cvCn": "澈洌",
   "release": "2022-06-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4047_pianst",
@@ -3677,14 +3677,14 @@
   "cvJp": "安元洋贵",
   "cvCn": "于丰硕",
   "release": "2022-06-09",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1027_greyy2",
   "name": "承曦格雷伊",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "投掷手",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "男",
@@ -3693,7 +3693,7 @@
   "cvJp": "渕上舞",
   "cvCn": "安志",
   "release": "2022-07-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_135_halo",
@@ -3709,7 +3709,7 @@
   "cvJp": "白砂沙帆",
   "cvCn": "橙璃",
   "release": "2022-07-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4048_doroth",
@@ -3725,7 +3725,7 @@
   "cvJp": "佐藤聪美",
   "cvCn": "吱毛",
   "release": "2022-07-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1026_gvial2",
@@ -3741,7 +3741,7 @@
   "cvJp": "诹访彩花",
   "cvCn": "陈超群",
   "release": "2022-08-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4054_malist",
@@ -3757,14 +3757,14 @@
   "cvJp": "野上翔",
   "cvCn": "许潇文",
   "release": "2022-08-11",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4055_bgsnow",
   "name": "鸿雪",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "重射手",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -3773,7 +3773,7 @@
   "cvJp": "安济知佳",
   "cvCn": "云鹤追",
   "release": "2022-08-11",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_497_ctable",
@@ -3789,7 +3789,7 @@
   "cvJp": "齐藤佑圭",
   "cvCn": "若舞",
   "release": "2022-08-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4032_provs",
@@ -3805,7 +3805,7 @@
   "cvJp": "米泽圆",
   "cvCn": "谢莹",
   "release": "2022-09-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4064_mlynar",
@@ -3821,7 +3821,7 @@
   "cvJp": "小山力也",
   "cvCn": "王宇航",
   "release": "2022-09-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4067_lolxh",
@@ -3853,7 +3853,7 @@
   "cvJp": "大下菜摘",
   "cvCn": "许潇文",
   "release": "2022-09-27",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_157_dagda",
@@ -3869,14 +3869,14 @@
   "cvJp": "青木志贵",
   "cvCn": "米糊",
   "release": "2022-10-11",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4062_totter",
   "name": "铅踝",
   "rarity": 4,
   "prof": "狙击",
-  "sub": "",
+  "sub": "攻城手",
   "faction": "萨尔贡",
   "nation": "萨尔贡",
   "sex": "男",
@@ -3885,7 +3885,7 @@
   "cvJp": "小林亲弘",
   "cvCn": "刘北辰",
   "release": "2022-10-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4071_peper",
@@ -3901,7 +3901,7 @@
   "cvJp": "篠原侑",
   "cvCn": "周一菡",
   "release": "2022-10-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4072_ironmn",
@@ -3917,7 +3917,7 @@
   "cvJp": "寺岛拓笃",
   "cvCn": "黄进泽",
   "release": "2022-10-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1028_texas2",
@@ -3933,14 +3933,14 @@
   "cvJp": "田所梓",
   "cvCn": "杨梦露",
   "release": "2022-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4014_lunacu",
   "name": "子月",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "神射手",
   "faction": "叙拉古",
   "nation": "叙拉古",
   "sex": "女",
@@ -3949,14 +3949,14 @@
   "cvJp": "久保田梨沙",
   "cvCn": "鹿尤尤",
   "release": "2022-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4063_quartz",
   "name": "石英",
   "rarity": 4,
   "prof": "近卫",
-  "sub": "",
+  "sub": "重剑手",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -3972,7 +3972,7 @@
   "name": "斥罪",
   "rarity": 6,
   "prof": "重装",
-  "sub": "",
+  "sub": "不屈者",
   "faction": "叙拉古",
   "nation": "叙拉古",
   "sex": "女",
@@ -3981,7 +3981,7 @@
   "cvJp": "大原沙耶香",
   "cvCn": "邵敏佳",
   "release": "2022-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_427_vigil",
@@ -3997,7 +3997,7 @@
   "cvJp": "KENN",
   "cvCn": "张桐铭",
   "release": "2022-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_466_qanik",
@@ -4013,14 +4013,14 @@
   "cvJp": "佐藤元",
   "cvCn": "张桐铭",
   "release": "2022-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1020_reed2",
   "name": "焰影苇草",
   "rarity": 6,
   "prof": "医疗",
-  "sub": "",
+  "sub": "咒愈师",
   "faction": "塔拉",
   "nation": "维多利亚",
   "sex": "女",
@@ -4029,14 +4029,14 @@
   "cvJp": "能登麻美子",
   "cvCn": "浮梦若薇",
   "release": "2022-12-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_297_hamoni",
   "name": "和弦",
   "rarity": 5,
   "prof": "术师",
-  "sub": "链术师",
+  "sub": "秘术师",
   "faction": "塔拉",
   "nation": "维多利亚",
   "sex": "女",
@@ -4045,7 +4045,7 @@
   "cvJp": "嘉数由美",
   "cvCn": "曹雅雯",
   "release": "2022-12-15",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4017_puzzle",
@@ -4061,7 +4061,7 @@
   "cvJp": "高梨谦吾",
   "cvCn": "姚铭舜",
   "release": "2022-12-15",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2024_chyue",
@@ -4077,7 +4077,7 @@
   "cvJp": "关俊彦",
   "cvCn": "赵岭",
   "release": "2023-01-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4078_bdhkgt",
@@ -4093,7 +4093,7 @@
   "cvJp": "藤原夏海",
   "cvCn": "邵敏佳",
   "release": "2023-01-17",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4080_lin",
@@ -4109,14 +4109,14 @@
   "cvJp": "伊藤加奈惠",
   "cvCn": "阎么么",
   "release": "2023-01-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_493_firwhl",
   "name": "火哨",
   "rarity": 5,
   "prof": "重装",
-  "sub": "",
+  "sub": "要塞",
   "faction": "雷姆必拓",
   "nation": "雷姆必拓",
   "sex": "女",
@@ -4125,7 +4125,7 @@
   "cvJp": "松井惠理子",
   "cvCn": "若舞",
   "release": "2023-01-17",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4082_qiubai",
@@ -4141,14 +4141,14 @@
   "cvJp": "寿美菜子",
   "cvCn": "蔡海婷",
   "release": "2023-02-14",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4083_chimes",
   "name": "铎铃",
   "rarity": 5,
   "prof": "近卫",
-  "sub": "",
+  "sub": "重剑手",
   "faction": "炎国",
   "nation": "炎国",
   "sex": "女",
@@ -4157,7 +4157,7 @@
   "cvJp": "平田宏美",
   "cvCn": "大汪",
   "release": "2023-02-14",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1029_yato2",
@@ -4173,7 +4173,7 @@
   "cvJp": "藤田咲",
   "cvCn": "侯小菲",
   "release": "2023-03-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1030_noirc2",
@@ -4189,7 +4189,7 @@
   "cvJp": "河西健吾",
   "cvCn": "刘照坤",
   "release": "2023-03-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_154_morgan",
@@ -4205,7 +4205,7 @@
   "cvJp": "金子真由美",
   "cvCn": "叶知秋",
   "release": "2023-04-06",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4087_ines",
@@ -4221,7 +4221,7 @@
   "cvJp": "恒松步",
   "cvCn": "张若瑜",
   "release": "2023-04-06",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_464_cement",
@@ -4237,7 +4237,7 @@
   "cvJp": "结木梢",
   "cvCn": "蔡海婷",
   "release": "2023-04-06",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_491_humus",
@@ -4253,7 +4253,23 @@
   "cvJp": "喜屋武和辉",
   "cvCn": "黑石稔",
   "release": "2023-04-06",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_1031_slent2",
+  "name": "淬羽赫默",
+  "rarity": 6,
+  "prof": "辅助",
+  "sub": "护佑者",
+  "faction": "莱茵生命",
+  "nation": "哥伦比亚",
+  "sex": "女",
+  "race": "黎博利",
+  "artist": "九日九号",
+  "cvJp": "鬼头明里",
+  "cvCn": "梁爽",
+  "release": "2023-05-01",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_249_mlyss",
@@ -4269,14 +4285,14 @@
   "cvJp": "田村由加莉",
   "cvCn": "王雅欣",
   "release": "2023-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4006_melnte",
   "name": "玫拉",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "重射手",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -4285,7 +4301,7 @@
   "cvJp": "武田华",
   "cvCn": "牛奶君",
   "release": "2023-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4027_heyak",
@@ -4301,23 +4317,7 @@
   "cvJp": "泽城美雪",
   "cvCn": "洪海天",
   "release": "2023-05-01",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_1031_slent2",
-  "name": "淬羽赫默",
-  "rarity": 6,
-  "prof": "辅助",
-  "sub": "护佑者",
-  "faction": "莱茵生命",
-  "nation": "哥伦比亚",
-  "sex": "女",
-  "race": "黎博利",
-  "artist": "九日九号",
-  "cvJp": "鬼头明里",
-  "cvCn": "梁爽",
-  "release": "2023-05-02",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1032_excu2",
@@ -4333,7 +4333,7 @@
   "cvJp": "近藤隆",
   "cvCn": "冷泉夜月",
   "release": "2023-06-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4015_spuria",
@@ -4349,7 +4349,7 @@
   "cvJp": "宫元悠里",
   "cvCn": "秦紫翼",
   "release": "2023-06-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_498_inside",
@@ -4365,14 +4365,14 @@
   "cvJp": "伊东健人",
   "cvCn": "马洋",
   "release": "2023-06-08",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2012_typhon",
   "name": "提丰",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "攻城手",
   "faction": "萨米",
   "nation": "萨米",
   "sex": "女",
@@ -4381,7 +4381,7 @@
   "cvJp": "大空直美",
   "cvCn": "皛四白",
   "release": "2023-07-06",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_341_sntlla",
@@ -4397,7 +4397,7 @@
   "cvJp": "志田有彩",
   "cvCn": "范楚绒",
   "release": "2023-07-06",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4102_threye",
@@ -4413,14 +4413,14 @@
   "cvJp": "富㭴美铃",
   "cvCn": "秦紫翼",
   "release": "2023-07-13",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1016_agoat2",
   "name": "纯烬艾雅法拉",
   "rarity": 6,
   "prof": "医疗",
-  "sub": "",
+  "sub": "行医",
   "faction": "莱塔尼亚",
   "nation": "莱塔尼亚",
   "sex": "女",
@@ -4429,7 +4429,7 @@
   "cvJp": "种田梨沙",
   "cvCn": "降温",
   "release": "2023-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1033_swire2",
@@ -4445,7 +4445,7 @@
   "cvJp": "德井青空",
   "cvCn": "谢莹",
   "release": "2023-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4106_bryota",
@@ -4461,7 +4461,7 @@
   "cvJp": "阪口大助",
   "cvCn": "张沛",
   "release": "2023-08-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_488_buildr",
@@ -4477,7 +4477,7 @@
   "cvJp": "中村环奈",
   "cvCn": "孙艳琦",
   "release": "2023-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1034_jesca2",
@@ -4493,14 +4493,14 @@
   "cvJp": "广桥凉",
   "cvCn": "侯小菲",
   "release": "2023-09-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4104_coldst",
   "name": "冰酿",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "猎手",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -4509,14 +4509,14 @@
   "cvJp": "绪乃冬华",
   "cvCn": "武向彤",
   "release": "2023-09-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4105_almond",
   "name": "杏仁",
   "rarity": 5,
   "prof": "特种",
-  "sub": "",
+  "sub": "钩索师",
   "faction": "黑钢国际",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -4525,14 +4525,14 @@
   "cvJp": "芹泽优",
   "cvCn": "二娇",
   "release": "2023-09-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4088_hodrer",
   "name": "赫德雷",
   "rarity": 6,
   "prof": "近卫",
-  "sub": "",
+  "sub": "重剑手",
   "faction": "巴别塔",
   "nation": "",
   "sex": "男",
@@ -4541,7 +4541,7 @@
   "cvJp": "细谷佳正",
   "cvCn": "苏至豪",
   "release": "2023-10-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4107_vrdant",
@@ -4557,14 +4557,14 @@
   "cvJp": "美藤大树",
   "cvCn": "马程未",
   "release": "2023-10-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4110_delphn",
   "name": "戴菲恩",
   "rarity": 5,
   "prof": "术师",
-  "sub": "链术师",
+  "sub": "秘术师",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -4573,14 +4573,14 @@
   "cvJp": "关口理咲",
   "cvCn": "曾彤",
   "release": "2023-10-08",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_494_vendla",
   "name": "刺玫",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "咒愈师",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -4589,7 +4589,7 @@
   "cvJp": "和久井优",
   "cvCn": "常佳梦",
   "release": "2023-10-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_245_cello",
@@ -4605,7 +4605,7 @@
   "cvJp": "远藤绫",
   "cvCn": "曾彤",
   "release": "2023-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4011_lessng",
@@ -4621,7 +4621,7 @@
   "cvJp": "内田雄马",
   "cvCn": "安志",
   "release": "2023-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4098_vvana",
@@ -4637,14 +4637,14 @@
   "cvJp": "M・A・O",
   "cvCn": "秦紫翼",
   "release": "2023-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4100_caper",
   "name": "跃跃",
   "rarity": 4,
   "prof": "狙击",
-  "sub": "",
+  "sub": "回环射手",
   "faction": "玻利瓦尔",
   "nation": "玻利瓦尔",
   "sex": "女",
@@ -4669,14 +4669,14 @@
   "cvJp": "金田晶",
   "cvCn": "洪海天",
   "release": "2023-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_499_kaitou",
   "name": "折光",
   "rarity": 5,
   "prof": "术师",
-  "sub": "秘术师",
+  "sub": "本源术师",
   "faction": "莱塔尼亚",
   "nation": "莱塔尼亚",
   "sex": "男",
@@ -4685,7 +4685,7 @@
   "cvJp": "神原大地",
   "cvCn": "桑毓泽",
   "release": "2023-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_194_leto",
@@ -4701,14 +4701,14 @@
   "cvJp": "朝井彩加",
   "cvCn": "陈雨",
   "release": "2023-12-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4114_harold",
   "name": "哈洛德",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "行医",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "男",
@@ -4717,7 +4717,7 @@
   "cvJp": "山崎巧",
   "cvCn": "董胜章",
   "release": "2023-12-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4116_blkkgt",
@@ -4733,14 +4733,14 @@
   "cvJp": "高山南",
   "cvCn": "吴迪",
   "release": "2023-12-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4081_warmy",
   "name": "温米",
   "rarity": 5,
   "prof": "术师",
-  "sub": "秘术师",
+  "sub": "本源术师",
   "faction": "雷姆必拓",
   "nation": "雷姆必拓",
   "sex": "女",
@@ -4749,14 +4749,14 @@
   "cvJp": "大野柚布子",
   "cvCn": "汪悦",
   "release": "2024-01-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4117_ray",
   "name": "莱伊",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "猎手",
   "faction": "雷姆必拓",
   "nation": "雷姆必拓",
   "sex": "女",
@@ -4765,7 +4765,7 @@
   "cvJp": "名塚佳织",
   "cvCn": "孙艳琦",
   "release": "2024-01-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2025_shu",
@@ -4781,23 +4781,7 @@
   "cvJp": "南条爱乃",
   "cvCn": "徐晨",
   "release": "2024-02-01",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_4023_rfalcn",
-  "name": "红隼",
-  "rarity": 5,
-  "prof": "先锋",
-  "sub": "尖兵",
-  "faction": "萨尔贡",
-  "nation": "萨尔贡",
-  "sex": "女",
-  "race": "黎博利",
-  "artist": "釜飯轟々丸",
-  "cvJp": "行成飞亚",
-  "cvCn": "唐雅菁",
-  "release": "2024-02-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4119_wanqin",
@@ -4813,7 +4797,7 @@
   "cvJp": "新田杏树",
   "cvCn": "风袖",
   "release": "2024-02-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4121_zuole",
@@ -4829,7 +4813,7 @@
   "cvJp": "丰永利行",
   "cvCn": "李嘉祥",
   "release": "2024-02-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4122_grabds",
@@ -4845,7 +4829,23 @@
   "cvJp": "阿部菜摘子",
   "cvCn": "阮从青",
   "release": "2024-02-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_4023_rfalcn",
+  "name": "红隼",
+  "rarity": 5,
+  "prof": "先锋",
+  "sub": "尖兵",
+  "faction": "萨尔贡",
+  "nation": "萨尔贡",
+  "sex": "女",
+  "race": "黎博利",
+  "artist": "釜飯轟々丸",
+  "cvJp": "行成飞亚",
+  "cvCn": "唐雅菁",
+  "release": "2024-02-03",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4123_ela",
@@ -4861,7 +4861,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2024-03-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4124_iana",
@@ -4877,7 +4877,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2024-03-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4125_rdoc",
@@ -4893,7 +4893,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2024-03-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4126_fuze",
@@ -4909,14 +4909,14 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2024-03-07",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4130_luton",
   "name": "露托",
   "rarity": 4,
   "prof": "重装",
-  "sub": "",
+  "sub": "不屈者",
   "faction": "玻利瓦尔",
   "nation": "玻利瓦尔",
   "sex": "女",
@@ -4925,7 +4925,7 @@
   "cvJp": "宝木久美",
   "cvCn": "宋媛媛",
   "release": "2024-04-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4131_odda",
@@ -4941,14 +4941,14 @@
   "cvJp": "浅利辽太",
   "cvCn": "于松涛",
   "release": "2024-04-11",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4132_ascln",
   "name": "阿斯卡纶",
   "rarity": 6,
   "prof": "特种",
-  "sub": "行商",
+  "sub": "伏击客",
   "faction": "S.W.E.E.P.",
   "nation": "罗德岛",
   "sex": "女",
@@ -4957,7 +4957,7 @@
   "cvJp": "长泽美树",
   "cvCn": "徐慧",
   "release": "2024-04-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_446_aroma",
@@ -4973,14 +4973,14 @@
   "cvJp": "深町季生",
   "cvCn": "橙璃",
   "release": "2024-04-11",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1035_wisdel",
   "name": "维什戴尔",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "投掷手",
   "faction": "巴别塔",
   "nation": "",
   "sex": "女",
@@ -4989,7 +4989,7 @@
   "cvJp": "竹达彩奈",
   "cvCn": "阮从青",
   "release": "2024-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1036_fang2",
@@ -5005,7 +5005,7 @@
   "cvJp": "白石凉子",
   "cvCn": "陈彦亦",
   "release": "2024-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4133_logos",
@@ -5021,14 +5021,14 @@
   "cvJp": "福山润",
   "cvCn": "梁达伟",
   "release": "2024-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4134_cetsyr",
   "name": "魔王",
   "rarity": 6,
   "prof": "辅助",
-  "sub": "",
+  "sub": "吟游者",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -5037,14 +5037,14 @@
   "cvJp": "南里侑香",
   "cvCn": "季冠霖",
   "release": "2024-05-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4079_haini",
   "name": "海霓",
   "rarity": 5,
   "prof": "辅助",
-  "sub": "",
+  "sub": "削弱者",
   "faction": "阿戈尔",
   "nation": "阿戈尔",
   "sex": "女",
@@ -5053,7 +5053,7 @@
   "cvJp": "深田爱衣",
   "cvCn": "孙艳琦",
   "release": "2024-06-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4137_udflow",
@@ -5069,14 +5069,14 @@
   "cvJp": "石田嘉代",
   "cvCn": "井琉",
   "release": "2024-06-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4145_ulpia",
   "name": "乌尔比安",
   "rarity": 6,
   "prof": "近卫",
-  "sub": "",
+  "sub": "重剑手",
   "faction": "深海猎人",
   "nation": "阿戈尔",
   "sex": "男",
@@ -5085,14 +5085,14 @@
   "cvJp": "小野大辅",
   "cvCn": "刘以嘉",
   "release": "2024-06-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4146_nymph",
   "name": "妮芙",
   "rarity": 6,
   "prof": "术师",
-  "sub": "秘术师",
+  "sub": "本源术师",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -5101,7 +5101,7 @@
   "cvJp": "关根瞳",
   "cvCn": "蔡娜",
   "release": "2024-07-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4147_mitm",
@@ -5117,14 +5117,14 @@
   "cvJp": "汐谷文康",
   "cvCn": "王辅平",
   "release": "2024-07-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4151_tinman",
   "name": "锡人",
   "rarity": 5,
   "prof": "特种",
-  "sub": "",
+  "sub": "炼金师",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "男",
@@ -5133,7 +5133,7 @@
   "cvJp": "木内秀信",
   "cvCn": "刘北辰",
   "release": "2024-07-16",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4058_pepe",
@@ -5149,14 +5149,14 @@
   "cvJp": "Machico",
   "cvCn": "陈婷婷",
   "release": "2024-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4138_narant",
   "name": "娜仁图亚",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "回环射手",
   "faction": "萨尔贡",
   "nation": "萨尔贡",
   "sex": "女",
@@ -5165,7 +5165,7 @@
   "cvJp": "雪野五月",
   "cvCn": "邵敏佳",
   "release": "2024-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4139_papyrs",
@@ -5181,7 +5181,7 @@
   "cvJp": "橘杏咲",
   "cvCn": "葛子瑞",
   "release": "2024-08-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4140_lasher",
@@ -5197,7 +5197,7 @@
   "cvJp": "户谷菊之介",
   "cvCn": "李轻扬",
   "release": "2024-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4141_marcil",
@@ -5213,7 +5213,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2024-09-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4142_laios",
@@ -5229,7 +5229,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2024-09-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4143_sensi",
@@ -5245,7 +5245,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2024-09-02",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4144_chilc",
@@ -5261,7 +5261,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2024-09-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1019_siege2",
@@ -5277,7 +5277,7 @@
   "cvJp": "川澄绫子",
   "cvCn": "梁爽",
   "release": "2024-10-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4162_cathy",
@@ -5293,7 +5293,7 @@
   "cvJp": "深见梨加",
   "cvCn": "武向彤",
   "release": "2024-10-09",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_487_bobb",
@@ -5309,7 +5309,7 @@
   "cvJp": "武内健",
   "cvCn": "张琪",
   "release": "2024-10-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1038_whitw2",
@@ -5325,7 +5325,7 @@
   "cvJp": "今井麻美",
   "cvCn": "陈彦亦",
   "release": "2024-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1502_crosly",
@@ -5341,7 +5341,7 @@
   "cvJp": "千本木彩花",
   "cvCn": "陈彦亦",
   "release": "2024-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4026_vulpis",
@@ -5357,7 +5357,7 @@
   "cvJp": "三石琴乃",
   "cvCn": "金喵儿",
   "release": "2024-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4148_philae",
@@ -5373,7 +5373,7 @@
   "cvJp": "佐藤诗乃",
   "cvCn": "陈怡萱",
   "release": "2024-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4155_talr",
@@ -5389,14 +5389,14 @@
   "cvJp": "寺岛惇太",
   "cvCn": "陆泊云",
   "release": "2024-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4165_ctrail",
   "name": "云迹",
   "rarity": 4,
   "prof": "特种",
-  "sub": "",
+  "sub": "巡空者",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -5412,7 +5412,7 @@
   "name": "引星棘刺",
   "rarity": 6,
   "prof": "特种",
-  "sub": "",
+  "sub": "炼金师",
   "faction": "伊比利亚",
   "nation": "伊比利亚",
   "sex": "男",
@@ -5421,14 +5421,14 @@
   "cvJp": "石川界人",
   "cvCn": "徐翔",
   "release": "2024-12-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4163_rosesa",
   "name": "瑰盐",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "疗养师",
+  "sub": "群愈师",
   "faction": "伊比利亚",
   "nation": "伊比利亚",
   "sex": "女",
@@ -5437,14 +5437,14 @@
   "cvJp": "高岸美里亚",
   "cvCn": "南昭",
   "release": "2024-12-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4164_tecno",
   "name": "特克诺",
   "rarity": 5,
   "prof": "术师",
-  "sub": "",
+  "sub": "塑灵术师",
   "faction": "玻利瓦尔",
   "nation": "玻利瓦尔",
   "sex": "女",
@@ -5453,14 +5453,14 @@
   "cvJp": "南野心",
   "cvCn": "金喵儿",
   "release": "2024-12-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1040_blaze2",
   "name": "烛煌",
   "rarity": 6,
   "prof": "术师",
-  "sub": "秘术师",
+  "sub": "本源术师",
   "faction": "罗德岛精英干员",
   "nation": "罗德岛",
   "sex": "女",
@@ -5469,7 +5469,7 @@
   "cvJp": "中原麻衣",
   "cvCn": "周童",
   "release": "2025-01-22",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2026_yu",
@@ -5485,7 +5485,7 @@
   "cvJp": "大谷育江",
   "cvCn": "卢晓彤",
   "release": "2025-01-22",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4052_surfer",
@@ -5501,7 +5501,7 @@
   "cvJp": "前田惠",
   "cvCn": "陈阳",
   "release": "2025-01-22",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4172_xingzh",
@@ -5517,7 +5517,7 @@
   "cvJp": "户板优衣",
   "cvCn": "张晔",
   "release": "2025-01-22",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4010_etlchi",
@@ -5533,14 +5533,14 @@
   "cvJp": "长谷川育美",
   "cvCn": "陈雨",
   "release": "2025-02-14",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4173_nowell",
   "name": "诺威尔",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "疗养师",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -5549,7 +5549,7 @@
   "cvJp": "新垣樽助",
   "cvCn": "刘垚",
   "release": "2025-02-14",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4171_wulfen",
@@ -5565,14 +5565,14 @@
   "cvJp": "后藤麻衣",
   "cvCn": "徐晨",
   "release": "2025-03-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4177_brigid",
   "name": "水灯心",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "回环射手",
   "faction": "塔拉",
   "nation": "维多利亚",
   "sex": "女",
@@ -5581,14 +5581,14 @@
   "cvJp": "樱庭有纱",
   "cvCn": "陈阳",
   "release": "2025-03-07",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_450_necras",
   "name": "死芒",
   "rarity": 6,
   "prof": "术师",
-  "sub": "",
+  "sub": "塑灵术师",
   "faction": "塔拉",
   "nation": "维多利亚",
   "sex": "女",
@@ -5597,7 +5597,7 @@
   "cvJp": "能登麻美子",
   "cvCn": "浮梦若薇",
   "release": "2025-03-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4178_alanna",
@@ -5613,7 +5613,7 @@
   "cvJp": "山本亚衣",
   "cvCn": "Vila",
   "release": "2025-04-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4179_monstr",
@@ -5629,7 +5629,7 @@
   "cvJp": "和泉风花",
   "cvCn": "陈怡萱",
   "release": "2025-04-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_445_wscoot",
@@ -5645,7 +5645,7 @@
   "cvJp": "住谷哲荣",
   "cvCn": "郭若林",
   "release": "2025-04-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1041_angel2",
@@ -5661,14 +5661,14 @@
   "cvJp": "石见舞菜香",
   "cvCn": "蔡书瑾",
   "release": "2025-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4187_graceb",
   "name": "聆音",
   "rarity": 5,
   "prof": "近卫",
-  "sub": "",
+  "sub": "本源近卫",
   "faction": "玻利瓦尔",
   "nation": "玻利瓦尔",
   "sex": "女",
@@ -5677,14 +5677,14 @@
   "cvJp": "木村咲良",
   "cvCn": "静宸",
   "release": "2025-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4193_lemuen",
   "name": "蕾缪安",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "神射手",
   "faction": "拉特兰",
   "nation": "拉特兰",
   "sex": "女",
@@ -5693,7 +5693,7 @@
   "cvJp": "中村绘里子",
   "cvCn": "苏婉",
   "release": "2025-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4194_rmixer",
@@ -5709,7 +5709,7 @@
   "cvJp": "飞田展男",
   "cvCn": "刘彬",
   "release": "2025-05-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1042_phatm2",
@@ -5725,14 +5725,14 @@
   "cvJp": "石田彰",
   "cvCn": "刘照坤",
   "release": "2025-06-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4191_tippi",
   "name": "蒂比",
   "rarity": 5,
   "prof": "特种",
-  "sub": "",
+  "sub": "巡空者",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "女",
@@ -5741,14 +5741,14 @@
   "cvJp": "古贺英里奈",
   "cvCn": "汪悦",
   "release": "2025-06-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4198_christ",
   "name": "Miss.Christine",
   "rarity": 5,
   "prof": "术师",
-  "sub": "秘术师",
+  "sub": "本源术师",
   "faction": "维多利亚",
   "nation": "维多利亚",
   "sex": "女",
@@ -5757,7 +5757,7 @@
   "cvJp": "-",
   "cvCn": "-",
   "release": "2025-06-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1043_leizi2",
@@ -5773,7 +5773,7 @@
   "cvJp": "甲斐田裕子",
   "cvCn": "徐徐",
   "release": "2025-07-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4196_reckpr",
@@ -5789,7 +5789,7 @@
   "cvJp": "前田诚二",
   "cvCn": "孙金龙",
   "release": "2025-07-08",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4195_radian",
@@ -5805,7 +5805,7 @@
   "cvJp": "福井裕佳梨",
   "cvCn": "施丛昊",
   "release": "2025-07-15",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1044_hsgma2",
@@ -5821,14 +5821,14 @@
   "cvJp": "安野希世乃",
   "cvCn": "陈雨",
   "release": "2025-08-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4199_makiri",
   "name": "松桐",
   "rarity": 5,
   "prof": "先锋",
-  "sub": "",
+  "sub": "策士",
   "faction": "东国",
   "nation": "东国",
   "sex": "女",
@@ -5837,7 +5837,7 @@
   "cvJp": "岩崎谅太",
   "cvCn": "朱泓熹",
   "release": "2025-08-02",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4202_haruka",
@@ -5853,14 +5853,14 @@
   "cvJp": "丰田萌绘",
   "cvCn": "kiyo",
   "release": "2025-08-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4203_kichi",
   "name": "吉星",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "散射手",
   "faction": "东国",
   "nation": "东国",
   "sex": "女",
@@ -5869,7 +5869,7 @@
   "cvJp": "稻濑葵",
   "cvCn": "陈婷婷",
   "release": "2025-08-02",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4182_oblvns",
@@ -5885,7 +5885,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2025-09-04",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4183_mortis",
@@ -5901,14 +5901,14 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2025-09-04",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4184_dolris",
   "name": "三角初华",
   "rarity": 5,
   "prof": "辅助",
-  "sub": "",
+  "sub": "吟游者",
   "faction": "Ave Mujica",
   "nation": "",
   "sex": "女",
@@ -5917,7 +5917,7 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2025-09-04",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4185_amoris",
@@ -5933,14 +5933,14 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2025-09-04",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4186_tmoris",
   "name": "八幡海铃",
   "rarity": 5,
   "prof": "特种",
-  "sub": "行商",
+  "sub": "伏击客",
   "faction": "Ave Mujica",
   "nation": "",
   "sex": "女",
@@ -5949,14 +5949,14 @@
   "cvJp": null,
   "cvCn": null,
   "release": "2025-09-04",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4204_mantra",
   "name": "真言",
   "rarity": 6,
   "prof": "术师",
-  "sub": "秘术师",
+  "sub": "本源术师",
   "faction": "罗德岛精英干员",
   "nation": "罗德岛",
   "sex": "女",
@@ -5965,14 +5965,14 @@
   "cvJp": "折笠爱",
   "cvCn": "黄雷",
   "release": "2025-10-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4207_branch",
   "name": "折桠",
   "rarity": 5,
   "prof": "重装",
-  "sub": "",
+  "sub": "不屈者",
   "faction": "乌萨斯",
   "nation": "乌萨斯",
   "sex": "女",
@@ -5981,7 +5981,7 @@
   "cvJp": "谷口梦奈",
   "cvCn": "真理",
   "release": "2025-10-09",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4208_wintim",
@@ -6000,27 +6000,11 @@
   "releaseSrc": "prts-online"
  },
  {
-  "id": "char_394_hadiya",
-  "name": "哈蒂娅",
-  "rarity": 5,
-  "prof": "近卫",
-  "sub": "",
-  "faction": "萨尔贡",
-  "nation": "萨尔贡",
-  "sex": "女",
-  "race": "卡普里尼",
-  "artist": "松尾 省吾",
-  "cvJp": "阿保麻莉亚",
-  "cvCn": "孙艳琦",
-  "release": "2025-10-31",
-  "releaseSrc": "prts-created"
- },
- {
   "id": "char_1045_svash2",
   "name": "凛御银灰",
   "rarity": 6,
   "prof": "先锋",
-  "sub": "",
+  "sub": "策士",
   "faction": "谢拉格",
   "nation": "谢拉格",
   "sex": "男",
@@ -6029,7 +6013,7 @@
   "cvJp": "小西克幸",
   "cvCn": "黑石稔",
   "release": "2025-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1046_sbell2",
@@ -6045,7 +6029,7 @@
   "cvJp": "早见沙织",
   "cvCn": "乔璐雨",
   "release": "2025-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1047_halo2",
@@ -6061,7 +6045,23 @@
   "cvJp": "白砂沙帆",
   "cvCn": "橙璃",
   "release": "2025-11-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_394_hadiya",
+  "name": "哈蒂娅",
+  "rarity": 5,
+  "prof": "近卫",
+  "sub": "佣兵",
+  "faction": "萨尔贡",
+  "nation": "萨尔贡",
+  "sex": "女",
+  "race": "卡普里尼",
+  "artist": "松尾 省吾",
+  "cvJp": "阿保麻莉亚",
+  "cvCn": "孙艳琦",
+  "release": "2025-11-01",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4051_akkord",
@@ -6084,7 +6084,7 @@
   "name": "雪猎",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "猎手",
   "faction": "谢拉格",
   "nation": "谢拉格",
   "sex": "女",
@@ -6093,7 +6093,7 @@
   "cvJp": "南真由",
   "cvCn": "庞显欢",
   "release": "2025-11-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4212_nasti",
@@ -6109,14 +6109,14 @@
   "cvJp": "福原绫香",
   "cvCn": "叶佳怡",
   "release": "2025-12-05",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4213_skybx",
   "name": "天空盒",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "裂空炮手",
   "faction": "哥伦比亚",
   "nation": "哥伦比亚",
   "sex": "男",
@@ -6125,7 +6125,7 @@
   "cvJp": "川原庆久",
   "cvCn": "陈昊天",
   "release": "2025-12-05",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4214_cairn",
@@ -6141,23 +6141,7 @@
   "cvJp": "小泽实乃里",
   "cvCn": "施丛昊",
   "release": "2025-12-05",
-  "releaseSrc": "banner"
- },
- {
-  "id": "char_4166_varkis",
-  "name": "摆渡人",
-  "rarity": 5,
-  "prof": "近卫",
-  "sub": "强攻手",
-  "faction": "米诺斯",
-  "nation": "米诺斯",
-  "sex": "男",
-  "race": "丰蹄",
-  "artist": "赤岸K",
-  "cvJp": "鹤冈聪",
-  "cvCn": "孟祥龙",
-  "release": "2026-01-08",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1022_flwr2",
@@ -6173,14 +6157,14 @@
   "cvJp": "高桥李依",
   "cvCn": "杨冬会",
   "release": "2026-01-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4056_titi",
   "name": "缇缇",
   "rarity": 6,
   "prof": "医疗",
-  "sub": "",
+  "sub": "咒愈师",
   "faction": "萨尔贡",
   "nation": "萨尔贡",
   "sex": "女",
@@ -6189,7 +6173,23 @@
   "cvJp": "五十岚裕美",
   "cvCn": "木子橙",
   "release": "2026-01-09",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
+ },
+ {
+  "id": "char_4166_varkis",
+  "name": "摆渡人",
+  "rarity": 5,
+  "prof": "近卫",
+  "sub": "强攻手",
+  "faction": "米诺斯",
+  "nation": "米诺斯",
+  "sex": "男",
+  "race": "丰蹄",
+  "artist": "赤岸K",
+  "cvJp": "鹤冈聪",
+  "cvCn": "孟祥龙",
+  "release": "2026-01-09",
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1050_chen3",
@@ -6205,7 +6205,7 @@
   "cvJp": "石上静香",
   "cvCn": "虫虫",
   "release": "2026-02-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_2027_wang",
@@ -6221,14 +6221,14 @@
   "cvJp": "神奈延年",
   "cvCn": "鹏小胖",
   "release": "2026-02-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4221_ju",
   "name": "矩",
   "rarity": 5,
   "prof": "狙击",
-  "sub": "",
+  "sub": "攻城手",
   "faction": "炎国",
   "nation": "炎国",
   "sex": "男",
@@ -6237,14 +6237,14 @@
   "cvJp": "青山穣",
   "cvCn": "王一凡",
   "release": "2026-02-10",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4222_taraxa",
   "name": "风絮",
   "rarity": 5,
   "prof": "医疗",
-  "sub": "",
+  "sub": "守望者",
   "faction": "炎国",
   "nation": "炎国",
   "sex": "男",
@@ -6253,7 +6253,7 @@
   "cvJp": "杉浦那由多",
   "cvCn": "马程未",
   "release": "2026-02-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4031_liesel",
@@ -6269,7 +6269,7 @@
   "cvJp": "榊原由依",
   "cvCn": "饶梓君",
   "release": "2026-03-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4037_demetr",
@@ -6285,7 +6285,7 @@
   "cvJp": "熊谷健太郎",
   "cvCn": "桑毓泽",
   "release": "2026-03-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1051_headb2",
@@ -6301,7 +6301,7 @@
   "cvJp": "小清水亚美",
   "cvCn": "秦文静",
   "release": "2026-04-07",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4223_botany",
@@ -6317,7 +6317,7 @@
   "cvJp": "织田亚希",
   "cvCn": "则灵",
   "release": "2026-04-07",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4224_turdus",
@@ -6333,14 +6333,14 @@
   "cvJp": "寺泽百花",
   "cvCn": "施丛昊",
   "release": "2026-04-07",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1052_kalts2",
   "name": "凯尔希·思衡托",
   "rarity": 6,
   "prof": "医疗",
-  "sub": "",
+  "sub": "守望者",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -6349,7 +6349,7 @@
   "cvJp": "日笠阳子",
   "cvCn": "刘雪",
   "release": "2026-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4225_tanya",
@@ -6365,14 +6365,14 @@
   "cvJp": "木间萌",
   "cvCn": "张晔",
   "release": "2026-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4226_veen",
   "name": "维伊",
   "rarity": 6,
   "prof": "术师",
-  "sub": "链术师",
+  "sub": "秘术师",
   "faction": "乌萨斯",
   "nation": "乌萨斯",
   "sex": "男",
@@ -6381,7 +6381,7 @@
   "cvJp": "高桥广树",
   "cvCn": "于松涛",
   "release": "2026-05-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4228_closur",
@@ -6397,14 +6397,14 @@
   "cvJp": "沼仓爱美",
   "cvCn": "侯小菲",
   "release": "2026-05-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1048_orchd2",
   "name": "焰狐龙梓兰",
   "rarity": 6,
   "prof": "狙击",
-  "sub": "",
+  "sub": "重射手",
   "faction": "行动预备组A6",
   "nation": "罗德岛",
   "sex": "女",
@@ -6413,14 +6413,14 @@
   "cvJp": "大津爱理",
   "cvCn": "钟可",
   "release": "2026-06-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1049_catap2",
   "name": "雷狼龙S空爆",
   "rarity": 5,
   "prof": "近卫",
-  "sub": "",
+  "sub": "佣兵",
   "faction": "行动预备组A6",
   "nation": "罗德岛",
   "sex": "女",
@@ -6429,7 +6429,7 @@
   "cvJp": "皆川纯子",
   "cvCn": "井琉",
   "release": "2026-06-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4229_aphris",
@@ -6445,14 +6445,14 @@
   "cvJp": "伊藤美来",
   "cvCn": "宋媛媛",
   "release": "2026-07-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4234_pedro",
   "name": "佩德洛",
   "rarity": 5,
   "prof": "辅助",
-  "sub": "",
+  "sub": "游击手",
   "faction": "玻利瓦尔",
   "nation": "玻利瓦尔",
   "sex": "男",
@@ -6461,7 +6461,7 @@
   "cvJp": "白石冬弥",
   "cvCn": "杨泽泉",
   "release": "2026-07-10",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4230_mcnist",
@@ -6477,14 +6477,14 @@
   "cvJp": "三浦祥朗",
   "cvCn": "冷泉夜月",
   "release": "2026-07-17",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_1015_aglna2",
   "name": "予愿安洁莉娜",
   "rarity": 6,
   "prof": "特种",
-  "sub": "",
+  "sub": "巡空者",
   "faction": "罗德岛",
   "nation": "罗德岛",
   "sex": "女",
@@ -6493,7 +6493,7 @@
   "cvJp": "大桥彩香",
   "cvCn": "溯浔",
   "release": "2026-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4235_thumpy",
@@ -6509,7 +6509,7 @@
   "cvJp": "矢野妃菜喜",
   "cvCn": "醋醋",
   "release": "2026-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4236_tmslot",
@@ -6525,7 +6525,7 @@
   "cvJp": "藤泽玲香",
   "cvCn": "赵爽",
   "release": "2026-08-01",
-  "releaseSrc": "prts-created"
+  "releaseSrc": "prts-online"
  },
  {
   "id": "char_4237_jcinta",
@@ -6541,6 +6541,6 @@
   "cvJp": "田泽茉纯",
   "cvCn": "蔡海婷",
   "release": "2026-08-01",
-  "releaseSrc": "banner"
+  "releaseSrc": "prts-online"
  }
 ]

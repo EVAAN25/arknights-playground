@@ -41,9 +41,9 @@ GitHub Pages：`Settings → Pages → Deploy from branch → main / (root)`。
 
 | 数据 | 来源 | 说明 |
 |---|---|---|
-| 干员基础信息（稀有度/职业/势力） | [Kengxxiao/ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData) `zh_CN` gamedata | 抓取于 2026-08-05 |
-| 种族/画师/声优 | [PRTS Wiki](https://prts.wiki) 干员页 wikitext | 抓取于 2026-08-05 |
-| 实装日期 | [arknights.wiki.gg](https://arknights.wiki.gg) 卡池表 + PRTS 页面创建时间交叉校正；低星干员（无卡池记录）取 PRTS「上线时间」 | 抓取于 2026-08-05，3★ 补充于 2026-08-07 |
+| 干员基础信息（稀有度/职业/势力） | [Kengxxiao/ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData) `zh_CN` gamedata；分支以 [PRTS Wiki](https://prts.wiki) 干员页为准全量校对 | 抓取于 2026-08-05，校对于 2026-08-07 |
+| 种族/画师/声优 | [PRTS Wiki](https://prts.wiki) 干员页 wikitext | 抓取于 2026-08-05，补齐于 2026-08-07 |
+| 实装日期 | [PRTS Wiki](https://prts.wiki) 干员页「上线时间」 | 校对于 2026-08-07 |
 | 头像 | [Aceship/Arknight-Images](https://github.com/Aceship/Arknight-Images) + PRTS 补充新干员 | 抓取于 2026-08-05 |
 | 中文语音 | [Aceship/Arknight-voices](https://github.com/Aceship/Arknight-voices) `voice_cn` | 抓取于 2026-08-05 |
 | 播放量快照 | B 站官号「明日方舟」(mid=161775300) 空间视频列表 | 快照日期 **2026-08-05**，见 `data/popularity.json` |

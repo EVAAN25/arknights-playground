@@ -41,7 +41,8 @@ node test.js
 ## 关键口径
 
 - **题池**：可获取的 3★~6★ 干员（409 = 17×3★ + 61×4★ + 195×5★ + 136×6★；玩法内按稀有度 ≥3 过滤）。
-- **实装日期**：优先 wiki.gg 卡池 startTimeCN（+8h 修正时区）；与 PRTS 页面创建时间相差 >30 天取较早者；无卡池记录的赠送/商店干员用 PRTS 创建时间；3★ 等低星干员取 PRTS 干员页「上线时间」（raw/prts_online.json，PRTS wikitext 获得方式模板）。
+- **职业/分支**：以 PRTS 干员页 CharinfoV2 模板为准（全量快照 raw/prts_charinfo.json，409 人）；gamedata subProfessionId 的 SUBPROF 中文映射由该快照共识生成，仅作新干员兜底（2026-08-07 全量校对：职业/星级 0 差异，分支修正 111 处——旧映射表把 stalker=伏击客错成行商、ringhealer=群愈师错成疗养师等）。
+- **实装日期**：一律以 PRTS 干员页「上线时间」为准（raw/prts_online.json 全量 409 人，2026-08-07 起替代卡池推算/页面创建时间；修正了开服干员误用首个 UP 卡池日期的 45 处偏差）。
 - **3★ 档案**：种族/画师/声优来自 PRTS wikitext（raw/prts_lore.json），性别来自 tl-akhr，头像从 PRTS `File:头像_<干员名>.png`（media.prts.wiki 按 md5 路径直链 curl）。
 - **播放量**：优先干员个人「前瞻PV/技能展示PV」；无个人 PV 的取「实装活动宣传PV」（实装日前 24 天窗口内最近的活动 PV）。官号联合投稿视频不在其空间列表中，相关干员不进入人气对决题池。
 - **连线唯一解**：枚举 16 人中所有共享某维度同值的四人组，exact-cover 计数必须为 1；组内 4 人必须是该值在 16 人中的全部命中。
